@@ -1,4 +1,4 @@
-import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
+import { FONT, MONO, esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Floppy disk in the language colour, with the repo on its label.";
 
@@ -8,11 +8,11 @@ const HAND = "'Marker Felt', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cur
 export default (r) =>
   svg(
     r.name,
-    `<rect x=".5" y=".5" width="399" height="149" rx="10" fill="#e9edf2" stroke="#cfd6de"/>
+    `${motion(".fl-shutter { animation: fl-shutter 7s ease-in-out infinite } @keyframes fl-shutter { 0%, 40%, 100% { transform: none } 55%, 75% { transform: translateX(-12px) } }")}
+<rect x=".5" y=".5" width="399" height="149" rx="10" fill="#e9edf2" stroke="#cfd6de"/>
 <path d="M20 15H128L140 27V135H20Z" fill="${r.lang.color}"/>
 <path d="M20 15H128L140 27V135H20Z" fill="#000" fill-opacity=".15"/>
-<rect x="48" y="15" width="64" height="38" fill="#c7cdd4"/>
-<rect x="88" y="21" width="14" height="26" fill="#6b7280"/>
+<g class="fl-shutter"><rect x="48" y="15" width="64" height="38" fill="#c7cdd4"/><rect x="88" y="21" width="14" height="26" fill="#6b7280"/></g>
 <rect x="26" y="122" width="8" height="8" fill="#111"/>
 <rect x="34" y="68" width="92" height="60" rx="3" fill="#fff"/>
 <path d="M40 96H120M40 110H120" stroke="#dbe3ec"/>

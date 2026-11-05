@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .cg-caret { animation: cg-caret 2s step-end infinite } @keyframes cg-caret { 0% { fill-opacity: 1 } 50% { fill-opacity: 0 } } }</style>
 <defs><mask id="hole"><rect width="400" height="150" rx="5" fill="#fff"/><circle cx="200" cy="138" r="6" fill="#000"/></mask></defs>
 <g mask="url(#hole)">
   <rect width="400" height="150" fill="#fbf6e6"/>
@@ -13,6 +14,6 @@
   <text x="96" y="47" font-size="13" font-weight="700">load_switch</text>
   <text font-size="11.5"><tspan x="96" y="65">A highly customizable toggle switch with</tspan><tspan x="96" y="83">a loading state.</tspan></text>
   <text x="84" y="101" font-size="11.5">Dart. ★ 20 ; ⑂ 3.</text>
-  <text x="84" y="119" font-size="10" fill="#6b645a">1. Dart -- Repositories. I. Title.</text>
+  <text x="84" y="119" font-size="10" fill="#6b645a">1. Dart -- Repositories. I. Title.<tspan class="cg-caret" fill-opacity="0">_</tspan></text>
 </g>
 </svg>

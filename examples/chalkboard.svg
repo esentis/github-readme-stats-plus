@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .cb-star { transform-origin: 8px 108px; animation: cb-star 6s ease-in-out infinite } @keyframes cb-star { 0%, 75%, 100% { transform: none } 83% { transform: rotate(14deg) scale(1.12) } 91% { transform: rotate(-5deg) } } }</style>
 <defs>
   <radialGradient id="slate" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#36574a"/><stop offset="1" stop-color="#22392f"/></radialGradient>
   <filter id="smudge" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
@@ -18,6 +19,6 @@
   <text x="24" y="40" font-size="22" font-weight="700">load_switch</text>
   <path d="M24 49q18.755 -5 37.51 0t37.51 0t37.51 0t37.51 0" fill="none" stroke="#eef3ee" stroke-width="1.6" stroke-linecap="round"/>
   <text font-size="12.5" fill="#d7e2d8"><tspan x="24" y="70">A highly customizable toggle switch with a</tspan><tspan x="24" y="86">loading state.</tspan></text>
-  <g font-size="14" font-weight="700"><g transform="translate(22 0)"><path transform="translate(8 108) rotate(-8)" d="M0.0 -9.0L5.3 8.1L-8.6 -2.8L8.6 -2.0L-5.3 7.3L-0.0 -8.2" fill="none" stroke="#ffe27a" stroke-width="1.8" stroke-linejoin="round"/><text x="22" y="113" fill="#ffe27a">20</text></g><g transform="translate(75.36 0)"><text y="113">⑂ 3</text></g><g transform="translate(131.4 0)"><circle cx="7" cy="108" r="6" fill="#00B4AB" stroke="#eef3ee" stroke-width="1.2"/><text x="20" y="113">Dart</text></g></g>
+  <g font-size="14" font-weight="700"><g transform="translate(22 0)"><g class="cb-star"><path transform="translate(8 108) rotate(-8)" d="M0.0 -9.0L5.3 8.1L-8.6 -2.8L8.6 -2.0L-5.3 7.3L-0.0 -8.2" fill="none" stroke="#ffe27a" stroke-width="1.8" stroke-linejoin="round"/></g><text x="22" y="113" fill="#ffe27a">20</text></g><g transform="translate(75.36 0)"><text y="113">⑂ 3</text></g><g transform="translate(131.4 0)"><circle cx="7" cy="108" r="6" fill="#00B4AB" stroke="#eef3ee" stroke-width="1.2"/><text x="20" y="113">Dart</text></g></g>
 </g>
 </svg>

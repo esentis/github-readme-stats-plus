@@ -1,4 +1,4 @@
-import { esc, fit, isLight, lines, svg, wrap } from "../card.js";
+import { esc, fit, isLight, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Gothic manuscript: parchment in a dark frame, an illuminated drop cap in the language colour, blackletter heading.";
 
@@ -13,14 +13,15 @@ export default (r) => {
   const size = r.name.length > 18 ? 20 : 27;
   return svg(
     r.name,
-    `<defs><radialGradient id="parch" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#f1e4c3"/><stop offset="1" stop-color="#c9ad7a"/></radialGradient></defs>
+    `${motion(".bl-gild { animation: bl-gild 6s ease-in-out infinite } @keyframes bl-gild { 50% { stroke: #fff0b8; stroke-width: 1.6px } }")}
+<defs><radialGradient id="parch" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#f1e4c3"/><stop offset="1" stop-color="#c9ad7a"/></radialGradient></defs>
 <rect width="400" height="150" rx="6" fill="#1c1411"/>
 <rect x="7" y="7" width="386" height="136" rx="2" fill="url(#parch)"/>
 <rect x="12.5" y="12.5" width="375" height="125" fill="none" stroke="#3a2516" stroke-width="1.2"/>
 <rect x="15.5" y="15.5" width="369" height="119" fill="none" stroke="${RUBRIC}" stroke-width=".6"/>
 ${[[200, 12.5], [200, 137.5], [12.5, 75], [387.5, 75]].map(([x, y]) => `<rect x="${x - 3.5}" y="${y - 3.5}" width="7" height="7" fill="${RUBRIC}" transform="rotate(45 ${x} ${y})"/>`).join("")}
 <rect x="26" y="24" width="44" height="44" fill="${r.lang.color}" stroke="#3a2516" stroke-width="1.5"/>
-<rect x="29.5" y="27.5" width="37" height="37" fill="none" stroke="#d6b25e" stroke-width="1"/>
+<rect class="bl-gild" x="29.5" y="27.5" width="37" height="37" fill="none" stroke="#d6b25e" stroke-width="1"/>
 <text x="48" y="58" font-family="${GOTHIC}" font-size="34" fill="${ink}" text-anchor="middle">${esc(cap.toUpperCase())}</text>
 <text x="80" y="54" font-family="${GOTHIC}" font-size="${size}" fill="#2a1b10">${esc(fit(rest.join(""), 290, size, 0.55))}</text>
 <path d="M80 66H372" stroke="#3a2516" stroke-width=".8"/>

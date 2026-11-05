@@ -1,4 +1,4 @@
-import { esc, fit, lines, row, svg, textWidth, wrap } from "../card.js";
+import { esc, fit, lines, motion, row, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Chalkboard: dark green slate with smudges, chalk-grain lettering, a doodled star and chalk on the tray.";
 
@@ -12,13 +12,14 @@ export default (r) => {
   const name = fit(r.name, 336, 22, 0.62);
   const under = Math.min(textWidth(name, 22, 0.62), 336);
   const items = [
-    [16 + textWidth(r.stars, 14, 0.62), `<path transform="translate(8 108) rotate(-8)" d="${STAR}" fill="none" stroke="#ffe27a" stroke-width="1.8" stroke-linejoin="round"/><text x="22" y="113" fill="#ffe27a">${esc(r.stars)}</text>`],
+    [16 + textWidth(r.stars, 14, 0.62), `<g class="cb-star"><path transform="translate(8 108) rotate(-8)" d="${STAR}" fill="none" stroke="#ffe27a" stroke-width="1.8" stroke-linejoin="round"/></g><text x="22" y="113" fill="#ffe27a">${esc(r.stars)}</text>`],
     [10 + textWidth(`⑂ ${r.forks}`, 14, 0.62), `<text y="113">⑂ ${esc(r.forks)}</text>`],
     [20 + textWidth(fit(r.lang.name, 120, 14, 0.62), 14, 0.62), `<circle cx="7" cy="108" r="6" fill="${r.lang.color}" stroke="#eef3ee" stroke-width="1.2"/><text x="20" y="113">${esc(fit(r.lang.name, 120, 14, 0.62))}</text>`],
   ];
   return svg(
     r.name,
-    `<defs>
+    `${motion(".cb-star { transform-origin: 8px 108px; animation: cb-star 6s ease-in-out infinite } @keyframes cb-star { 0%, 75%, 100% { transform: none } 83% { transform: rotate(14deg) scale(1.12) } 91% { transform: rotate(-5deg) } }")}
+<defs>
   <radialGradient id="slate" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#36574a"/><stop offset="1" stop-color="#22392f"/></radialGradient>
   <filter id="smudge" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
   <filter id="chalk" x="-5%" y="-20%" width="110%" height="140%">

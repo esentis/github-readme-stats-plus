@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .dt-ring { transform-origin: 336px 128px; animation: dt-ring 5s ease-in-out infinite } @keyframes dt-ring { 50% { transform: scale(1.05) } } }</style>
 <defs>
   <clipPath id="clip"><rect width="400" height="150" rx="10"/></clipPath>
   <pattern id="h0" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="1" fill="#121212"/></pattern><pattern id="h1" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="1.6" fill="#121212"/></pattern><pattern id="h2" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="2.2" fill="#121212"/></pattern><pattern id="h3" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="2.8" fill="#121212"/></pattern><pattern id="h4" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="3.4" fill="#121212"/></pattern><pattern id="h5" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="4" fill="#121212"/></pattern>
@@ -7,7 +8,7 @@
   <rect width="400" height="150" fill="#00B4AB"/>
   <rect x="214" width="31" height="150" fill="url(#h0)"/><rect x="245" width="31" height="150" fill="url(#h1)"/><rect x="276" width="31" height="150" fill="url(#h2)"/><rect x="307" width="31" height="150" fill="url(#h3)"/><rect x="338" width="31" height="150" fill="url(#h4)"/><rect x="369" width="31" height="150" fill="url(#h5)"/>
   <circle cx="336" cy="128" r="72" fill="#121212"/>
-  <circle cx="336" cy="128" r="84" fill="none" stroke="#121212" stroke-width="4"/>
+  <circle class="dt-ring" cx="336" cy="128" r="84" fill="none" stroke="#121212" stroke-width="4"/>
 </g>
 <g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="800">
   <text x="22" y="30" font-size="10" letter-spacing="2.5" fill="#fff" fill-opacity=".75">ESENTIS</text>

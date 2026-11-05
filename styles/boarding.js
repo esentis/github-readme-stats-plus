@@ -1,4 +1,4 @@
-import { FONT, barcode, esc, fit, isLight, svg } from "../card.js";
+import { FONT, barcode, esc, fit, isLight, motion, svg } from "../card.js";
 
 export const about = "Boarding pass with a tear-off stub and a barcode unique to each repo. Shows no description.";
 
@@ -10,7 +10,8 @@ export default (r) => {
   const nameSize = r.name.length > 16 ? 13 : 16;
   return svg(
     r.name,
-    `<defs>
+    `${motion(".bd-plane { animation: bd-plane 4s ease-in-out infinite } @keyframes bd-plane { 50% { transform: translate(3px, -1.5px) } }")}
+<defs>
   <mask id="notch"><rect width="400" height="150" rx="12" fill="#fff"/><circle cx="296" r="10" fill="#000"/><circle cx="296" cy="150" r="10" fill="#000"/></mask>
 </defs>
 <g mask="url(#notch)">
@@ -28,7 +29,7 @@ export default (r) => {
   </g>
   <g font-weight="700" fill="#16202a">
     <text x="18" y="72" font-size="16">${esc(fit(r.owner, 72, 16))}</text>
-    <text x="94" y="71" font-size="14" fill="${ink}">✈</text>
+    <text class="bd-plane" x="94" y="71" font-size="14" fill="${ink}">✈</text>
     <text x="120" y="72" font-size="${nameSize}">${esc(fit(r.name, 166, nameSize))}</text>
     <text x="18" y="120" font-size="15">${esc(fit(r.lang.name, 96, 15))}</text>
     <text x="120" y="120" font-size="15">${esc(r.stars)}</text>

@@ -1,4 +1,4 @@
-import { FONT, esc, fit, svg } from "../card.js";
+import { FONT, esc, fit, motion, svg } from "../card.js";
 
 export const about = "Retro game cartridge: grey shell with grip ridges, a sunset label in the language colour and the name on a bold banner. Shows no description.";
 
@@ -9,10 +9,11 @@ export default (r) => {
   const ridges = Array.from({ length: 12 }, (_, i) => `M12 ${30 + i * 8}H40M360 ${30 + i * 8}H388`).join("");
   const lang = fit(r.lang.name.toUpperCase(), 100, 11, 0.7);
   const stars = [[70, 62], [96, 76], [128, 60], [262, 64], [300, 80], [330, 58], [160, 72], [236, 74]]
-    .map(([x, y]) => `<rect x="${x}" y="${y}" width="2" height="2"/>`).join("");
+    .map(([x, y], i) => `<rect class="ct-star" style="animation-delay:${(i * 0.45).toFixed(2)}s" x="${x}" y="${y}" width="2" height="2"/>`).join("");
   return svg(
     r.name,
-    `<defs>
+    `${motion(".ct-star { animation: ct-star 3.6s ease-in-out infinite } @keyframes ct-star { 0%, 100% { opacity: 1 } 50% { opacity: .15 } }")}
+<defs>
   <linearGradient id="shell" x2="0" y2="1"><stop offset="0" stop-color="#aeaeb6"/><stop offset="1" stop-color="#85858e"/></linearGradient>
   <linearGradient id="sky" gradientUnits="userSpaceOnUse" x1="0" y1="50" x2="0" y2="110"><stop offset="0" stop-color="#1b1446"/><stop offset="1" stop-color="${r.lang.color}"/></linearGradient>
   <clipPath id="label"><rect x="50" y="14" width="300" height="108" rx="5"/></clipPath>

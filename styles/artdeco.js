@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Art deco: black lacquer and gold, stepped frame, a sunburst fan holding the star count, condensed caps.";
 
@@ -16,7 +16,7 @@ const fan = (cx, cy, r0, r1, n = 14) => {
   const p = (a, rad) => `${(cx + rad * Math.cos(a)).toFixed(1)} ${(cy + rad * Math.sin(a)).toFixed(1)}`;
   return Array.from({ length: n }, (_, i) => {
     const [a0, a1] = [Math.PI * (1 + i / n), Math.PI * (1 + (i + 1) / n)];
-    return `<path d="M${p(a0, r0)}L${p(a0, r1)}A${r1} ${r1} 0 0 1 ${p(a1, r1)}L${p(a1, r0)}A${r0} ${r0} 0 0 0 ${p(a0, r0)}Z" fill="${GOLD}" fill-opacity="${i % 2 ? 0.25 : 0.85}"/>`;
+    return `<path d="M${p(a0, r0)}L${p(a0, r1)}A${r1} ${r1} 0 0 1 ${p(a1, r1)}L${p(a1, r0)}A${r0} ${r0} 0 0 0 ${p(a0, r0)}Z" fill="${GOLD}" fill-opacity="${i % 2 ? 0.25 : 0.85}"${i % 2 ? ` class="ad-ray" style="animation-delay:${(i * 0.12).toFixed(2)}s"` : ""}/>`;
   }).join("");
 };
 
@@ -26,7 +26,8 @@ export default (r) => {
   const size = name.length > 13 ? 19 : 25;
   return svg(
     r.name,
-    `<rect width="400" height="150" rx="6" fill="#0f0e0c"/>
+    `${motion(".ad-ray { animation: ad-ray 7s ease-in-out infinite } @keyframes ad-ray { 0%, 16%, 100% { fill-opacity: .25 } 8% { fill-opacity: .6 } }")}
+<rect width="400" height="150" rx="6" fill="#0f0e0c"/>
 <polygon points="${stepped(6, 6)}" fill="none" stroke="${GOLD}" stroke-width="1.5"/>
 <polygon points="${stepped(11, 5)}" fill="none" stroke="${GOLD}" stroke-width=".6" stroke-opacity=".6"/>
 ${fan(70, 128, 30, 74)}

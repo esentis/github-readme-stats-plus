@@ -1,4 +1,4 @@
-import { MONO, esc, fit, lines, svg, wrap } from "../card.js";
+import { MONO, esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Technical drawing: stars as a dimension line, language and forks in a title block.";
 
@@ -6,7 +6,8 @@ export const about = "Technical drawing: stars as a dimension line, language and
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".bp-scan { opacity: 1; stroke-dasharray: 24 300; stroke-dashoffset: 24; animation: bp-scan 6s ease-in-out infinite } @keyframes bp-scan { 0%, 30% { stroke-dashoffset: 24 } 80%, 100% { stroke-dashoffset: -172 } }")}
+<defs>
   <pattern id="minor" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#fff" stroke-opacity=".08"/></pattern>
   <pattern id="major" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#fff" stroke-opacity=".2"/></pattern>
   <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#cfe3ff"/></marker>
@@ -20,6 +21,7 @@ export default (r) =>
   <text font-size="11.5" fill="#cfe3ff">${lines(wrap(r.description, 50), 22, 60, 15)}</text>
   <path d="M22 108V124M198 108V124" stroke="#cfe3ff"/>
   <line x1="24" y1="116" x2="196" y2="116" stroke="#cfe3ff" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line class="bp-scan" x1="24" y1="116" x2="196" y2="116" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0"/>
   <text x="110" y="109" font-size="11" text-anchor="middle">★ ${esc(r.stars)} STARS</text>
   <g font-size="10" fill="#cfe3ff">
     <rect x="246" y="94" width="136" height="42" fill="#0f4c9c" stroke="#cfe3ff"/>

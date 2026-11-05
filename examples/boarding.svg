@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .bd-plane { animation: bd-plane 4s ease-in-out infinite } @keyframes bd-plane { 50% { transform: translate(3px, -1.5px) } } }</style>
 <defs>
   <mask id="notch"><rect width="400" height="150" rx="12" fill="#fff"/><circle cx="296" r="10" fill="#000"/><circle cx="296" cy="150" r="10" fill="#000"/></mask>
 </defs>
@@ -17,7 +18,7 @@
   </g>
   <g font-weight="700" fill="#16202a">
     <text x="18" y="72" font-size="16">esentis</text>
-    <text x="94" y="71" font-size="14" fill="#00B4AB">✈</text>
+    <text class="bd-plane" x="94" y="71" font-size="14" fill="#00B4AB">✈</text>
     <text x="120" y="72" font-size="16">load_switch</text>
     <text x="18" y="120" font-size="15">Dart</text>
     <text x="120" y="120" font-size="15">20</text>

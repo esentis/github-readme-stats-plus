@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .bw-caret { animation: bw-caret 2s step-end infinite } @keyframes bw-caret { 0% { fill-opacity: 1 } 50% { fill-opacity: 0 } } }</style>
 <rect width="400" height="150" fill="#b8ff2b"/>
 <rect x="2" y="2" width="396" height="146" fill="none" stroke="#000" stroke-width="4"/>
 <g font-family="'Times New Roman', Times, serif" fill="#000">
   <text x="16" y="26" font-size="13"><tspan fill="#0000ee" text-decoration="underline">esentis</tspan> / <tspan fill="#551a8b" text-decoration="underline">repos</tspan></text>
-  <text x="16" y="56" font-size="28" font-weight="700">load_switch</text>
+  <text x="16" y="56" font-size="28" font-weight="700">load_switch<tspan class="bw-caret" font-weight="400" fill-opacity="0">|</tspan></text>
   <path d="M16 66H384" stroke="#555" stroke-width="1"/><path d="M16 67.5H384" stroke="#fff" stroke-width="1"/>
   <text font-size="13.5"><tspan x="16" y="86">A highly customizable toggle switch with a loading</tspan><tspan x="16" y="102">state.</tspan></text>
   <g font-size="13"><g transform="translate(16 0)"><rect y="112" width="57.04" height="24" fill="#fff" stroke="#000" stroke-width="1.5"/><text x="8" y="129"><tspan fill="#00B4AB" stroke="#000" stroke-width=".6">■</tspan> Dart</text></g><g transform="translate(71.53999999999999 0)"><rect y="112" width="43.519999999999996" height="24" fill="none" stroke="#000" stroke-width="1.5"/><text x="8" y="129">★ 20</text></g><g transform="translate(113.55999999999999 0)"><rect y="112" width="36.76" height="24" fill="none" stroke="#000" stroke-width="1.5"/><text x="8" y="129">⑂ 3</text></g></g>

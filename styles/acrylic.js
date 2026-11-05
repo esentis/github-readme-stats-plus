@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Thick frosted acrylic slab with a bevelled edge, lit from behind in the language colour.";
 
@@ -6,7 +6,8 @@ export const about = "Thick frosted acrylic slab with a bevelled edge, lit from 
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".ac-light { animation: ac-light 8s ease-in-out infinite } @keyframes ac-light { 50% { opacity: .7; transform: translate(10px, -4px) } }")}
+<defs>
   <clipPath id="clip"><rect width="400" height="150" rx="14"/></clipPath>
   <filter id="light" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
   <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
@@ -17,7 +18,7 @@ export default (r) =>
 </defs>
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#18181d"/>
-  <g filter="url(#light)"><circle cx="110" cy="100" r="72" fill="${r.lang.color}"/><circle cx="320" cy="34" r="46" fill="${r.lang.color}" opacity=".6"/><circle cx="110" cy="104" r="24" fill="#fff" opacity=".45"/></g>
+  <g class="ac-light" filter="url(#light)"><circle cx="110" cy="100" r="72" fill="${r.lang.color}"/><circle cx="320" cy="34" r="46" fill="${r.lang.color}" opacity=".6"/><circle cx="110" cy="104" r="24" fill="#fff" opacity=".45"/></g>
   <rect x="24" y="24" width="352" height="116" rx="14" fill="#000" fill-opacity=".55" filter="url(#shadow)"/>
   <rect x="16" y="18" width="368" height="118" rx="14" fill="url(#side)"/>
   <rect x="16" y="12" width="368" height="116" rx="14" fill="#1d1d24" fill-opacity=".42"/>

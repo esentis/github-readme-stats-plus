@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Light or dark, following the viewer's system theme. The default.";
 
@@ -6,15 +6,17 @@ export const about = "Light or dark, following the viewer's system theme. The de
 export default (r) =>
   svg(
     r.name,
-    `<style>
+    `${motion(".ad-shine { animation: ad-shine 9s ease-in-out infinite } @keyframes ad-shine { 0%, 30% { transform: translateX(0) } 70%, 100% { transform: translateX(480px) } }")}
+<style>
   .bg { fill: #fff; stroke: #d0d7de } .t { fill: #1f2328 } .d { fill: #59636e } .i { fill: #818b98 }
   @media (prefers-color-scheme: dark) {
     .bg { fill: #0d1117; stroke: #30363d } .t { fill: #f0f6fc } .d { fill: #9198a1 } .i { fill: #6e7681 }
   }
 </style>
 <clipPath id="clip"><rect width="400" height="150" rx="12"/></clipPath>
+<linearGradient id="shine" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <rect class="bg" x=".5" y=".5" width="399" height="149" rx="11.5"/>
-<rect clip-path="url(#clip)" y="146" width="400" height="4" fill="${r.lang.color}"/>
+<g clip-path="url(#clip)"><rect y="146" width="400" height="4" fill="${r.lang.color}"/><rect class="ad-shine" x="-80" y="146" width="80" height="4" fill="url(#shine)"/></g>
 <g font-family="${FONT}">
   <text class="i" x="24" y="32" font-size="12">${esc(fit(r.owner, 340, 12))} /</text>
   <text class="t" x="24" y="56" font-size="20" font-weight="600">${esc(fit(r.name, 352, 20))}</text>

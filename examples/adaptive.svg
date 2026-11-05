@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ad-shine { animation: ad-shine 9s ease-in-out infinite } @keyframes ad-shine { 0%, 30% { transform: translateX(0) } 70%, 100% { transform: translateX(480px) } } }</style>
 <style>
   .bg { fill: #fff; stroke: #d0d7de } .t { fill: #1f2328 } .d { fill: #59636e } .i { fill: #818b98 }
   @media (prefers-color-scheme: dark) {
@@ -6,8 +7,9 @@
   }
 </style>
 <clipPath id="clip"><rect width="400" height="150" rx="12"/></clipPath>
+<linearGradient id="shine" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <rect class="bg" x=".5" y=".5" width="399" height="149" rx="11.5"/>
-<rect clip-path="url(#clip)" y="146" width="400" height="4" fill="#00B4AB"/>
+<g clip-path="url(#clip)"><rect y="146" width="400" height="4" fill="#00B4AB"/><rect class="ad-shine" x="-80" y="146" width="80" height="4" fill="url(#shine)"/></g>
 <g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
   <text class="i" x="24" y="32" font-size="12">esentis /</text>
   <text class="t" x="24" y="56" font-size="20" font-weight="600">load_switch</text>

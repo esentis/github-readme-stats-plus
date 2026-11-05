@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ac-light { animation: ac-light 8s ease-in-out infinite } @keyframes ac-light { 50% { opacity: .7; transform: translate(10px, -4px) } } }</style>
 <defs>
   <clipPath id="clip"><rect width="400" height="150" rx="14"/></clipPath>
   <filter id="light" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
@@ -10,7 +11,7 @@
 </defs>
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#18181d"/>
-  <g filter="url(#light)"><circle cx="110" cy="100" r="72" fill="#00B4AB"/><circle cx="320" cy="34" r="46" fill="#00B4AB" opacity=".6"/><circle cx="110" cy="104" r="24" fill="#fff" opacity=".45"/></g>
+  <g class="ac-light" filter="url(#light)"><circle cx="110" cy="100" r="72" fill="#00B4AB"/><circle cx="320" cy="34" r="46" fill="#00B4AB" opacity=".6"/><circle cx="110" cy="104" r="24" fill="#fff" opacity=".45"/></g>
   <rect x="24" y="24" width="352" height="116" rx="14" fill="#000" fill-opacity=".55" filter="url(#shadow)"/>
   <rect x="16" y="18" width="368" height="118" rx="14" fill="url(#side)"/>
   <rect x="16" y="12" width="368" height="116" rx="14" fill="#1d1d24" fill-opacity=".42"/>

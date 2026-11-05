@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Vintage library catalog card: ruled lines, a red heading line, a call number and typewriter text.";
 
@@ -9,7 +9,8 @@ export default (r) => {
   const call = [r.lang.name.slice(0, 3).toUpperCase(), `★${r.stars}`, `.${r.owner[0].toUpperCase()}${r.name.length}`];
   return svg(
     r.name,
-    `<defs><mask id="hole"><rect width="400" height="150" rx="5" fill="#fff"/><circle cx="200" cy="138" r="6" fill="#000"/></mask></defs>
+    `${motion(".cg-caret { animation: cg-caret 2s step-end infinite } @keyframes cg-caret { 0% { fill-opacity: 1 } 50% { fill-opacity: 0 } }")}
+<defs><mask id="hole"><rect width="400" height="150" rx="5" fill="#fff"/><circle cx="200" cy="138" r="6" fill="#000"/></mask></defs>
 <g mask="url(#hole)">
   <rect width="400" height="150" fill="#fbf6e6"/>
   <path d="M0 50.5H400M0 68.5H400M0 86.5H400M0 104.5H400M0 122.5H400" stroke="#9cc3e0" stroke-opacity=".7"/>
@@ -23,7 +24,7 @@ export default (r) => {
   <text x="96" y="47" font-size="13" font-weight="700">${esc(fit(r.name, 286, 13))}</text>
   <text font-size="11.5">${lines(wrap(r.description, 40), 96, 65, 18)}</text>
   <text x="84" y="101" font-size="11.5">${esc(fit(r.lang.name, 120, 11.5))}. ★ ${esc(r.stars)} ; ⑂ ${esc(r.forks)}.</text>
-  <text x="84" y="119" font-size="10" fill="#6b645a">1. ${esc(fit(r.lang.name, 90, 10))} -- Repositories. I. Title.</text>
+  <text x="84" y="119" font-size="10" fill="#6b645a">1. ${esc(fit(r.lang.name, 90, 10))} -- Repositories. I. Title.<tspan class="cg-caret" fill-opacity="0">_</tspan></text>
 </g>`,
   );
 };

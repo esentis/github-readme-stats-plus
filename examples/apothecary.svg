@@ -1,10 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ap-sheen { animation: ap-sheen 8s ease-in-out infinite } @keyframes ap-sheen { 0%, 40% { transform: translateX(0) } 80%, 100% { transform: translateX(300px) } } }</style>
+<defs><clipPath id="ribbon"><rect x="78" y="38" width="244" height="28"/></clipPath><linearGradient id="sheen" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
 <path d="M14 0H386A14 14 0 0 0 400 14V136A14 14 0 0 0 386 150H14A14 14 0 0 0 0 136V14A14 14 0 0 0 14 0Z" fill="#f2e8cf"/>
 <path d="M16 6H384A10 10 0 0 0 394 16V134A10 10 0 0 0 384 144H16A10 10 0 0 0 6 134V16A10 10 0 0 0 16 6Z" fill="none" stroke="#26402f" stroke-width="2.2"/>
 <path d="M18.5 10.5H381.5A8 8 0 0 0 389.5 18.5V131.5A8 8 0 0 0 381.5 139.5H18.5A8 8 0 0 0 10.5 131.5V18.5A8 8 0 0 0 18.5 10.5Z" fill="none" stroke="#26402f" stroke-width=".8"/>
 <path d="M48 46H86V72H48L58 59ZM352 46H314V72H352L342 59Z" fill="#00B4AB"/><path d="M48 46H86V72H48L58 59ZM352 46H314V72H352L342 59Z" fill="#000" fill-opacity=".3"/>
 <path d="M78 66L86 72V66ZM322 66L314 72V66Z" fill="#000" fill-opacity=".5"/>
 <rect x="78" y="38" width="244" height="28" fill="#00B4AB"/>
+<g clip-path="url(#ribbon)"><path class="ap-sheen" d="M52 38H76L66 66H42Z" fill="url(#sheen)"/></g>
 <path d="M78 41.5H322M78 62.5H322" stroke="#fbf4e2" stroke-opacity=".45" stroke-width=".7"/>
 <g font-family="'Hoefler Text', Baskerville, 'Baskerville Old Face', Georgia, serif" fill="#26402f" text-anchor="middle">
   <text x="200" y="30" font-size="9.5" letter-spacing="2.5">ESENTIS &amp; CO.</text>

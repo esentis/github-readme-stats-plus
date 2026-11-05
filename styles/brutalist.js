@@ -1,4 +1,4 @@
-import { esc, fit, lines, row, svg, textWidth, wrap } from "../card.js";
+import { esc, fit, lines, motion, row, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Cream card, thick outline, hard shadow and a highlighter title.";
 
@@ -16,7 +16,8 @@ export default (r) => {
   });
   return svg(
     r.name,
-    `<rect x="9" y="9" width="388" height="138" fill="#111"/>
+    `${motion(".br-shadow { animation: br-shadow 5s ease-in-out infinite } @keyframes br-shadow { 0%, 60%, 100% { transform: none } 80% { transform: translate(3px, 3px) } }")}
+<rect class="br-shadow" x="9" y="9" width="388" height="138" fill="#111"/>
 <rect x="1.5" y="1.5" width="388" height="138" fill="#fffbea" stroke="#111" stroke-width="3"/>
 <rect x="20" y="20" width="${textWidth(name, 22, 0.69) + 14}" height="30" fill="#ffd60a"/>
 <g font-family="${BLACK}" font-weight="900" fill="#111">

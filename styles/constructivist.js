@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Constructivist poster: cream, red and black diagonals, a big red circle with the stars, bold slanted caps.";
 
@@ -10,10 +10,11 @@ export default (r) => {
   const size = name.length > 12 ? 17 : 25;
   return svg(
     r.name,
-    `<defs><clipPath id="c"><rect width="400" height="150" rx="6"/></clipPath></defs>
+    `${motion(".cv-sun { transform-origin: 336px 52px; animation: cv-sun 6s ease-in-out infinite } @keyframes cv-sun { 50% { transform: scale(1.04) } }")}
+<defs><clipPath id="c"><rect width="400" height="150" rx="6"/></clipPath></defs>
 <g clip-path="url(#c)">
   <rect width="400" height="150" fill="#efe5cf"/>
-  <circle cx="336" cy="52" r="70" fill="#c8102e"/>
+  <circle class="cv-sun" cx="336" cy="52" r="70" fill="#c8102e"/>
   <path d="M400 150V112L318 150Z" fill="#1a1a1a"/>
   <g transform="translate(0 86) rotate(-6)">
     <rect x="-10" y="0" width="430" height="24" fill="#1a1a1a"/>

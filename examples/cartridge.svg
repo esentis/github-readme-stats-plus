@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ct-star { animation: ct-star 3.6s ease-in-out infinite } @keyframes ct-star { 0%, 100% { opacity: 1 } 50% { opacity: .15 } } }</style>
 <defs>
   <linearGradient id="shell" x2="0" y2="1"><stop offset="0" stop-color="#aeaeb6"/><stop offset="1" stop-color="#85858e"/></linearGradient>
   <linearGradient id="sky" gradientUnits="userSpaceOnUse" x1="0" y1="50" x2="0" y2="110"><stop offset="0" stop-color="#1b1446"/><stop offset="1" stop-color="#00B4AB"/></linearGradient>
@@ -10,7 +11,7 @@
 <rect x="47" y="11" width="306" height="114" rx="7" fill="#76767f"/>
 <g clip-path="url(#label)">
   <rect x="50" y="14" width="300" height="108" fill="url(#sky)"/>
-  <g fill="#fff" opacity=".85"><rect x="70" y="62" width="2" height="2"/><rect x="96" y="76" width="2" height="2"/><rect x="128" y="60" width="2" height="2"/><rect x="262" y="64" width="2" height="2"/><rect x="300" y="80" width="2" height="2"/><rect x="330" y="58" width="2" height="2"/><rect x="160" y="72" width="2" height="2"/><rect x="236" y="74" width="2" height="2"/></g>
+  <g fill="#fff" opacity=".85"><rect class="ct-star" style="animation-delay:0.00s" x="70" y="62" width="2" height="2"/><rect class="ct-star" style="animation-delay:0.45s" x="96" y="76" width="2" height="2"/><rect class="ct-star" style="animation-delay:0.90s" x="128" y="60" width="2" height="2"/><rect class="ct-star" style="animation-delay:1.35s" x="262" y="64" width="2" height="2"/><rect class="ct-star" style="animation-delay:1.80s" x="300" y="80" width="2" height="2"/><rect class="ct-star" style="animation-delay:2.25s" x="330" y="58" width="2" height="2"/><rect class="ct-star" style="animation-delay:2.70s" x="160" y="72" width="2" height="2"/><rect class="ct-star" style="animation-delay:3.15s" x="236" y="74" width="2" height="2"/></g>
   <circle cx="200" cy="100" r="30" fill="#ffd23f"/>
   <g fill="url(#sky)"><rect x="160" y="88" width="80" height="3"/><rect x="160" y="95" width="80" height="4"/></g>
   <path d="M50 104L92 76L120 92L160 70L204 98L246 74L290 96L322 80L350 92V122H50Z" fill="#140d33"/>

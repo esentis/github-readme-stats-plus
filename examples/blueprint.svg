@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .bp-scan { opacity: 1; stroke-dasharray: 24 300; stroke-dashoffset: 24; animation: bp-scan 6s ease-in-out infinite } @keyframes bp-scan { 0%, 30% { stroke-dashoffset: 24 } 80%, 100% { stroke-dashoffset: -172 } } }</style>
 <defs>
   <pattern id="minor" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#fff" stroke-opacity=".08"/></pattern>
   <pattern id="major" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#fff" stroke-opacity=".2"/></pattern>
@@ -13,6 +14,7 @@
   <text font-size="11.5" fill="#cfe3ff"><tspan x="22" y="60">A highly customizable toggle switch with a loading</tspan><tspan x="22" y="75">state.</tspan></text>
   <path d="M22 108V124M198 108V124" stroke="#cfe3ff"/>
   <line x1="24" y1="116" x2="196" y2="116" stroke="#cfe3ff" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line class="bp-scan" x1="24" y1="116" x2="196" y2="116" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0"/>
   <text x="110" y="109" font-size="11" text-anchor="middle">★ 20 STARS</text>
   <g font-size="10" fill="#cfe3ff">
     <rect x="246" y="94" width="136" height="42" fill="#0f4c9c" stroke="#cfe3ff"/>

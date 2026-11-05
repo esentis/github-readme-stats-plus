@@ -1,4 +1,4 @@
-import { esc, fit, isLight, lines, svg, wrap } from "../card.js";
+import { esc, fit, isLight, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Victorian apothecary label: cream paper, double border with cut-in corners, a ribbon banner in the language colour, \"No.\" star count.";
 
@@ -17,12 +17,15 @@ export default (r) => {
   const tails = "M48 46H86V72H48L58 59ZM352 46H314V72H352L342 59Z";
   return svg(
     r.name,
-    `<path d="${label(0, 14)}" fill="#f2e8cf"/>
+    `${motion(".ap-sheen { animation: ap-sheen 8s ease-in-out infinite } @keyframes ap-sheen { 0%, 40% { transform: translateX(0) } 80%, 100% { transform: translateX(300px) } }")}
+<defs><clipPath id="ribbon"><rect x="78" y="38" width="244" height="28"/></clipPath><linearGradient id="sheen" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<path d="${label(0, 14)}" fill="#f2e8cf"/>
 <path d="${label(6, 10)}" fill="none" stroke="${INK}" stroke-width="2.2"/>
 <path d="${label(10.5, 8)}" fill="none" stroke="${INK}" stroke-width=".8"/>
 <path d="${tails}" fill="${r.lang.color}"/><path d="${tails}" fill="#000" fill-opacity=".3"/>
 <path d="M78 66L86 72V66ZM322 66L314 72V66Z" fill="#000" fill-opacity=".5"/>
 <rect x="78" y="38" width="244" height="28" fill="${r.lang.color}"/>
+<g clip-path="url(#ribbon)"><path class="ap-sheen" d="M52 38H76L66 66H42Z" fill="url(#sheen)"/></g>
 <path d="M78 41.5H322M78 62.5H322" stroke="${ink}" stroke-opacity=".45" stroke-width=".7"/>
 <g font-family="${SERIF}" fill="${INK}" text-anchor="middle">
   <text x="200" y="30" font-size="9.5" letter-spacing="2.5">${esc(fit(r.owner.toUpperCase(), 180, 9.5, 0.85))} &amp; CO.</text>

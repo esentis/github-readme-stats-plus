@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Misty layered pine forest fading into the distance.";
 
@@ -24,7 +24,8 @@ const mist = (y) => `<rect y="${y}" width="400" height="${150 - y}" fill="url(#m
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".fo-sway { transform-origin: 200px 150px; animation: fo-sway 8s ease-in-out infinite } @keyframes fo-sway { 50% { transform: skewX(-2deg) } }")}
+<defs>
   <clipPath id="clip"><rect width="400" height="150" rx="14"/></clipPath>
   <linearGradient id="sky" x2="0" y2="1"><stop offset="0" stop-color="#eef3ee"/><stop offset="1" stop-color="#cfdcd2"/></linearGradient>
   <linearGradient id="mist" x2="0" y2="1"><stop offset="0" stop-color="#eef3ee" stop-opacity=".65"/><stop offset=".5" stop-color="#eef3ee" stop-opacity="0"/></linearGradient>
@@ -32,8 +33,8 @@ export default (r) =>
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="url(#sky)"/>
   <g fill="#b3c7b9">${layer(112, 24, 18, 15, 1)}</g>${mist(100)}
-  <g fill="#7d9c88">${layer(128, 30, 18, 22, 2)}</g>${mist(118)}
-  <g fill="#2e4b3a">${layer(150, 46, 18, 30, 3, 250)}${layer(150, 40, 10, 30, 4, -10, 10)}</g>
+  <g class="fo-sway" fill="#7d9c88">${layer(128, 30, 18, 22, 2)}</g>${mist(118)}
+  <g class="fo-sway" style="animation-delay:.8s" fill="#2e4b3a">${layer(150, 46, 18, 30, 3, 250)}${layer(150, 40, 10, 30, 4, -10, 10)}</g>
   <rect y="130" width="400" height="20" fill="#2e4b3a"/>
 </g>
 <g font-family="${FONT}">
