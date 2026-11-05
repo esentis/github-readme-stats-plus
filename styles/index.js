@@ -13,6 +13,7 @@ import * as blackletter from "./blackletter.js";
 import * as blueprint from "./blueprint.js";
 import * as boarding from "./boarding.js";
 import * as bold from "./bold.js";
+import * as borealis from "./borealis.js";
 import * as brutalist from "./brutalist.js";
 import * as brutalweb from "./brutalweb.js";
 import * as cartridge from "./cartridge.js";
@@ -27,8 +28,11 @@ import * as cyberpunk from "./cyberpunk.js";
 import * as darkglass from "./darkglass.js";
 import * as dashboard from "./dashboard.js";
 import * as destijl from "./destijl.js";
+import * as dunes from "./dunes.js";
 import * as duotone from "./duotone.js";
 import * as floppy from "./floppy.js";
+import * as forest from "./forest.js";
+import * as frost from "./frost.js";
 import * as glass from "./glass.js";
 import * as glitch from "./glitch.js";
 import * as gumwrapper from "./gumwrapper.js";
@@ -36,11 +40,13 @@ import * as handheld from "./handheld.js";
 import * as holo from "./holo.js";
 import * as jersey from "./jersey.js";
 import * as keynote from "./keynote.js";
+import * as lava from "./lava.js";
 import * as lowpoly from "./lowpoly.js";
 import * as luggage from "./luggage.js";
 import * as meander from "./meander.js";
 import * as memphis from "./memphis.js";
 import * as mesh from "./mesh.js";
+import * as moon from "./moon.js";
 import * as neon from "./neon.js";
 import * as neonsign from "./neonsign.js";
 import * as nouveau from "./nouveau.js";
@@ -61,6 +67,7 @@ import * as railway from "./railway.js";
 import * as receipt from "./receipt.js";
 import * as retromac from "./retromac.js";
 import * as retrowin from "./retrowin.js";
+import * as sakura from "./sakura.js";
 import * as scandi from "./scandi.js";
 import * as scoreboard from "./scoreboard.js";
 import * as sketch from "./sketch.js";
@@ -68,6 +75,8 @@ import * as smartwatch from "./smartwatch.js";
 import * as splitflap from "./splitflap.js";
 import * as spotlight from "./spotlight.js";
 import * as stamp from "./stamp.js";
+import * as starfield from "./starfield.js";
+import * as storm from "./storm.js";
 import * as subway from "./subway.js";
 import * as swiss from "./swiss.js";
 import * as synthwave from "./synthwave.js";
@@ -75,13 +84,16 @@ import * as tarot from "./tarot.js";
 import * as terminal from "./terminal.js";
 import * as terrazzo from "./terrazzo.js";
 import * as ticker from "./ticker.js";
+import * as topographic from "./topographic.js";
 import * as tradingcard from "./tradingcard.js";
 import * as ukiyoe from "./ukiyoe.js";
+import * as underwater from "./underwater.js";
 import * as vhs from "./vhs.js";
 import * as vinyl from "./vinyl.js";
 import * as voxel from "./voxel.js";
 import * as wanted from "./wanted.js";
 import * as washi from "./washi.js";
+import * as waves from "./waves.js";
 import * as weather from "./weather.js";
 import * as wireframe from "./wireframe.js";
 import * as wristband from "./wristband.js";
@@ -94,6 +106,7 @@ export const groups = {
   "Art movements": { artdeco, nouveau, destijl, constructivist, popart, ukiyoe, meander, blackletter, apothecary, papelpicado, scandi, brutalweb },
   "Digital art": { chrome, pastel, duotone, glitch, ascii, wireframe, lowpoly, voxel, acrylic, bento, dashboard },
   "Signs and screens": { patch, neonsign, chalkboard, receipt, vinyl, cartridge, placard, subway, weather, smartwatch, bigtype, mesh },
+  "Nature": { underwater, starfield, topographic, borealis, waves, dunes, forest, lava, frost, sakura, storm, moon },
 };
 
 export default Object.fromEntries(
