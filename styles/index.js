@@ -25,13 +25,16 @@ import * as borealis from "./borealis.js";
 import * as botanical from "./botanical.js";
 import * as brutalist from "./brutalist.js";
 import * as brutalweb from "./brutalweb.js";
+import * as candle from "./candle.js";
 import * as cartridge from "./cartridge.js";
 import * as cassette from "./cassette.js";
 import * as catalog from "./catalog.js";
 import * as cereal from "./cereal.js";
 import * as chalkboard from "./chalkboard.js";
+import * as champagne from "./champagne.js";
 import * as chess from "./chess.js";
 import * as chrome from "./chrome.js";
+import * as chronograph from "./chronograph.js";
 import * as cinema from "./cinema.js";
 import * as clawmachine from "./clawmachine.js";
 import * as clay from "./clay.js";
@@ -47,6 +50,7 @@ import * as cpu from "./cpu.js";
 import * as creditcard from "./creditcard.js";
 import * as crossstitch from "./crossstitch.js";
 import * as crossword from "./crossword.js";
+import * as crystal from "./crystal.js";
 import * as cyberpunk from "./cyberpunk.js";
 import * as darkglass from "./darkglass.js";
 import * as dashboard from "./dashboard.js";
@@ -70,6 +74,7 @@ import * as forest from "./forest.js";
 import * as fortune from "./fortune.js";
 import * as frost from "./frost.js";
 import * as gigposter from "./gigposter.js";
+import * as gilded from "./gilded.js";
 import * as gitgraph from "./gitgraph.js";
 import * as glass from "./glass.js";
 import * as glitch from "./glitch.js";
@@ -79,6 +84,7 @@ import * as headphones from "./headphones.js";
 import * as holo from "./holo.js";
 import * as hologram from "./hologram.js";
 import * as icecream from "./icecream.js";
+import * as inkwell from "./inkwell.js";
 import * as isometric from "./isometric.js";
 import * as jersey from "./jersey.js";
 import * as kaleidoscope from "./kaleidoscope.js";
@@ -119,8 +125,10 @@ import * as passport from "./passport.js";
 import * as pastel from "./pastel.js";
 import * as patch from "./patch.js";
 import * as pcb from "./pcb.js";
+import * as pearl from "./pearl.js";
 import * as pedal from "./pedal.js";
 import * as pendulums from "./pendulums.js";
+import * as perfume from "./perfume.js";
 import * as periodic from "./periodic.js";
 import * as piano from "./piano.js";
 import * as pinball from "./pinball.js";
@@ -155,6 +163,7 @@ import * as scandi from "./scandi.js";
 import * as scoreboard from "./scoreboard.js";
 import * as serverrack from "./serverrack.js";
 import * as sheetmusic from "./sheetmusic.js";
+import * as silk from "./silk.js";
 import * as sketch from "./sketch.js";
 import * as slots from "./slots.js";
 import * as smartwatch from "./smartwatch.js";
@@ -185,6 +194,7 @@ import * as tradingcard from "./tradingcard.js";
 import * as ukiyoe from "./ukiyoe.js";
 import * as underwater from "./underwater.js";
 import * as vaporwave from "./vaporwave.js";
+import * as velvet from "./velvet.js";
 import * as vhs from "./vhs.js";
 import * as vinyl from "./vinyl.js";
 import * as voxel from "./voxel.js";
@@ -218,6 +228,7 @@ export const groups = {
   "Light and sky": { rainbow, sunrise, fireflies, bokeh, prism, lanterns, fireworks, snowglobe, lighthouse, eclipse },
   "Abstract motion": { liquid, ripple, kaleidoscope, spirograph, lavalamp, flowfield, pendulums, dotwave, ribbon, confetti },
   "Cozy handmade": { knit, quilt, pottery, crossstitch, letterpress, watercolor, terrarium, bookshelf, corkboard, fireplace },
+  "Luxe": { velvet, champagne, perfume, silk, pearl, chronograph, inkwell, gilded, crystal, candle },
 };
 
 export default Object.fromEntries(

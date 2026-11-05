@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .gd-glint { stroke-dasharray: 34 410; animation: gd-glint 7s linear infinite } @keyframes gd-glint { to { stroke-dashoffset: -444 } } .gd-lamp { animation: gd-lamp 7s ease-in-out infinite } @keyframes gd-lamp { 50% { opacity: .7 } } }</style>
+<defs>
+  <clipPath id="gd-card"><rect width="400" height="150" rx="12"/></clipPath>
+  <pattern id="gd-damask" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M11 3C14 8 18 9 19 11C18 13 14 14 11 19C8 14 4 13 3 11C4 9 8 8 11 3Z" fill="#fff" fill-opacity=".035"/></pattern>
+  <radialGradient id="gd-wall" cx=".2" cy="0" r="1.1"><stop offset="0" stop-color="#2c4a3e"/><stop offset=".6" stop-color="#15261f"/><stop offset="1" stop-color="#0a130f"/></radialGradient>
+  <radialGradient id="gd-light" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#ffe9b0" stop-opacity=".22"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/></radialGradient>
+  <linearGradient id="gd-top" x2="0" y2="1"><stop offset="0" stop-color="#fff0b8"/><stop offset=".5" stop-color="#d9a842"/><stop offset="1" stop-color="#8a5f1a"/></linearGradient>
+  <linearGradient id="gd-side" x2="1"><stop offset="0" stop-color="#8a5f1a"/><stop offset=".5" stop-color="#c8963a"/><stop offset="1" stop-color="#5a3c0e"/></linearGradient>
+  <linearGradient id="gd-bottom" x2="0" y2="1"><stop offset="0" stop-color="#6b4a12"/><stop offset=".6" stop-color="#b07f2c"/><stop offset="1" stop-color="#e2b65a"/></linearGradient>
+  <radialGradient id="gd-paint" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#99dac8"/><stop offset=".7" stop-color="#26beb2"/><stop offset="1" stop-color="#00B4AB"/></radialGradient>
+  <linearGradient id="gd-brass" x2="0" y2="1"><stop offset="0" stop-color="#f3d993"/><stop offset=".5" stop-color="#c49a45"/><stop offset="1" stop-color="#9c7428"/></linearGradient>
+  <filter id="gd-blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="gd-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <filter id="gd-canvas"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .16 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+</defs>
+<g clip-path="url(#gd-card)">
+  <rect width="400" height="150" fill="url(#gd-wall)"/><rect width="400" height="150" fill="url(#gd-damask)"/>
+  <ellipse class="gd-lamp" cx="75" cy="-10" rx="110" ry="90" fill="url(#gd-light)"/>
+  <rect x="22" y="21" width="114" height="122" fill="#000" opacity=".55" filter="url(#gd-blur)"/>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="11.5" fill="none" stroke="#e2b65a" stroke-opacity=".18"/>
+<rect x="31" y="27" width="88" height="96" fill="url(#gd-paint)"/>
+<circle cx="71" cy="59" r="8" fill="#fff4dc" fill-opacity=".85"/><circle cx="71" cy="59" r="16" fill="#fff4dc" fill-opacity=".15"/>
+<path d="M31 83.9718674197793C55 72.36852783337235 75 86.0281325802207 95 80.36852783337235S112 72 119 82.18426391668618V123H31Z" fill="#009089"/><path d="M31 88.19687159359455C55 74.05815903097391 75 109.80312840640545 95 82.05815903097391S112 86 119 90.02907951548696V123H31Z" fill="#006863"/><path d="M31 103.65829491242766C55 102.46800658106804 75 122.34170508757234 95 110.46800658106804S112 100 119 111.23400329053402V123H31Z" fill="#004441"/>
+<rect x="31" y="27" width="88" height="96" fill="#fff" filter="url(#gd-canvas)"/>
+<path d="M31 27H119V123H31Z" fill="none" stroke="#3d2a08" stroke-width="2"/>
+<polygon points="18,14 132,14 119,27 31,27" fill="url(#gd-top)"/><polygon points="132,14 132,136 119,123 119,27" fill="url(#gd-side)"/><polygon points="132,136 18,136 31,123 119,123" fill="url(#gd-bottom)"/><polygon points="18,136 18,14 31,27 31,123" fill="url(#gd-top)"/>
+<path d="M18 14L31 27M132 14L119 27M132 136L119 123M18 136L31 123" stroke="#5a3c0e" stroke-opacity=".6" stroke-width=".6"/>
+<rect x="21.5" y="17.5" width="107" height="115" fill="none" stroke="#fff3c4" stroke-opacity=".9" stroke-width="2.4" stroke-dasharray="0 4" stroke-linecap="round"/>
+<rect x="27.5" y="23.5" width="95" height="103" fill="none" stroke="#6b4a12" stroke-opacity=".7"/>
+<rect x="18.5" y="14.5" width="113" height="121" fill="none" stroke="#4a3208"/>
+<circle cx="24.5" cy="20.5" r="4.2" fill="url(#gd-top)" stroke="#6b4a12" stroke-width=".6"/><circle cx="24.5" cy="20.5" r="1.6" fill="#fff3c4"/><circle cx="24.5" cy="20.5" r="3" fill="none" stroke="#6b4a12" stroke-width=".5" stroke-dasharray="1 1"/><circle cx="125.5" cy="20.5" r="4.2" fill="url(#gd-top)" stroke="#6b4a12" stroke-width=".6"/><circle cx="125.5" cy="20.5" r="1.6" fill="#fff3c4"/><circle cx="125.5" cy="20.5" r="3" fill="none" stroke="#6b4a12" stroke-width=".5" stroke-dasharray="1 1"/><circle cx="125.5" cy="129.5" r="4.2" fill="url(#gd-top)" stroke="#6b4a12" stroke-width=".6"/><circle cx="125.5" cy="129.5" r="1.6" fill="#fff3c4"/><circle cx="125.5" cy="129.5" r="3" fill="none" stroke="#6b4a12" stroke-width=".5" stroke-dasharray="1 1"/><circle cx="24.5" cy="129.5" r="4.2" fill="url(#gd-top)" stroke="#6b4a12" stroke-width=".6"/><circle cx="24.5" cy="129.5" r="1.6" fill="#fff3c4"/><circle cx="24.5" cy="129.5" r="3" fill="none" stroke="#6b4a12" stroke-width=".5" stroke-dasharray="1 1"/>
+<rect class="gd-glint" x="21.5" y="17.5" width="107" height="115" fill="none" stroke="#fffbe6" stroke-width="4" stroke-dasharray="0 444" filter="url(#gd-glow)"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="156" y="34" font-size="8.5" font-weight="600" letter-spacing="2.6" fill="#c9a45c">OIL ON CANVAS · DART</text>
+  <text x="155" y="61" font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-size="22" fill="#f4e6c3">load_switch</text>
+  <text x="156" y="76" font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-style="italic" font-size="11.5" fill="#c9a45c">by esentis</text>
+  <text font-size="11" fill="#c8c6b4" fill-opacity=".85"><tspan x="156" y="96">A highly customizable toggle</tspan><tspan x="156" y="110">switch with a loading state.</tspan></text>
+  <rect x="156" y="116" width="88" height="20" rx="2" fill="url(#gd-brass)" stroke="#6b4a12" stroke-width=".7"/>
+  <circle cx="160" cy="126" r=".9" fill="#6b4a12"/><circle cx="240" cy="126" r=".9" fill="#6b4a12"/>
+  <text x="200" y="130" font-size="10.5" font-weight="700" letter-spacing=".6" text-anchor="middle" fill="#3d2a08" xml:space="preserve">★ 20   ⑂ 3</text>
+</g>
+</svg>

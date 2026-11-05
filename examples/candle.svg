@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .cd-flame { transform-origin: 334px 64px; animation: cd-flick 2.4s ease-in-out infinite } @keyframes cd-flick { 0%, 100% { transform: none } 20% { transform: scale(.94, 1.06) skewX(-2deg) } 45% { transform: scale(1.04, .95) skewX(1.5deg) } 70% { transform: scale(.97, 1.04) skewX(-1deg) } } .cd-glow { animation: cd-glow 4.8s ease-in-out infinite } @keyframes cd-glow { 0%, 100% { opacity: 1 } 30% { opacity: .78 } 55% { opacity: .95 } 80% { opacity: .82 } } .cd-halo { transform-origin: 334px 50px; animation: cd-halo 2.4s ease-in-out infinite } @keyframes cd-halo { 50% { transform: scale(1.08); opacity: .8 } } }</style>
+<defs>
+  <clipPath id="cd-card"><rect width="400" height="150" rx="14"/></clipPath>
+  <radialGradient id="cd-room" cx=".84" cy=".36" r="1"><stop offset="0" stop-color="#3b200d"/><stop offset=".55" stop-color="#170c06"/><stop offset="1" stop-color="#080402"/></radialGradient>
+  <radialGradient id="cd-light" cx="334" cy="52" r="330" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffb347" stop-opacity=".42"/><stop offset=".35" stop-color="#ff9a3c" stop-opacity=".12"/><stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/></radialGradient>
+  <radialGradient id="cd-halo"><stop offset="0" stop-color="#ffd27a" stop-opacity=".55"/><stop offset="1" stop-color="#ff8c2a" stop-opacity="0"/></radialGradient>
+  <radialGradient id="cd-fire" cx=".5" cy=".75" r=".75"><stop offset="0" stop-color="#fffbe8"/><stop offset=".35" stop-color="#ffe08a"/><stop offset=".7" stop-color="#ff9b2f"/><stop offset="1" stop-color="#ff6a1a" stop-opacity=".2"/></radialGradient>
+  <linearGradient id="cd-wax" x2="1"><stop offset="0" stop-color="#226a63"/><stop offset=".45" stop-color="#81cdb3"/><stop offset="1" stop-color="#1b5751"/></linearGradient>
+  <linearGradient id="cd-drip" x2="1"><stop offset="0" stop-color="#319a90"/><stop offset=".5" stop-color="#9edac5"/><stop offset="1" stop-color="#2b877e"/></linearGradient>
+  <linearGradient id="cd-brass" x2="1"><stop offset="0" stop-color="#6b4a1a"/><stop offset=".4" stop-color="#e8c071"/><stop offset="1" stop-color="#5a3c12"/></linearGradient>
+  <filter id="cd-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.2"/></filter>
+</defs>
+<g clip-path="url(#cd-card)">
+  <rect width="400" height="150" fill="url(#cd-room)"/>
+  <rect class="cd-glow" width="400" height="150" fill="url(#cd-light)"/>
+  <ellipse cx="334" cy="142" rx="48" ry="5" fill="#000" opacity=".5"/>
+  <circle class="cd-halo" cx="334" cy="50" r="34" fill="url(#cd-halo)"/>
+  <rect x="316" y="72" width="36" height="66" fill="url(#cd-wax)"/>
+  <ellipse cx="334" cy="72" rx="18" ry="4.5" fill="#94d0b2"/>
+  <ellipse cx="334" cy="72.5" rx="12" ry="2.8" fill="#b1dfc8" opacity=".9"/>
+  <path d="M319.3 75C319.3 80 320.6 82 320.6 99.4A1.7 1.7 0 0 0 324.0 99.4C324.0 82 325.3 80 325.3 75Z" fill="url(#cd-drip)"/><path d="M329.7 75C329.7 80 331.0 82 331.0 97.9A1.7 1.7 0 0 0 334.4 97.9C334.4 82 335.7 80 335.7 75Z" fill="url(#cd-drip)"/><path d="M335.7 75C335.7 80 337.0 82 337.0 84.1A1.7 1.7 0 0 0 340.4 84.1C340.4 82 341.7 80 341.7 75Z" fill="url(#cd-drip)"/>
+  <rect x="316" y="72" width="36" height="66" fill="#ffb347" opacity=".08"/>
+  <path d="M310 136H358L364 142H304Z" fill="url(#cd-brass)"/><ellipse cx="334" cy="142.5" rx="34" ry="3.5" fill="url(#cd-brass)"/>
+  <path d="M334 72.5C334 69 333 67 334.5 64" stroke="#1a0f08" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <g class="cd-flame"><path d="M334 26C336 38 341 46 341 55C341 61 338 65 334 65C330 65 327 61 327 55C327 46 332 38 334 26Z" fill="#ff9b2f" opacity=".45" filter="url(#cd-blur)" transform="translate(-16.7 -3.2) scale(1.05)"/><path d="M334 26C336 38 341 46 341 55C341 61 338 65 334 65C330 65 327 61 327 55C327 46 332 38 334 26Z" fill="url(#cd-fire)"/>
+    <path d="M334 44C335.5 51 337 55 337 58C337 61 335.5 62 334 62C332.5 62 331 61 331 58C331 55 332.5 51 334 44Z" fill="#fffdf2" opacity=".9"/>
+    <ellipse cx="334" cy="63" rx="3" ry="2" fill="#4f7cff" opacity=".45"/></g>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="13.5" fill="none" stroke="#ffb347" stroke-opacity=".14"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="27" y="32" font-size="8.5" font-weight="600" letter-spacing="3" fill="#c99a5c">NOCTURNE · DART</text>
+  <text x="26" y="62" font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-size="24" fill="#fbe3b8">load_switch</text>
+  <text font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-style="italic" font-size="12" fill="#cfae84"><tspan x="27" y="84">A highly customizable toggle switch</tspan><tspan x="27" y="99">with a loading state.</tspan></text>
+  <text x="27" y="132" font-size="11" font-weight="600" letter-spacing="1.2" fill="#f0c98e">★ 20<tspan dx="14">⑂ 3</tspan><tspan dx="14" fill="#00B4AB">●</tspan> Dart</text>
+</g>
+</svg>

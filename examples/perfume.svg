@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .pf-ray { animation: pf-ray 7s ease-in-out infinite } @keyframes pf-ray { 0% { transform: translateX(-100px) } 45%, 100% { transform: translateX(100px) } } .pf-mist { transform-origin: 334px 36px; animation: pf-mist 9s ease-out infinite } @keyframes pf-mist { 0%, 61% { opacity: 0; transform: scale(.3) } 66% { opacity: .9 } 90%, 100% { opacity: 0; transform: translate(12px, -4px) scale(1.5) } } .pf-pump { animation: pf-pump 9s ease-in-out infinite } @keyframes pf-pump { 0%, 58%, 68%, 100% { transform: none } 62%, 64% { transform: translateY(2px) } } }</style>
+<defs>
+  <clipPath id="pf-card"><rect width="400" height="150" rx="14"/></clipPath>
+  <clipPath id="pf-in"><polygon points="301 67 343 67 351 75 351 121 343 129 301 129 293 121 293 75"/></clipPath>
+  <clipPath id="pf-glass"><polygon points="296 58 348 58 360 70 360 126 348 138 296 138 284 126 284 70"/></clipPath>
+  <radialGradient id="pf-bg" cx=".8" cy=".45" r=".75"><stop offset="0" stop-color="#fffdf9"/><stop offset="1" stop-color="#ece3d7"/></radialGradient>
+  <linearGradient id="pf-liq" x2="0" y2="1"><stop offset="0" stop-color="#00B4AB" stop-opacity=".7"/><stop offset="1" stop-color="#00B4AB"/></linearGradient>
+  <linearGradient id="pf-gold" x2="1"><stop offset="0" stop-color="#9b7430"/><stop offset=".35" stop-color="#f8e6b0"/><stop offset=".6" stop-color="#d1a855"/><stop offset="1" stop-color="#7f5c22"/></linearGradient>
+  <linearGradient id="pf-vol" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset=".35" stop-color="#fff" stop-opacity=".12"/><stop offset=".7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></linearGradient>
+  <linearGradient id="pf-beam" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="pf-mistblur" x="-50%" y="-80%" width="200%" height="260%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <filter id="pf-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5"/></filter>
+</defs>
+<g clip-path="url(#pf-card)"><rect width="400" height="150" fill="url(#pf-bg)"/>
+  <ellipse cx="324" cy="139" rx="46" ry="4.5" fill="#4a3a2a" opacity=".25" filter="url(#pf-blur)"/>
+  <ellipse cx="368" cy="140" rx="26" ry="4" fill="#00B4AB" opacity=".35" filter="url(#pf-blur)"/></g>
+<rect x=".5" y=".5" width="399" height="149" rx="13.5" fill="none" stroke="#dcd0c0"/>
+<g filter="url(#pf-mistblur)" fill="#00B4AB" fill-opacity=".5"><circle class="pf-mist" cx="340" cy="36" r="5.5" style="animation-delay:0s" opacity="0"/><circle class="pf-mist" cx="347" cy="32" r="5" style="animation-delay:0.08s" opacity="0"/><circle class="pf-mist" cx="350" cy="40" r="4.5" style="animation-delay:0.16s" opacity="0"/><circle class="pf-mist" cx="356" cy="35" r="6" style="animation-delay:0.24s" opacity="0"/></g>
+<g class="pf-pump"><rect x="314" y="29" width="16" height="17" rx="2.5" fill="url(#pf-gold)"/><path d="M314 33H330" stroke="#fff" stroke-opacity=".5"/><circle cx="330.5" cy="36.5" r="1" fill="#5a4018"/></g>
+<rect x="315" y="50" width="14" height="12" fill="#e9e4dc" stroke="#c7bcae" stroke-width=".6"/>
+<rect x="310" y="43" width="24" height="10" rx="1.5" fill="url(#pf-gold)"/><path d="M310 46.5H334M310 49.5H334" stroke="#6b4c1a" stroke-opacity=".35" stroke-width=".6"/>
+<g clip-path="url(#pf-glass)">
+  <rect x="280" y="55" width="90" height="90" fill="#fff" fill-opacity=".3"/>
+  <rect x="280" y="80" width="90" height="60" fill="url(#pf-liq)" opacity=".6"/>
+  <polygon points="301 67 343 67 351 75 351 121 343 129 301 129 293 121 293 75" fill="#fff" fill-opacity=".12"/>
+  <path d="M290 80H354V135H290Z" fill="url(#pf-liq)" clip-path="url(#pf-in)"/>
+  <polygon points="296 58 348 58 343 67 301 67" fill="#fff" fill-opacity=".6"/><polygon points="296 58 348 58 343 67 301 67" fill="#000" fill-opacity="0"/><polygon points="348 58 360 70 351 75 343 67" fill="#fff" fill-opacity=".35"/><polygon points="348 58 360 70 351 75 343 67" fill="#000" fill-opacity="0"/><polygon points="360 70 360 126 351 121 351 75" fill="#fff" fill-opacity=".1"/><polygon points="360 70 360 126 351 121 351 75" fill="#000" fill-opacity=".12"/><polygon points="360 126 348 138 343 129 351 121" fill="#fff" fill-opacity="0"/><polygon points="360 126 348 138 343 129 351 121" fill="#000" fill-opacity=".25"/><polygon points="348 138 296 138 301 129 343 129" fill="#fff" fill-opacity="0"/><polygon points="348 138 296 138 301 129 343 129" fill="#000" fill-opacity=".28"/><polygon points="296 138 284 126 293 121 301 129" fill="#fff" fill-opacity="0"/><polygon points="296 138 284 126 293 121 301 129" fill="#000" fill-opacity=".2"/><polygon points="284 126 284 70 293 75 293 121" fill="#fff" fill-opacity=".3"/><polygon points="284 126 284 70 293 75 293 121" fill="#000" fill-opacity="0"/><polygon points="284 70 296 58 301 67 293 75" fill="#fff" fill-opacity=".55"/><polygon points="284 70 296 58 301 67 293 75" fill="#000" fill-opacity="0"/>
+  <path d="M290 80H354V135H290Z" fill="url(#pf-vol)"/>
+  <path d="M293 80.5H351" stroke="#fff" stroke-opacity=".7"/>
+  <rect x="299" y="71" width="4.5" height="56" fill="#fff" fill-opacity=".45"/><rect x="343" y="73" width="1.5" height="52" fill="#fff" fill-opacity=".3"/>
+  <path class="pf-ray" d="M318 54H342L316 140H292Z" fill="url(#pf-beam)"/>
+</g>
+<polygon points="296 58 348 58 360 70 360 126 348 138 296 138 284 126 284 70" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width=".8"/>
+<polygon points="296 58 348 58 360 70 360 126 348 138 296 138 284 126 284 70" fill="none" stroke="#6d5c4a" stroke-opacity=".35" stroke-width=".6" transform="translate(.6 .6)"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="28" y="32" font-size="8.5" font-weight="600" letter-spacing="4" fill="#a3907c">EAU DE PARFUM</text>
+  <text x="27" y="64" font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-size="26" fill="#1f1a17">load_switch</text>
+  <rect x="28" y="73" width="18" height="1" fill="#00B4AB"/>
+  <text font-size="11" fill="#7a6c60" letter-spacing=".2"><tspan x="28" y="92">A highly customizable toggle switch</tspan><tspan x="28" y="107">with a loading state.</tspan></text>
+  <text x="28" y="133" font-size="9.5" font-weight="600" letter-spacing="2" fill="#3b332d">★ 20<tspan dx="12">⑂ 3</tspan><tspan dx="12" fill="#00B4AB">●</tspan> DART</text>
+</g>
+</svg>

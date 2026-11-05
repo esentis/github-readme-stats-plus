@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .cp-still { display: none } .cp-bub { animation: cp-rise 3s linear infinite } @keyframes cp-rise { 0% { transform: translateY(0); opacity: 0 } 12%, 85% { opacity: .95 } 100% { transform: translateY(-54px); opacity: 0 } } .cp-spark { animation: cp-spark 2.6s ease-in-out infinite } @keyframes cp-spark { 0%, 100% { transform: scale(1); opacity: 1 } 50% { transform: scale(.25); opacity: .2 } } }</style>
+<defs>
+  <clipPath id="cp-card"><rect width="400" height="150" rx="14"/></clipPath>
+  <clipPath id="cp-bowl"><path d="M313 16C312 58 317 88 327.5 96H332.5C343 88 348 58 347 16Z"/></clipPath>
+  <radialGradient id="cp-bg" cx=".8" cy=".35" r=".9"><stop offset="0" stop-color="#2d1f10"/><stop offset="1" stop-color="#080604"/></radialGradient>
+  <linearGradient id="cp-wine" x2="0" y2="1"><stop offset="0" stop-color="#fbe9b0"/><stop offset=".6" stop-color="#e3b55a"/><stop offset="1" stop-color="#b98428"/></linearGradient>
+  <linearGradient id="cp-gold" x2="0" y2="1"><stop offset="0" stop-color="#f7e3a8"/><stop offset="1" stop-color="#c39343"/></linearGradient>
+  <filter id="cp-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5"/></filter>
+</defs>
+<g clip-path="url(#cp-card)">
+  <rect width="400" height="150" fill="url(#cp-bg)"/>
+  <g filter="url(#cp-blur)"><circle cx="291" cy="128" r="16.5" fill="#00B4AB" fill-opacity="0.17"/><circle cx="227" cy="1" r="9.2" fill="#e8b964" fill-opacity="0.19"/><circle cx="256" cy="84" r="17.3" fill="#e8b964" fill-opacity="0.17"/><circle cx="321" cy="27" r="10.6" fill="#00B4AB" fill-opacity="0.19"/><circle cx="251" cy="101" r="8.2" fill="#e8b964" fill-opacity="0.18"/><circle cx="266" cy="136" r="19.6" fill="#e8b964" fill-opacity="0.12"/><circle cx="395" cy="122" r="12.2" fill="#00B4AB" fill-opacity="0.08"/><circle cx="353" cy="123" r="8.2" fill="#e8b964" fill-opacity="0.09"/></g>
+  <ellipse cx="330" cy="135" rx="40" ry="5" fill="#e8b964" fill-opacity=".14" filter="url(#cp-blur)"/>
+</g>
+<rect x="6.5" y="6.5" width="387" height="137" rx="9" fill="none" stroke="#c9a45c" stroke-opacity=".35"/>
+<g>
+  <path d="M313 16C312 58 317 88 327.5 96H332.5C343 88 348 58 347 16Z" fill="#fff" fill-opacity=".05"/>
+  <g clip-path="url(#cp-bowl)"><rect x="300" y="34" width="60" height="70" fill="url(#cp-wine)" fill-opacity=".92"/>
+    <ellipse cx="330" cy="34" rx="16.4" ry="2" fill="#fff6d6" fill-opacity=".85"/>
+    <g fill="#fffbea"><g class="cp-still"><circle cx="328.1" cy="90.0" r="0.70"/><circle cx="332.1" cy="90.0" r="0.70"/><circle cx="327.8" cy="81.0" r="0.83"/><circle cx="331.8" cy="81.0" r="0.83"/><circle cx="327.7" cy="72.0" r="0.97"/><circle cx="331.6" cy="72.0" r="0.97"/><circle cx="328.6" cy="63.0" r="1.10"/><circle cx="330.9" cy="63.0" r="1.10"/><circle cx="328.3" cy="54.0" r="1.23"/><circle cx="331.7" cy="54.0" r="1.23"/><circle cx="327.7" cy="45.0" r="1.37"/><circle cx="331.2" cy="45.0" r="1.37"/></g><circle class="cp-bub" cx="328.3" cy="90" r="0.70" style="animation-delay:0.00s"/><circle class="cp-bub" cx="332.0" cy="90" r="0.70" style="animation-delay:-0.24s"/><circle class="cp-bub" cx="328.6" cy="90" r="0.83" style="animation-delay:-0.50s"/><circle class="cp-bub" cx="332.0" cy="90" r="0.83" style="animation-delay:-0.74s"/><circle class="cp-bub" cx="328.3" cy="90" r="0.97" style="animation-delay:-1.00s"/><circle class="cp-bub" cx="332.2" cy="90" r="0.97" style="animation-delay:-1.24s"/><circle class="cp-bub" cx="327.5" cy="90" r="1.10" style="animation-delay:-1.50s"/><circle class="cp-bub" cx="332.0" cy="90" r="1.10" style="animation-delay:-1.74s"/><circle class="cp-bub" cx="327.7" cy="90" r="1.23" style="animation-delay:-2.00s"/><circle class="cp-bub" cx="331.6" cy="90" r="1.23" style="animation-delay:-2.24s"/><circle class="cp-bub" cx="328.6" cy="90" r="1.37" style="animation-delay:-2.50s"/><circle class="cp-bub" cx="332.0" cy="90" r="1.37" style="animation-delay:-2.74s"/></g></g>
+  <path d="M327.5 96H332.5V133H327.5Z" fill="url(#cp-gold)" fill-opacity=".4"/><path d="M329 96V133" stroke="#fff" stroke-opacity=".55" stroke-width=".8"/>
+  <ellipse cx="330" cy="134.5" rx="17" ry="3.2" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-opacity=".5" stroke-width=".9"/>
+  <path d="M313 16C312 58 317 88 327.5 96H332.5C343 88 348 58 347 16Z" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="1.1"/>
+  <ellipse cx="330" cy="16" rx="17" ry="1.8" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width=".9"/>
+  <path d="M316.5 22C316.5 52 320 76 326 88" stroke="#fff" stroke-opacity=".55" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M343 28C343 48 341 64 338 74" stroke="#fff" stroke-opacity=".22" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path class="cp-spark" style="transform-origin:314px 16px;animation-delay:0s" d="M314 11.5Q314 16 318.5 16Q314 16 314 20.5Q314 16 309.5 16Q314 16 314 11.5Z" fill="#fff8e1"/><path class="cp-spark" style="transform-origin:345.5px 17px;animation-delay:-1.3s" d="M345.5 13.8Q345.5 17 348.7 17Q345.5 17 345.5 20.2Q345.5 17 342.3 17Q345.5 17 345.5 13.8Z" fill="#fff8e1"/><path class="cp-spark" style="transform-origin:331px 34px;animation-delay:-0.7s" d="M331 31.4Q331 34 333.6 34Q331 34 331 36.6Q331 34 328.4 34Q331 34 331 31.4Z" fill="#fff8e1"/>
+</g>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <circle cx="30" cy="27.5" r="3" fill="#00B4AB"/>
+  <text x="39" y="31" font-size="8.5" font-weight="600" letter-spacing="3" fill="#c9a45c">CUVÉE DART</text>
+  <text x="27" y="59" font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-size="24" fill="#f7e9c6">load_switch</text>
+  <text font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-style="italic" font-size="11.5" fill="#b9a988"><tspan x="28" y="79">A highly customizable toggle switch</tspan><tspan x="28" y="93">with a loading state.</tspan></text>
+  <g font-size="8" font-weight="600" letter-spacing="2.5" fill="#9c845a"><text x="28" y="114">VINTAGE</text><text x="118" y="114">SHARED</text></g>
+  <path d="M106 106V134" stroke="#c9a45c" stroke-opacity=".4"/>
+  <g font-family="Didot, 'Bodoni 72', 'Bodoni MT', Baskerville, Georgia, serif" font-size="17" fill="url(#cp-gold)"><text x="28" y="134">★ 20</text><text x="118" y="134">⑂ 3</text></g>
+</g>
+</svg>
