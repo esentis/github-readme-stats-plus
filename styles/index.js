@@ -114,6 +114,7 @@ import * as mesh from "./mesh.js";
 import * as metronome from "./metronome.js";
 import * as microscope from "./microscope.js";
 import * as mines from "./mines.js";
+import * as minimal from "./minimal.js";
 import * as missionpatch from "./missionpatch.js";
 import * as mixer from "./mixer.js";
 import * as moon from "./moon.js";
@@ -221,7 +222,7 @@ import * as wristband from "./wristband.js";
 import * as y2k from "./y2k.js";
 
 export const groups = {
-  Originals: { adaptive, aurora, neon, spotlight, brutalist, glass, terminal, bold, holo, blueprint, synthwave, pixel, swiss, boarding },
+  Originals: { adaptive, aurora, neon, spotlight, brutalist, glass, terminal, bold, holo, blueprint, synthwave, pixel, swiss, boarding, minimal },
   "Everyday objects": { periodic, creditcard, passport, luggage, cinema, cassette, floppy, vhs, handheld, retrowin, retromac, splitflap },
   "Places and print": { washi, cyberpunk, memphis, railway, catalog, polaroid, stamp, arcade, keynote, darkglass, terrazzo, sketch },
   "Pop culture": { jersey, tradingcard, wanted, tarot, playingcard, scoreboard, racetiming, ticker, nutrition, productlabel, wristband, gumwrapper },
