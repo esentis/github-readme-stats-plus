@@ -8,9 +8,11 @@ import * as artdeco from "./artdeco.js";
 import * as ascii from "./ascii.js";
 import * as atom from "./atom.js";
 import * as aurora from "./aurora.js";
+import * as balloons from "./balloons.js";
 import * as bauhaus from "./bauhaus.js";
 import * as bento from "./bento.js";
 import * as bigtype from "./bigtype.js";
+import * as billboard from "./billboard.js";
 import * as blackhole from "./blackhole.js";
 import * as blackletter from "./blackletter.js";
 import * as blocks from "./blocks.js";
@@ -25,7 +27,9 @@ import * as borealis from "./borealis.js";
 import * as botanical from "./botanical.js";
 import * as brutalist from "./brutalist.js";
 import * as brutalweb from "./brutalweb.js";
+import * as cablecar from "./cablecar.js";
 import * as candle from "./candle.js";
+import * as carousel from "./carousel.js";
 import * as cartridge from "./cartridge.js";
 import * as cassette from "./cassette.js";
 import * as catalog from "./catalog.js";
@@ -36,6 +40,7 @@ import * as chess from "./chess.js";
 import * as chrome from "./chrome.js";
 import * as chronograph from "./chronograph.js";
 import * as cinema from "./cinema.js";
+import * as citylights from "./citylights.js";
 import * as clawmachine from "./clawmachine.js";
 import * as clay from "./clay.js";
 import * as cockpit from "./cockpit.js";
@@ -64,6 +69,7 @@ import * as dunes from "./dunes.js";
 import * as duotone from "./duotone.js";
 import * as eclipse from "./eclipse.js";
 import * as equalizer from "./equalizer.js";
+import * as ferriswheel from "./ferriswheel.js";
 import * as fireflies from "./fireflies.js";
 import * as fireplace from "./fireplace.js";
 import * as fireworks from "./fireworks.js";
@@ -138,6 +144,7 @@ import * as placard from "./placard.js";
 import * as playingcard from "./playingcard.js";
 import * as polaroid from "./polaroid.js";
 import * as popart from "./popart.js";
+import * as postcard from "./postcard.js";
 import * as pottery from "./pottery.js";
 import * as prism from "./prism.js";
 import * as productlabel from "./productlabel.js";
@@ -165,6 +172,7 @@ import * as serverrack from "./serverrack.js";
 import * as sheetmusic from "./sheetmusic.js";
 import * as silk from "./silk.js";
 import * as sketch from "./sketch.js";
+import * as skyline from "./skyline.js";
 import * as slots from "./slots.js";
 import * as smartwatch from "./smartwatch.js";
 import * as snowglobe from "./snowglobe.js";
@@ -176,6 +184,7 @@ import * as starfield from "./starfield.js";
 import * as starmap from "./starmap.js";
 import * as sticker from "./sticker.js";
 import * as storm from "./storm.js";
+import * as streetlamp from "./streetlamp.js";
 import * as subway from "./subway.js";
 import * as sudoku from "./sudoku.js";
 import * as sunrise from "./sunrise.js";
@@ -195,6 +204,7 @@ import * as ukiyoe from "./ukiyoe.js";
 import * as underwater from "./underwater.js";
 import * as vaporwave from "./vaporwave.js";
 import * as velvet from "./velvet.js";
+import * as vending from "./vending.js";
 import * as vhs from "./vhs.js";
 import * as vinyl from "./vinyl.js";
 import * as voxel from "./voxel.js";
@@ -229,6 +239,7 @@ export const groups = {
   "Abstract motion": { liquid, ripple, kaleidoscope, spirograph, lavalamp, flowfield, pendulums, dotwave, ribbon, confetti },
   "Cozy handmade": { knit, quilt, pottery, crossstitch, letterpress, watercolor, terrarium, bookshelf, corkboard, fireplace },
   "Luxe": { velvet, champagne, perfume, silk, pearl, chronograph, inkwell, gilded, crystal, candle },
+  "City and travel": { skyline, balloons, postcard, vending, ferriswheel, citylights, cablecar, streetlamp, billboard, carousel },
 };
 
 export default Object.fromEntries(

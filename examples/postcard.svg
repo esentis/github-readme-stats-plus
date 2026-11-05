@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .pc-cl{animation:pc-cl 20s linear infinite}@keyframes pc-cl{0%{transform:translateX(0)}25%{transform:translateX(60px)}25.01%{transform:translateX(-180px)}100%{transform:translateX(0)}}.pc-gl{animation:pc-gl 3s ease-in-out infinite}@keyframes pc-gl{0%,100%{opacity:.9}50%{opacity:.2}} }</style>
+<defs>
+  <clipPath id="pc-scene"><rect x="14" y="14" width="200" height="122"/></clipPath>
+  <radialGradient id="pc-age" r=".75"><stop offset=".6" stop-color="#b98a4e" stop-opacity="0"/><stop offset="1" stop-color="#b98a4e" stop-opacity=".35"/></radialGradient>
+  <linearGradient id="pc-sky" x2="0" y2="1"><stop offset="0" stop-color="#7fbfcf"/><stop offset=".75" stop-color="#f3e2b4"/></linearGradient>
+  <linearGradient id="pc-sea" x2="0" y2="1"><stop offset="0" stop-color="#3d93a6"/><stop offset="1" stop-color="#245f78"/></linearGradient>
+  <pattern id="pc-dots" width="3" height="3" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".5" fill="#3b2a1a" opacity=".12"/></pattern>
+</defs>
+<rect width="400" height="150" rx="6" fill="#f2e5c7"/>
+<rect width="400" height="150" rx="6" fill="url(#pc-age)"/>
+<g fill="#b48a52" opacity=".14"><circle cx="248" cy="128" r="5"/><circle cx="380" cy="104" r="3"/><circle cx="296" cy="22" r="2.4"/><circle cx="226" cy="40" r="3.4"/></g>
+<path d="M386 150L400 136V144Q400 150 394 150Z" fill="#e3d1aa"/><path d="M386 150L400 136" stroke="#c8ae7e" stroke-width=".6"/>
+<rect x="11" y="11" width="206" height="128" fill="#fbf5e6"/>
+<g clip-path="url(#pc-scene)">
+  <rect x="14" y="14" width="200" height="122" fill="url(#pc-sky)"/>
+  <circle cx="176" cy="88" r="15" fill="#f9cf74"/>
+  <g class="pc-cl"><path d="M160 30a7 7 0 0 1 12-5a9 9 0 0 1 16 2a6 6 0 0 1 3 11h-28a5 5 0 0 1-3-8Z" fill="#fffaf0" opacity=".92"/></g>
+  <path d="M14 98L50 80L78 90L112 74L150 92L214 84V100H14Z" fill="#8eaaa3"/>
+  <rect x="14" y="98" width="200" height="38" fill="url(#pc-sea)"/>
+  <g stroke="#fff6dc" stroke-linecap="round" class="pc-gl"><path d="M162 104h14M168 110h20M158 117h10"/></g>
+  <path d="M14 136V102Q40 96 70 104Q92 112 96 136Z" fill="#c9965f"/>
+  <rect x="22" y="104" width="11" height="9" fill="#f7efe0"/><path d="M21 104l6.5 -5l6.5 5Z" fill="#c4553a"/><rect x="26.5" y="109" width="2" height="4" fill="#5d7f9a"/><rect x="37" y="100" width="13" height="11" fill="#f7efe0"/><path d="M36 100l7.5 -5l7.5 5Z" fill="#2f6f9f"/><rect x="42.5" y="107" width="2" height="4" fill="#5d7f9a"/><rect x="54" y="106" width="10" height="8" fill="#f7efe0"/><path d="M53 106l6 -5l6 5Z" fill="#c4553a"/><rect x="58" y="110" width="2" height="4" fill="#5d7f9a"/><rect x="30" y="118" width="12" height="10" fill="#f7efe0"/><path d="M29 118l7 -5l7 5Z" fill="#c4553a"/><rect x="35" y="124" width="2" height="4" fill="#5d7f9a"/><rect x="48" y="118" width="11" height="9" fill="#f7efe0"/><path d="M47 118l6.5 -5l6.5 5Z" fill="#2f6f9f"/><rect x="52.5" y="123" width="2" height="4" fill="#5d7f9a"/><rect x="66" y="116" width="10" height="9" fill="#f7efe0"/><path d="M65 116l6 -5l6 5Z" fill="#c4553a"/><rect x="70" y="121" width="2" height="4" fill="#5d7f9a"/>
+  <g transform="translate(134 120)"><path d="M0 0V-16L10 0Z" fill="#00B4AB" stroke="#2a1a10" stroke-width=".6"/><path d="M-7 2H14L11 6H-4Z" fill="#5a3a2a"/></g>
+  <rect x="14" y="14" width="200" height="122" fill="url(#pc-dots)"/>
+</g>
+<rect x="14" y="14" width="200" height="122" fill="none" stroke="#3b2a1a" stroke-opacity=".35" stroke-width=".8"/>
+<text x="26" y="36" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" fill="#fffaf0" stroke="#3b2a1a" stroke-width="2.4" stroke-opacity=".55" paint-order="stroke">Greetings from</text>
+<g font-family="Impact, 'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="900" letter-spacing=".5">
+  <text x="28" y="71" fill="#2a1a10" opacity=".45">load_switch</text>
+  <text x="26" y="69" fill="#00B4AB" stroke="#2a1a10" stroke-width="3" stroke-linejoin="round" paint-order="stroke">load_switch</text>
+</g>
+<rect x="337" y="13" width="46" height="53" fill="#fffaf0"/><path d="M338 13h0M338 66h0M342.4 13h0M342.4 66h0M346.8 13h0M346.8 66h0M351.2 13h0M351.2 66h0M355.6 13h0M355.6 66h0M360 13h0M360 66h0M364.4 13h0M364.4 66h0M368.8 13h0M368.8 66h0M373.2 13h0M373.2 66h0M377.6 13h0M377.6 66h0M382 13h0M382 66h0M337 14h0M383 14h0M337 18.3h0M383 18.3h0M337 22.6h0M383 22.6h0M337 26.9h0M383 26.9h0M337 31.2h0M383 31.2h0M337 35.5h0M383 35.5h0M337 39.8h0M383 39.8h0M337 44.099999999999994h0M383 44.099999999999994h0M337 48.4h0M383 48.4h0M337 52.699999999999996h0M383 52.699999999999996h0M337 57h0M383 57h0M337 61.3h0M383 61.3h0M337 65.6h0M383 65.6h0" stroke="#f2e5c7" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="341" y="17" width="38" height="45" fill="#00B4AB"/><rect x="343" y="19" width="34" height="41" fill="none" stroke="#fff8ea" stroke-opacity=".5" stroke-width=".6"/>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#fff8ea" text-anchor="middle"><text x="360" y="36" font-size="14">★</text><text x="360" y="52" font-size="12" font-weight="700">20</text></g>
+<g fill="none" stroke="#2c2747" stroke-opacity=".55" stroke-width="1.1">
+  <circle cx="314" cy="44" r="22"/><circle cx="314" cy="44" r="10" stroke-width=".6"/>
+  <path d="M232 36q8-4 16 0t16 0t16 0M232 44q8-4 16 0t16 0t16 0M232 52q8-4 16 0t16 0t16 0"/>
+</g>
+<path id="pc-arc" d="M299 49.5A16 16 0 1 1 329 49.5" fill="none"/>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="8" font-weight="700" fill="#2c2747" fill-opacity=".7" text-anchor="middle">
+  <text><textPath href="#pc-arc" startOffset="50%">DART</textPath></text>
+  <text x="314" y="47" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="8.5">⑂ 3</text>
+  <text x="314" y="62" letter-spacing="1">POST</text>
+</g>
+<g stroke="#9b8a6a" stroke-opacity=".45" stroke-width=".6"><path d="M232 88H384M232 104H384M232 120H384M232 140H384"/></g>
+<text font-family="Georgia, 'Times New Roman', serif" font-size="12.5" font-style="italic" fill="#2c3a6b"><tspan x="234" y="85">A highly customizable</tspan><tspan x="234" y="101">toggle switch with a</tspan><tspan x="234" y="117">loading state.</tspan></text>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="11.5" font-style="italic" fill="#2c3a6b"><text x="234" y="137">— esentis</text></g>
+</svg>
