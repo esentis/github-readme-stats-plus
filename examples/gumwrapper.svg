@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs><pattern id="polka" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2.5" fill="#fff" fill-opacity=".45"/><circle cx="12" cy="12" r="2.5" fill="#fff" fill-opacity=".45"/></pattern></defs>
+<rect width="400" height="150" rx="12" fill="#fff3b0"/>
+<polygon points="64,22 46,66 6,14 16,25 6,36 16,47 6,58 16,69 6,80 16,91 6,102 16,113 6,124 16,135 46,84 64,128" fill="#ff8cc0"/><path d="M46 70L10 30M46 75L12 75M46 80L10 120" stroke="#e0478f" stroke-width="1.2"/><g transform="matrix(-1 0 0 1 400 0)"><polygon points="64,22 46,66 6,14 16,25 6,36 16,47 6,58 16,69 6,80 16,91 6,102 16,113 6,124 16,135 46,84 64,128" fill="#ff8cc0"/><path d="M46 70L10 30M46 75L12 75M46 80L10 120" stroke="#e0478f" stroke-width="1.2"/></g>
+<rect x="62" y="18" width="276" height="114" rx="8" fill="#ff5fa2"/>
+<rect x="62" y="18" width="276" height="114" rx="8" fill="url(#polka)"/>
+<path d="M62 48Q130 36 200 48T338 48V100Q270 112 200 100T62 100Z" fill="#ffd93b"/>
+<g font-family="'Arial Rounded MT Bold', 'Varela Round', 'Nunito', 'Trebuchet MS', sans-serif" font-weight="900" text-anchor="middle">
+  <text x="196" y="86.08" font-size="28" fill="#fff" stroke="#c2185b" stroke-width="5" stroke-linejoin="round" paint-order="stroke">load_switch</text>
+  <text x="80" y="38" font-size="10" fill="#fff" text-anchor="start" letter-spacing="1">BUBBLE GUM</text>
+  <rect x="100" y="110" width="200" height="16" rx="8" fill="#00B4AB" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="122" font-size="10" fill="#fff">DART FLAVOUR · ⑂ 3</text>
+  <g transform="translate(316 32) rotate(-12)">
+    <g><polygon points="30.0,0.0 21.4,4.9 27.0,13.0 17.2,13.7 18.7,23.5 9.5,19.8 6.7,29.2 0.0,22.0 -6.7,29.2 -9.5,19.8 -18.7,23.5 -17.2,13.7 -27.0,13.0 -21.4,4.9 -30.0,0.0 -21.4,-4.9 -27.0,-13.0 -17.2,-13.7 -18.7,-23.5 -9.5,-19.8 -6.7,-29.2 -0.0,-22.0 6.7,-29.2 9.5,-19.8 18.7,-23.5 17.2,-13.7 27.0,-13.0 21.4,-4.9" fill="#ffe14d" stroke="#e0478f" stroke-width="1.5"/>
+      <animateTransform attributeName="transform" type="scale" values="1;1.08;1" dur="1.6s" repeatCount="indefinite"/></g>
+    <text y="-5" font-size="6.5" fill="#c2185b">FREE INSIDE</text>
+    <text y="9" font-size="12" fill="#c2185b">★20</text>
+  </g>
+</g>
+</svg>

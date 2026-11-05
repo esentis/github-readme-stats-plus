@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0f4"/></linearGradient>
+  <radialGradient id="glow" cx="1" cy="1" r=".9"><stop offset="0" stop-color="#00B4AB" stop-opacity=".16"/><stop offset="1" stop-color="#00B4AB" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="400" height="150" rx="10" fill="url(#bg)"/>
+<rect width="400" height="150" rx="10" fill="url(#glow)"/>
+<rect x=".5" y=".5" width="399" height="149" rx="9.5" fill="none" stroke="#000" stroke-opacity=".07"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="32" y="30" font-size="9" font-weight="600" fill="#9aa1ad" letter-spacing="2">ESENTIS</text>
+  <rect x="32" y="42" width="22" height="3" rx="1.5" fill="#00B4AB"/>
+  <text x="31" y="83.2" font-size="32" font-weight="700" fill="#111318" letter-spacing="-.6">load_switch</text>
+  <text x="32" y="103.2" font-size="11.5" fill="#6b7280">A highly customizable toggle switch with a loading stat…</text>
+  <text x="32" y="130" font-size="9" fill="#9aa1ad" letter-spacing="1">Dart   ·   ★ 20   ·   ⑂ 3</text>
+  <text x="368" y="130" font-size="9" fill="#c2c7d0" text-anchor="end">01</text>
+</g>
+</svg>

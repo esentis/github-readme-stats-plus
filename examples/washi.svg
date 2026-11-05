@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="clip"><rect width="400" height="150" rx="6"/></clipPath>
+  <filter id="fiber"><feTurbulence type="fractalNoise" baseFrequency=".02 .9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .47  0 0 0 0 .33  0 0 0 .5 -.12"/></filter>
+  <filter id="rough" x="-10%" y="-30%" width="120%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".05 .7" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter>
+</defs>
+<g clip-path="url(#clip)"><rect width="400" height="150" fill="#f4eddc"/><rect width="400" height="150" filter="url(#fiber)"/></g>
+<rect x=".5" y=".5" width="399" height="149" rx="5.5" fill="none" stroke="#d8cdb4"/>
+<line x1="38" y1="20" x2="38" y2="130" stroke="#c8322b" stroke-width="1.5"/>
+<circle cx="24" cy="24" r="4" fill="#00B4AB"/>
+<text font-family="'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif" font-size="9" font-weight="700" fill="#3a332a" text-anchor="middle"><tspan x="24" y="42">D</tspan><tspan x="24" y="51.6">A</tspan><tspan x="24" y="61.2">R</tspan><tspan x="24" y="70.8">T</tspan></text>
+<path d="M50 62C120 50 210 55 290 48C296 50 294 56 286 57C210 62 130 64 54 70C46 70 44 64 50 62Z" fill="#1b1a17" fill-opacity=".9" filter="url(#rough)"/>
+<g font-family="'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif">
+  <text x="54" y="44" font-size="22" font-weight="700" fill="#1b1a17">load_switch</text>
+  <text font-size="12" fill="#4a4238"><tspan x="54" y="90">A highly customizable toggle switch</tspan><tspan x="54" y="106">with a loading state.</tspan></text>
+  <text x="54" y="130" font-size="11" fill="#8a7d6a" letter-spacing="1">esentis · ⑂ 3</text>
+</g>
+<g transform="translate(336 74) rotate(-6)">
+  <rect x="-34" y="-34" width="68" height="68" rx="8" fill="#c8322b" fill-opacity=".92" filter="url(#rough)"/>
+  <rect x="-28" y="-28" width="56" height="56" rx="4" fill="none" stroke="#f4eddc" stroke-width="2"/>
+  <g font-family="'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif" font-weight="700" fill="#f4eddc" text-anchor="middle">
+    <text y="-5" font-size="17">★</text>
+    <text y="19" font-size="20">20</text>
+  </g>
+</g>
+</svg>

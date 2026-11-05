@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<rect x="1" y="1" width="398" height="148" rx="4" fill="#fff" stroke="#000" stroke-width="2"/>
+<g font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif" fill="#000">
+  <text x="20" y="34" font-size="21" font-weight="900" letter-spacing="-.5">Repository Facts</text>
+  <text x="20" y="48" font-size="9">Serving size <tspan font-weight="700">1 repo (esentis)</tspan></text>
+  <rect x="20" y="53" width="176" height="7"/>
+  <text x="20" y="70" font-size="8" font-weight="700">Amount per serving</text>
+  <text x="20" y="90" font-size="17"><tspan font-weight="900">Stars ★</tspan></text><text x="196" y="90" font-size="17" font-weight="900" text-anchor="end">20</text><rect x="20" y="95" width="176" height="4"/>
+  <text x="20" y="110" font-size="11"><tspan font-weight="900">Forks ⑂</tspan></text><text x="196" y="110" font-size="11" font-weight="900" text-anchor="end">3</text><rect x="20" y="115" width="176" height="1"/>
+  <text x="20" y="130" font-size="11" font-weight="900">Language</text>
+  <rect x="80" y="122" width="8" height="8" fill="#00B4AB" stroke="#000" stroke-width=".6"/>
+  <text x="196" y="130" font-size="11" text-anchor="end">Dart</text>
+  <rect x="20" y="135" width="176" height="1"/>
+  <rect x="210" y="14" width="1.5" height="122"/>
+  <text x="224" y="34" font-size="15" font-weight="900">load_switch</text>
+  <rect x="224" y="40" width="160" height="3"/>
+  <text x="224" y="58" font-size="9" font-weight="900">INGREDIENTS:</text>
+  <text font-size="9.5"><tspan x="224" y="72">A highly customizable toggle</tspan><tspan x="224" y="84">switch with a loading state.</tspan></text>
+  <text x="224" y="134" font-size="7">* Percent Daily Values are open source.</text>
+</g>
+</svg>

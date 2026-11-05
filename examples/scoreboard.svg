@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <pattern id="dots" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#fff"/></pattern>
+  <pattern id="unlit" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#3a2a0c"/></pattern>
+  <mask id="led"><rect width="400" height="150" fill="url(#dots)"/></mask>
+  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="400" height="150" rx="10" fill="#2a2a2d"/>
+<rect x="6" y="6" width="388" height="138" rx="6" fill="#050505"/>
+<g fill="#55555a"><circle cx="14" cy="14" r="2.5"/><circle cx="386" cy="14" r="2.5"/><circle cx="14" cy="136" r="2.5"/><circle cx="386" cy="136" r="2.5"/></g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="700">
+  <text x="200" y="30" font-size="16" fill="#f4f4f4" text-anchor="middle" letter-spacing="1">LOAD_SWITCH</text>
+  <rect x="22" y="54" width="134" height="72" rx="4" fill="#0b0b0b" stroke="#2c2c2c"/>
+  <rect x="26" y="58" width="126" height="64" fill="url(#unlit)"/>
+  <text x="89" y="108.72" font-size="52" fill="#ffb21a" text-anchor="middle" mask="url(#led)" filter="url(#glow)">20</text>
+  <text x="89" y="47" font-size="10" fill="#d8d8d8" text-anchor="middle" letter-spacing="3">STARS</text>
+  <rect x="244" y="54" width="134" height="72" rx="4" fill="#0b0b0b" stroke="#2c2c2c"/>
+  <rect x="248" y="58" width="126" height="64" fill="url(#unlit)"/>
+  <text x="311" y="108.72" font-size="52" fill="#ffb21a" text-anchor="middle" mask="url(#led)" filter="url(#glow)">3</text>
+  <text x="311" y="47" font-size="10" fill="#d8d8d8" text-anchor="middle" letter-spacing="3">FORKS</text>
+  <text x="200" y="66" font-size="9" fill="#d8d8d8" text-anchor="middle" letter-spacing="2">LANG</text>
+  <rect x="166" y="74" width="68" height="22" rx="3" fill="#0b0b0b" stroke="#00B4AB"/>
+  <text x="200" y="89" font-size="12" fill="#f4f4f4" text-anchor="middle">DART</text>
+  <circle cx="186" cy="114" r="4" fill="#ff3b30"><animate attributeName="opacity" values="1;1;.15;.15" keyTimes="0;.5;.5;1" dur="1.4s" repeatCount="indefinite"/></circle>
+  <text x="194" y="118" font-size="10" fill="#ff3b30" letter-spacing="1">LIVE</text>
+</g>
+</svg>

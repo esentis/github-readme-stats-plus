@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs><mask id="hole"><rect width="400" height="150" rx="5" fill="#fff"/><circle cx="200" cy="138" r="6" fill="#000"/></mask></defs>
+<g mask="url(#hole)">
+  <rect width="400" height="150" fill="#fbf6e6"/>
+  <path d="M0 50.5H400M0 68.5H400M0 86.5H400M0 104.5H400M0 122.5H400" stroke="#9cc3e0" stroke-opacity=".7"/>
+  <path d="M0 30.5H400" stroke="#d9473c" stroke-width="1.5"/>
+  <path d="M72.5 0V150" stroke="#d9473c" stroke-opacity=".35"/>
+</g>
+<circle cx="200" cy="138" r="6" fill="none" stroke="#d8ceb4"/>
+<g font-family="'Courier New', Courier, ui-monospace, monospace" fill="#2a2724">
+  <text font-size="11.5" font-weight="700"><tspan x="14" y="48">DAR</tspan><tspan x="14" y="66">★20</tspan><tspan x="14" y="84">.E11</tspan></text>
+  <text x="84" y="25" font-size="12">esentis.</text>
+  <text x="96" y="47" font-size="13" font-weight="700">load_switch</text>
+  <text font-size="11.5"><tspan x="96" y="65">A highly customizable toggle switch with</tspan><tspan x="96" y="83">a loading state.</tspan></text>
+  <text x="84" y="101" font-size="11.5">Dart. ★ 20 ; ⑂ 3.</text>
+  <text x="84" y="119" font-size="10" fill="#6b645a">1. Dart -- Repositories. I. Title.</text>
+</g>
+</svg>
