@@ -37,6 +37,7 @@ import * as clay from "./clay.js";
 import * as cockpit from "./cockpit.js";
 import * as cocktail from "./cocktail.js";
 import * as comic from "./comic.js";
+import * as confetti from "./confetti.js";
 import * as console from "./console.js";
 import * as constructivist from "./constructivist.js";
 import * as countdown from "./countdown.js";
@@ -51,6 +52,7 @@ import * as dice from "./dice.js";
 import * as diner from "./diner.js";
 import * as dna from "./dna.js";
 import * as donut from "./donut.js";
+import * as dotwave from "./dotwave.js";
 import * as dunes from "./dunes.js";
 import * as duotone from "./duotone.js";
 import * as eclipse from "./eclipse.js";
@@ -59,6 +61,7 @@ import * as fireflies from "./fireflies.js";
 import * as fireworks from "./fireworks.js";
 import * as flask from "./flask.js";
 import * as floppy from "./floppy.js";
+import * as flowfield from "./flowfield.js";
 import * as forest from "./forest.js";
 import * as fortune from "./fortune.js";
 import * as frost from "./frost.js";
@@ -74,13 +77,16 @@ import * as hologram from "./hologram.js";
 import * as icecream from "./icecream.js";
 import * as isometric from "./isometric.js";
 import * as jersey from "./jersey.js";
+import * as kaleidoscope from "./kaleidoscope.js";
 import * as keycap from "./keycap.js";
 import * as keynote from "./keynote.js";
 import * as lanterns from "./lanterns.js";
 import * as latte from "./latte.js";
 import * as lava from "./lava.js";
+import * as lavalamp from "./lavalamp.js";
 import * as ledmatrix from "./ledmatrix.js";
 import * as lighthouse from "./lighthouse.js";
+import * as liquid from "./liquid.js";
 import * as lowpoly from "./lowpoly.js";
 import * as luggage from "./luggage.js";
 import * as maze from "./maze.js";
@@ -108,6 +114,7 @@ import * as pastel from "./pastel.js";
 import * as patch from "./patch.js";
 import * as pcb from "./pcb.js";
 import * as pedal from "./pedal.js";
+import * as pendulums from "./pendulums.js";
 import * as periodic from "./periodic.js";
 import * as piano from "./piano.js";
 import * as pinball from "./pinball.js";
@@ -130,6 +137,8 @@ import * as ramen from "./ramen.js";
 import * as receipt from "./receipt.js";
 import * as retromac from "./retromac.js";
 import * as retrowin from "./retrowin.js";
+import * as ribbon from "./ribbon.js";
+import * as ripple from "./ripple.js";
 import * as riso from "./riso.js";
 import * as rover from "./rover.js";
 import * as sakura from "./sakura.js";
@@ -142,6 +151,7 @@ import * as sketch from "./sketch.js";
 import * as slots from "./slots.js";
 import * as smartwatch from "./smartwatch.js";
 import * as snowglobe from "./snowglobe.js";
+import * as spirograph from "./spirograph.js";
 import * as splitflap from "./splitflap.js";
 import * as spotlight from "./spotlight.js";
 import * as stamp from "./stamp.js";
@@ -196,6 +206,7 @@ export const groups = {
   "Games and toys": { blocks, puzzlecube, chess, dice, pinball, slots, crossword, sudoku, mines, maze, boardgame, clawmachine },
   "Science and tech": { pcb, oscilloscope, dna, microscope, flask, atom, punchcard, serverrack, keycap, gitgraph, cpu, morse },
   "Light and sky": { rainbow, sunrise, fireflies, bokeh, prism, lanterns, fireworks, snowglobe, lighthouse, eclipse },
+  "Abstract motion": { liquid, ripple, kaleidoscope, spirograph, lavalamp, flowfield, pendulums, dotwave, ribbon, confetti },
 };
 
 export default Object.fromEntries(

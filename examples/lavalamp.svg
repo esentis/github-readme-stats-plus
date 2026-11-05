@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ll-a, .ll-b, .ll-c { animation: ll-a 14s ease-in-out infinite } .ll-b { animation-name: ll-b } .ll-c { animation-name: ll-c } .ll-glow { animation: ll-glow 7s ease-in-out infinite }
+@keyframes ll-a { 50% { transform: translate(4px, -68px) scale(.85, 1.15) } } @keyframes ll-b { 50% { transform: translate(-5px, -54px) scale(1.1, .9) } } @keyframes ll-c { 50% { transform: translate(2px, -40px) } } @keyframes ll-glow { 50% { opacity: .35 } } }</style>
+<defs>
+  <clipPath id="ll-clip"><rect width="400" height="150" rx="16"/></clipPath>
+  <clipPath id="ll-in"><path d="M312 22L300 84Q298 96 304 104H348Q354 96 352 84L340 22Z"/></clipPath>
+  <linearGradient id="ll-bg" x2="1"><stop offset="0" stop-color="#0d0910"/><stop offset="1" stop-color="#1a1018"/></linearGradient>
+  <linearGradient id="ll-wax" gradientUnits="userSpaceOnUse" y1="104" x2="0" y2="22"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="ll-metal" x2="1"><stop offset="0" stop-color="#2a2730"/><stop offset=".35" stop-color="#8d8996"/><stop offset=".55" stop-color="#4a4652"/><stop offset="1" stop-color="#1c1a21"/></linearGradient>
+  <linearGradient id="ll-shine" x2="1"><stop offset=".08" stop-color="#fff" stop-opacity="0"/><stop offset=".22" stop-color="#fff" stop-opacity=".35"/><stop offset=".34" stop-color="#fff" stop-opacity="0"/><stop offset=".8" stop-color="#fff" stop-opacity="0"/><stop offset=".9" stop-color="#fff" stop-opacity=".12"/></linearGradient>
+  <filter id="ll-goo" filterUnits="userSpaceOnUse" x="296" y="10" width="60" height="100"><feGaussianBlur stdDeviation="3.5"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 22 -9"/></filter>
+  <filter id="ll-blur" filterUnits="userSpaceOnUse" x="200" y="-60" width="260" height="270"><feGaussianBlur stdDeviation="20"/></filter>
+</defs>
+<g clip-path="url(#ll-clip)">
+  <rect width="400" height="150" fill="url(#ll-bg)"/>
+  <ellipse class="ll-glow" cx="326" cy="70" rx="44" ry="62" fill="#00B4AB" opacity=".55" filter="url(#ll-blur)"/>
+  <ellipse cx="326" cy="146" rx="70" ry="7" fill="#00B4AB" opacity=".35" filter="url(#ll-blur)"/>
+</g>
+<path d="M312 22L300 84Q298 96 304 104H348Q354 96 352 84L340 22Z" fill="#00B4AB"/>
+<path d="M312 22L300 84Q298 96 304 104H348Q354 96 352 84L340 22Z" fill="#0b0710" fill-opacity=".62"/>
+<g clip-path="url(#ll-in)">
+  <ellipse cx="326" cy="108" rx="34" ry="22" fill="#00B4AB" opacity=".55" filter="url(#ll-blur)"/>
+  <g filter="url(#ll-goo)" fill="#00B4AB">
+    <ellipse cx="326" cy="104" rx="24" ry="8"/>
+    <ellipse cx="326" cy="22" rx="14" ry="5"/>
+    <circle class="ll-a" cx="325.2" cy="93.36781713424716" r="9.3" style="transform-origin:325.2px 98px;animation-duration:17.7s;animation-delay:-13.7s"/><circle class="ll-b" cx="319.5" cy="95.49091265141033" r="5.0" style="transform-origin:319.5px 98px;animation-duration:13.1s;animation-delay:-11.8s"/><circle class="ll-c" cx="322.0" cy="94.10106778447516" r="7.8" style="transform-origin:322.0px 98px;animation-duration:18.3s;animation-delay:-13.1s"/><circle class="ll-a" cx="327.9" cy="95.04636793292593" r="5.9" style="transform-origin:327.9px 98px;animation-duration:13.9s;animation-delay:-12.6s"/><circle class="ll-b" cx="321.6" cy="93.80917998740915" r="8.4" style="transform-origin:321.6px 98px;animation-duration:12.4s;animation-delay:-10.2s"/><circle class="ll-c" cx="323.0" cy="93.23230728576891" r="9.5" style="transform-origin:323.0px 98px;animation-duration:19.7s;animation-delay:-6.7s"/><circle class="ll-a" cx="334.6" cy="93.47249813913368" r="9.1" style="transform-origin:334.6px 98px;animation-duration:15.0s;animation-delay:-0.2s"/>
+  </g>
+  <rect x="296" y="20" width="60" height="86" fill="url(#ll-wax)"/>
+  <path d="M312 22L300 84Q298 96 304 104H348Q354 96 352 84L340 22Z" fill="url(#ll-shine)"/>
+</g>
+<path d="M312 22L300 84Q298 96 304 104H348Q354 96 352 84L340 22Z" fill="none" stroke="#fff" stroke-opacity=".28"/>
+<path d="M314 8H338L340 22H312Z" fill="url(#ll-metal)"/>
+<path d="M304 104H348L341 118L356 142H296L311 118Z" fill="url(#ll-metal)"/>
+<path d="M304 104.5H348" stroke="#00B4AB" stroke-opacity=".7"/>
+<rect x=".5" y=".5" width="399" height="149" rx="15.5" fill="none" stroke="#fff" stroke-opacity=".08"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="24" y="34" font-size="11" fill="#a3929c">esentis</text>
+  <text x="24" y="58" font-size="20" font-weight="700" fill="#fff4ef">load_switch</text>
+  <text font-size="12.5" fill="#c4b3b9"><tspan x="24" y="80">A highly customizable toggle</tspan><tspan x="24" y="96">switch with a loading state.</tspan></text>
+  <g transform="translate(24 0)"><circle cx="5" cy="124" r="5" fill="#00B4AB"/><text x="16" y="128.32" font-size="12" fill="#f6e9e6">Dart</text></g><g transform="translate(84.8 0)"><path transform="translate(0 117) scale(0.875)" fill-rule="evenodd" fill="#a3929c" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="128.32" font-size="12" fill="#f6e9e6">20</text></g><g transform="translate(135.2 0)"><path transform="translate(0 117) scale(0.875)" fill-rule="evenodd" fill="#a3929c" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="128.32" font-size="12" fill="#f6e9e6">3</text></g>
+</g>
+</svg>
