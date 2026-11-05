@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<rect x=".5" y=".5" width="399" height="149" rx="3" fill="#f6f2e9" stroke="#d9d1c1"/>
+<rect x="6.5" y="6.5" width="387" height="137" rx="1" fill="none" stroke="#e6dfd1"/>
+<g font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif">
+  <text x="30" y="32" font-size="10" fill="#7a7264" letter-spacing="2.5">ESENTIS</text>
+  <text x="30" y="57" font-size="21" fill="#1f1c18">load_switch</text>
+  <circle cx="34" cy="69" r="4" fill="#00B4AB"/>
+  <text x="44" y="73" font-size="11.5" fill="#4a443b">Dart, open-source software</text>
+  <text font-size="11.5" font-style="italic" fill="#5b5448"><tspan x="30" y="93">A highly customizable toggle switch with a loading state.</tspan></text>
+  <path d="M30 120H370" stroke="#d6cebd"/>
+  <text x="30" y="135" font-size="9" fill="#7a7264" letter-spacing="1.5">ACCESSION  ★ 20  ·  ⑂ 3</text>
+  <text x="370" y="135" font-size="9" fill="#a39a89" letter-spacing="1.5" text-anchor="end">GIFT OF THE AUTHOR</text>
+</g>
+</svg>

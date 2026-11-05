@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="clip"><rect width="400" height="150" rx="20"/></clipPath>
+  <linearGradient id="sky" x2=".4" y2="1"><stop offset="0" stop-color="#6ba9f2"/><stop offset="1" stop-color="#2c5fc2"/></linearGradient>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="400" height="150" fill="url(#sky)"/>
+  <circle cx="190" cy="20" r="60" fill="#00B4AB" opacity=".6" filter="url(#blur)"/>
+</g>
+<rect x="212" y="14" width="174" height="122" rx="14" fill="#fff" fill-opacity=".16"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" fill="#fff">
+  <path d="M22 28L33 23L28 34L27.5 29Z"/>
+  <text x="38" y="33" font-size="14" font-weight="600">load_switch</text>
+  <text x="18" y="86" font-size="50" font-weight="200">20°</text>
+  <text x="22" y="107" font-size="13.5" font-weight="600">Dart</text>
+  <text x="22" y="125" font-size="11.5" fill-opacity=".85">H:★20   L:⑂3</text>
+  <g transform="translate(188 68) scale(0.85)" stroke="#ffd23f" stroke-width="2" stroke-linecap="round"><circle r="6" fill="#ffd23f"/><path d="M0-10V-12M0 10V12M-10 0H-12M10 0H12M7-7L8.5-8.5M-7 7L-8.5 8.5M7 7L8.5 8.5M-7-7L-8.5-8.5"/></g>
+  <text font-size="10.5" fill-opacity=".92"><tspan x="224" y="34">A highly customizable</tspan><tspan x="224" y="48">toggle switch with a</tspan><tspan x="224" y="62">loading state.</tspan></text>
+  <path d="M224 90H374" stroke="#fff" stroke-opacity=".3"/>
+  <g font-size="8.5" font-weight="600" fill-opacity=".85"><text x="234" y="103" text-anchor="middle">Mon</text><g transform="translate(234 120) scale(0.55)" stroke="#ffd23f" stroke-width="2" stroke-linecap="round"><circle r="6" fill="#ffd23f"/><path d="M0-10V-12M0 10V12M-10 0H-12M10 0H12M7-7L8.5-8.5M-7 7L-8.5 8.5M7 7L8.5 8.5M-7-7L-8.5-8.5"/></g><text x="266" y="103" text-anchor="middle">Tue</text><g transform="translate(266 120) scale(0.55)" stroke="#ffd23f" stroke-width="2" stroke-linecap="round"><circle r="6" fill="#ffd23f"/><path d="M0-10V-12M0 10V12M-10 0H-12M10 0H12M7-7L8.5-8.5M-7 7L-8.5 8.5M7 7L8.5 8.5M-7-7L-8.5-8.5"/></g><text x="298" y="103" text-anchor="middle">Wed</text><path transform="translate(298 121) scale(0.75)" fill="#fff" d="M-9 5a5 5 0 010-10a7 7 0 0113-1a5 5 0 014 11z"/><text x="330" y="103" text-anchor="middle">Thu</text><path transform="translate(330 121) scale(0.75)" fill="#fff" d="M-9 5a5 5 0 010-10a7 7 0 0113-1a5 5 0 014 11z"/><text x="362" y="103" text-anchor="middle">Fri</text><g transform="translate(359 117) scale(0.45)" stroke="#ffd23f" stroke-width="2" stroke-linecap="round"><circle r="6" fill="#ffd23f"/><path d="M0-10V-12M0 10V12M-10 0H-12M10 0H12M7-7L8.5-8.5M-7 7L-8.5 8.5M7 7L8.5 8.5M-7-7L-8.5-8.5"/></g><path transform="translate(364 123) scale(0.6)" fill="#fff" d="M-9 5a5 5 0 010-10a7 7 0 0113-1a5 5 0 014 11z"/></g>
+</g>
+</svg>

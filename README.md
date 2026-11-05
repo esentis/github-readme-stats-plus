@@ -98,7 +98,8 @@ The repo object a style receives:
   name: "load_switch",
   description: "A highly customizable toggle switch with a loading state.",
   stars: "20",   // already formatted: "1.2K", "3.4M"
-  starCount: 20, // the raw number, for anything that needs maths
+  starCount: 20, // the raw numbers, for anything that needs maths
+  forkCount: 3,
   forks: "3",
   lang: { name: "Dart", color: "#00B4AB" },
 }

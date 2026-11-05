@@ -103,6 +103,7 @@ export function normalize(r) {
     description: r.description || "No description provided",
     stars: compact.format(r.stargazerCount),
     starCount: r.stargazerCount,
+    forkCount: r.forkCount,
     forks: compact.format(r.forkCount),
     // The colour goes into attributes unescaped, so only accept a plain hex value.
     lang: { name: lang.name, color: /^#[0-9a-f]{3,8}$/i.test(lang.color) ? lang.color : "#858585" },

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="clip"><rect width="400" height="150" rx="16"/></clipPath>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+  <filter id="h1"><feColorMatrix type="hueRotate" values="140"/></filter>
+  <filter id="h2"><feColorMatrix type="hueRotate" values="230"/></filter>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="400" height="150" fill="#f4f0ff"/>
+  <g filter="url(#soft)">
+    <path fill="#7c5cff" opacity=".7" d="M122.6 164.3Q95.1 188.6 52.4 199.2Q9.6 209.9 -3.9 174.9Q-17.4 140.0 -2.4 107.3Q12.7 74.6 54.3 82.3Q95.9 90.1 123.0 115.0Q150.0 140.0 122.6 164.3Z"/>
+    <path fill="#ff7eb6" opacity=".75" d="M435.6 151.6Q411.2 173.2 373.2 182.7Q335.2 192.1 323.2 161.1Q311.2 130.0 324.6 100.9Q337.9 71.8 374.9 78.7Q411.9 85.6 436.0 107.8Q460.0 130.0 435.6 151.6Z"/>
+    <path fill="#00B4AB" d="M159.5 47.0Q129.0 74.0 81.5 85.8Q34.0 97.6 19.0 58.8Q4.0 20.0 20.7 -16.3Q37.4 -52.7 83.7 -44.1Q129.9 -35.5 160.0 -7.7Q190.0 20.0 159.5 47.0Z"/>
+    <path fill="#00B4AB" filter="url(#h1)" d="M366.0 35.7Q337.1 61.3 291.9 72.5Q246.8 83.7 232.6 46.9Q218.3 10.0 234.2 -24.5Q250.1 -59.1 294.0 -50.9Q337.9 -42.7 366.5 -16.3Q395.0 10.0 366.0 35.7Z"/>
+    <path fill="#00B4AB" filter="url(#h2)" opacity=".8" d="M258.7 98.9Q237.3 117.8 204.1 126.1Q170.8 134.3 160.3 107.2Q149.8 80.0 161.5 54.6Q173.2 29.1 205.6 35.1Q238.0 41.2 259.0 60.6Q280.0 80.0 258.7 98.9Z"/>
+  </g>
+</g>
+<rect x="16" y="14" width="66.19999999999999" height="22" rx="11" fill="#fff" fill-opacity=".75"/>
+<rect x="16" y="50" width="368" height="86" rx="14" fill="#fff" fill-opacity=".86" stroke="#fff"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="26" y="29" font-size="11" font-weight="700" fill="#1f1b2e">esentis</text>
+  <text x="32" y="78" font-size="18" font-weight="700" fill="#16121f">load_switch</text>
+  <text x="32" y="97" font-size="11.5" fill="#5b5668">A highly customizable toggle switch with a loading s…</text>
+  <g transform="translate(32 0)"><circle cx="5" cy="118" r="5" fill="#00B4AB"/><text x="16" y="122.32" font-size="12" fill="#16121f">Dart</text></g><g transform="translate(94.8 0)"><path transform="translate(0 111) scale(0.875)" fill-rule="evenodd" fill="#6b6578" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="122.32" font-size="12" fill="#16121f">20</text></g><g transform="translate(147.2 0)"><path transform="translate(0 111) scale(0.875)" fill-rule="evenodd" fill="#6b6578" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="122.32" font-size="12" fill="#16121f">3</text></g>
+</g>
+</svg>
