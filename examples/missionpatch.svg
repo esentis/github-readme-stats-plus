@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <pattern id="mp-canvas" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 4L4 0" stroke="#000" stroke-opacity=".05"/></pattern>
+  <pattern id="mp-twill" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><rect width="1.2" height="3" fill="#fff" fill-opacity=".07"/></pattern>
+  <path id="mp-top" d="M28 75A50 50 0 0 1 128 75"/>
+  <path id="mp-bot" d="M21 75A57 57 0 0 0 135 75"/>
+  <clipPath id="mp-in"><circle cx="78" cy="75" r="45"/></clipPath>
+  <radialGradient id="mp-sky" cx=".5" cy=".3"><stop offset="0" stop-color="#2c4386"/><stop offset="1" stop-color="#0e1838"/></radialGradient>
+  <filter id="mp-sh" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dy="1.5" stdDeviation="1.5" flood-opacity=".35"/></filter>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .mp-flame{transform-box:fill-box;transform-origin:50% 0;animation:mp-flick 2s ease-in-out infinite}.mp-tw{animation:mp-tw 3s ease-in-out infinite}
+@keyframes mp-flick{0%,100%{transform:scaleY(1)}25%{transform:scaleY(.78)}50%{transform:scaleY(1.08)}75%{transform:scaleY(.86)}}@keyframes mp-tw{50%{opacity:.25}} }</style>
+<rect width="400" height="150" rx="12" fill="#e9e3d4"/><rect width="400" height="150" rx="12" fill="url(#mp-canvas)"/>
+<g filter="url(#mp-sh)"><circle cx="78" cy="75" r="64" fill="#f3d27a"/></g>
+<circle cx="78" cy="75" r="61" fill="#13204a"/><circle cx="78" cy="75" r="61" fill="url(#mp-twill)"/>
+<circle cx="78" cy="75" r="62.5" fill="none" stroke="#9b7a23" stroke-dasharray="2 1.4" stroke-width=".8"/>
+<circle cx="78" cy="75" r="47" fill="#f3d27a"/>
+<g clip-path="url(#mp-in)">
+  <rect x="30" y="28" width="96" height="94" fill="url(#mp-sky)"/>
+  <g fill="#fff" class="mp-tw"><circle cx="52" cy="50" r="1.2"/><circle cx="104" cy="44" r="1"/><circle cx="110" cy="70" r="1.3"/></g>
+  <g fill="#fff" fill-opacity=".8"><circle cx="46" cy="72" r=".9"/><circle cx="66" cy="38" r=".9"/><circle cx="96" cy="58" r=".8"/></g>
+  <circle cx="78" cy="160" r="64" fill="#00B4AB"/><circle cx="78" cy="160" r="64" fill="url(#mp-twill)"/>
+  <path d="M30 104Q78 88 126 104" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+</g>
+<g transform="rotate(-18 78 70)"><path d="M40 70A38 11 0 0 1 116 70" fill="none" stroke="#f3d27a" stroke-width="2"/></g>
+<path class="mp-flame" d="M72 84Q78 106 84 84Z" fill="#f59e0b"/><path class="mp-flame" d="M75 84Q78 97 81 84Z" fill="#fde68a"/>
+<path d="M69 72L60 88L70 84ZM87 72L96 88L86 84Z" fill="#c2410c"/>
+<path d="M78 34C87 43 89 58 88 84H68C67 58 69 43 78 34Z" fill="#f5f2ea" stroke="#9c958a" stroke-width=".8"/>
+<circle cx="78" cy="56" r="4.5" fill="#00B4AB" stroke="#55534e" stroke-width="1.2"/>
+<g transform="rotate(-18 78 70)"><path d="M40 70A38 11 0 0 0 116 70" fill="none" stroke="#f3d27a" stroke-width="2"/></g>
+<circle cx="78" cy="75" r="47" fill="none" stroke="#9b7a23" stroke-dasharray="2 1.4" stroke-width=".8"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="800" fill="#f3d27a">
+  <text font-size="10" letter-spacing="1.5"><textPath href="#mp-top" startOffset="50%" text-anchor="middle">★ 20 STARS ★</textPath></text>
+  <text font-size="8.5" letter-spacing="1.5"><textPath href="#mp-bot" startOffset="50%" text-anchor="middle">DART</textPath></text>
+  <text x="22" y="78.5" font-size="9">★</text><text x="134" y="78.5" font-size="9" text-anchor="end">★</text>
+</g>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="160" y="32" font-size="9" font-weight="700" fill="#9b7a23" letter-spacing="2">MISSION · ESENTIS</text>
+  <text x="160" y="56" font-size="19" font-weight="800" fill="#13204a">load_switch</text>
+  <text font-size="11.5" fill="#4b4f5c"><tspan x="160" y="77">A highly customizable toggle</tspan><tspan x="160" y="92">switch with a loading state.</tspan></text>
+  <g transform="translate(160 0)"><circle cx="5" cy="124" r="5" fill="#00B4AB"/><text x="16" y="128.32" font-size="12" fill="#13204a" font-weight="600">Dart</text></g><g transform="translate(218.8 0)"><path transform="translate(0 117) scale(0.875)" fill-rule="evenodd" fill="#9b7a23" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="128.32" font-size="12" fill="#13204a" font-weight="600">20</text></g><g transform="translate(267.2 0)"><path transform="translate(0 117) scale(0.875)" fill-rule="evenodd" fill="#9b7a23" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="128.32" font-size="12" fill="#13204a" font-weight="600">3</text></g>
+</g>
+</svg>

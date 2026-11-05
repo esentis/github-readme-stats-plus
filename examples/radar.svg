@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <radialGradient id="rd-scope"><stop offset="0" stop-color="#0a3518"/><stop offset="1" stop-color="#03140a"/></radialGradient>
+  <linearGradient id="rd-sweep" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-54" y2="0"><stop offset="0" stop-color="#4ade80" stop-opacity=".55"/><stop offset="1" stop-color="#4ade80" stop-opacity="0"/></linearGradient>
+  <filter id="rd-glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="1.5" result="b"/><feComponentTransfer in="b" result="b"><feFuncA type="linear" slope=".6"/></feComponentTransfer><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .rd-sweep{transform-box:fill-box;transform-origin:center;animation:rd-spin 4s linear infinite}.rd-blip{animation:rd-fade 4s linear infinite}
+@keyframes rd-spin{to{transform:rotate(360deg)}}@keyframes rd-fade{0%{opacity:1}70%,100%{opacity:.2}} }</style>
+<rect width="400" height="150" rx="12" fill="#020a05"/>
+<rect x=".5" y=".5" width="399" height="149" rx="11.5" fill="none" stroke="#4ade80" stroke-opacity=".25"/>
+<g transform="translate(78 75)">
+  <circle r="66" fill="#0b1a10" stroke="#1d3b26" stroke-width="3"/>
+  <circle r="62" fill="url(#rd-scope)"/>
+  <g fill="none" stroke="#4ade80" stroke-opacity=".28"><circle r="20"/><circle r="40"/><circle r="60"/><path d="M-62 0H62M0 -62V62"/></g>
+  <g stroke="#4ade80" stroke-opacity=".6"><path d="M0 -60V-53" transform="rotate(0)"/><path d="M0 -60V-57" transform="rotate(10)"/><path d="M0 -60V-57" transform="rotate(20)"/><path d="M0 -60V-57" transform="rotate(30)"/><path d="M0 -60V-57" transform="rotate(40)"/><path d="M0 -60V-57" transform="rotate(50)"/><path d="M0 -60V-57" transform="rotate(60)"/><path d="M0 -60V-57" transform="rotate(70)"/><path d="M0 -60V-57" transform="rotate(80)"/><path d="M0 -60V-53" transform="rotate(90)"/><path d="M0 -60V-57" transform="rotate(100)"/><path d="M0 -60V-57" transform="rotate(110)"/><path d="M0 -60V-57" transform="rotate(120)"/><path d="M0 -60V-57" transform="rotate(130)"/><path d="M0 -60V-57" transform="rotate(140)"/><path d="M0 -60V-57" transform="rotate(150)"/><path d="M0 -60V-57" transform="rotate(160)"/><path d="M0 -60V-57" transform="rotate(170)"/><path d="M0 -60V-53" transform="rotate(180)"/><path d="M0 -60V-57" transform="rotate(190)"/><path d="M0 -60V-57" transform="rotate(200)"/><path d="M0 -60V-57" transform="rotate(210)"/><path d="M0 -60V-57" transform="rotate(220)"/><path d="M0 -60V-57" transform="rotate(230)"/><path d="M0 -60V-57" transform="rotate(240)"/><path d="M0 -60V-57" transform="rotate(250)"/><path d="M0 -60V-57" transform="rotate(260)"/><path d="M0 -60V-53" transform="rotate(270)"/><path d="M0 -60V-57" transform="rotate(280)"/><path d="M0 -60V-57" transform="rotate(290)"/><path d="M0 -60V-57" transform="rotate(300)"/><path d="M0 -60V-57" transform="rotate(310)"/><path d="M0 -60V-57" transform="rotate(320)"/><path d="M0 -60V-57" transform="rotate(330)"/><path d="M0 -60V-57" transform="rotate(340)"/><path d="M0 -60V-57" transform="rotate(350)"/></g>
+  <g class="rd-sweep"><circle r="62" fill="none"/><path d="M0 0V-62A62 62 0 0 0 -53.7 -31Z" fill="url(#rd-sweep)"/><path d="M0 0V-62" stroke="#bbf7d0" stroke-width="1.5"/></g>
+  <g class="rd-blip" style="animation-delay:-1.05s"><circle cx="-45.7" cy="3.4" r="4.5" fill="#4ade80" fill-opacity=".25"/><circle cx="-45.7" cy="3.4" r="2" fill="#bbf7d0"/></g><g class="rd-blip" style="animation-delay:-1.20s"><circle cx="-21.3" cy="7.1" r="4.5" fill="#4ade80" fill-opacity=".25"/><circle cx="-21.3" cy="7.1" r="2" fill="#bbf7d0"/></g><g class="rd-blip" style="animation-delay:-0.38s"><circle cx="-30.4" cy="-44.7" r="4.5" fill="#4ade80" fill-opacity=".25"/><circle cx="-30.4" cy="-44.7" r="2" fill="#bbf7d0"/></g><g class="rd-blip" style="animation-delay:-1.82s"><circle cx="-9.3" cy="31.7" r="4.5" fill="#4ade80" fill-opacity=".25"/><circle cx="-9.3" cy="31.7" r="2" fill="#bbf7d0"/></g><g class="rd-blip" style="animation-delay:-2.61s"><circle cx="36.8" cy="25.7" r="4.5" fill="#4ade80" fill-opacity=".25"/><circle cx="36.8" cy="25.7" r="2" fill="#bbf7d0"/></g><g class="rd-blip" style="animation-delay:-1.41s"><circle cx="-25.0" cy="19.0" r="4.5" fill="#4ade80" fill-opacity=".25"/><circle cx="-25.0" cy="19.0" r="2" fill="#bbf7d0"/></g>
+  <circle r="2.5" fill="#00B4AB" stroke="#bbf7d0" stroke-width=".8"/>
+</g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <text x="164" y="28" font-size="9" fill="#4ade80" fill-opacity=".65" letter-spacing="1">CONTACT · ESENTIS</text>
+  <text x="164" y="50" font-size="16" font-weight="700" fill="#bbf7d0" filter="url(#rd-glow)">load_switch</text>
+  <text font-size="9.5" fill="#4ade80" fill-opacity=".85"><tspan x="164" y="68">A highly customizable toggle switch</tspan><tspan x="164" y="81">with a loading state.</tspan></text>
+  <path d="M164 98H386" stroke="#4ade80" stroke-opacity=".3" stroke-dasharray="2 3"/>
+  <text x="164" y="112" font-size="8" fill="#4ade80" fill-opacity=".6" letter-spacing="1">CONTACTS</text><text x="164" y="129" font-size="14" font-weight="700" fill="#bbf7d0">★ 20</text><text x="246" y="112" font-size="8" fill="#4ade80" fill-opacity=".6" letter-spacing="1">FORKS</text><text x="246" y="129" font-size="14" font-weight="700" fill="#bbf7d0">⑂ 3</text>
+  <circle cx="312" cy="109" r="3" fill="#00B4AB"/><text x="318" y="112" font-size="8" fill="#4ade80" fill-opacity=".6" letter-spacing="1">LANG</text><text x="318" y="129" font-size="11" font-weight="700" fill="#bbf7d0">Dart</text>
+</g>
+</svg>

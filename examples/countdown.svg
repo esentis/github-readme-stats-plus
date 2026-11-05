@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <linearGradient id="cd-sky" x2="0" y2="1"><stop offset="0" stop-color="#090c18"/><stop offset="1" stop-color="#1a2136"/></linearGradient>
+  <filter id="cd-blur" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="2"/></filter>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .cd-glow{animation:cd-pulse 2s ease-in-out infinite}.cd-led{animation:cd-led 2s steps(1) infinite}.cd-steam{transform-box:fill-box;transform-origin:center;animation:cd-steam 4s ease-in-out infinite}.cd-steam:nth-child(2){animation-delay:-1.3s}.cd-steam:nth-child(3){animation-delay:-2.6s}
+@keyframes cd-pulse{50%{opacity:.15}}@keyframes cd-led{50%{opacity:.15}}@keyframes cd-steam{0%,100%{transform:scale(.85);opacity:.55}50%{transform:scale(1.1);opacity:.85}} }</style>
+<rect width="400" height="150" rx="12" fill="url(#cd-sky)"/>
+<path d="M0 140H400V138Q400 150 388 150H12Q0 150 0 138Z" fill="#0b0e17"/>
+<path d="M0 140H400" stroke="#2a3248"/>
+<rect x="306" y="126" width="72" height="8" fill="#283046"/><path d="M314 134V140M370 134V140" stroke="#283046" stroke-width="4"/>
+<path d="M352 18H364V126H352ZM352 126L364 114M364 126L352 114M352 114L364 102M364 114L352 102M352 102L364 90M364 102L352 90M352 90L364 78M364 90L352 78M352 78L364 66M364 78L352 66M352 66L364 54M364 66L352 54M352 54L364 42M364 54L352 42M352 42L364 30M364 42L352 30M352 30L364 18M364 30L352 18" fill="none" stroke="#56607a" stroke-width="1.2"/>
+<path d="M352 48H343M352 82H343" stroke="#56607a" stroke-width="2"/>
+<circle class="cd-led" cx="358" cy="14" r="2.5" fill="#ef4444"/>
+<g fill="#cbd5e1"><circle class="cd-steam" cx="318" cy="122" r="7"/><circle class="cd-steam" cx="342" cy="123" r="6"/><circle class="cd-steam" cx="330" cy="126" r="8"/></g>
+<path d="M330 22C337 30 339 40 339 52V114H321V52C321 40 323 30 330 22Z" fill="#e5e7eb"/>
+<rect x="321" y="62" width="18" height="10" fill="#00B4AB"/>
+<path d="M321 98L313 118H321ZM339 98L347 118H339Z" fill="#9ca3af"/>
+<path d="M324 114H336V120H324Z" fill="#4b5563"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <text x="20" y="27" font-size="9" fill="#8b93a7" letter-spacing="1.5">LAUNCH CONTROL · ESENTIS</text>
+  <text x="20" y="48" font-size="16" font-weight="700" fill="#f3f4f6">load_switch</text>
+  <text x="20" y="63" font-size="9.5" fill="#9aa3b8">A highly customizable toggle switch with a l…</text>
+  <text class="cd-glow" x="20" y="104" font-size="30" fill-opacity=".7" font-weight="700" fill="#ffb020" filter="url(#cd-blur)">T-00:00:20</text>
+  <text x="20" y="104" font-size="30" font-weight="700" fill="#ffb020">T-00:00:20</text>
+  <text x="214" y="86" font-size="8" fill="#8b93a7" letter-spacing="1">★ 20</text>
+  <text x="214" y="97" font-size="8" fill="#8b93a7" letter-spacing="1">1 SEC/STAR</text>
+  <g transform="translate(20 0)"><rect y="122" width="9" height="9" rx="2" fill="#16a34a"/><path d="M2 126.5l2 2 3-4" fill="none" stroke="#dcfce7" stroke-width="1.3"/><text x="13" y="130" font-size="9" fill="#cbd5e1">LANG DART</text></g><g transform="translate(92.6 0)"><rect y="122" width="9" height="9" rx="2" fill="#16a34a"/><path d="M2 126.5l2 2 3-4" fill="none" stroke="#dcfce7" stroke-width="1.3"/><text x="13" y="130" font-size="9" fill="#cbd5e1">FORKS 3</text></g><g transform="translate(154.39999999999998 0)"><rect y="122" width="9" height="9" rx="2" fill="#16a34a"/><path d="M2 126.5l2 2 3-4" fill="none" stroke="#dcfce7" stroke-width="1.3"/><text x="13" y="130" font-size="9" fill="#cbd5e1">GO</text></g>
+</g>
+</svg>
