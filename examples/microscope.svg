@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .mic-a{animation:mic-a 7s ease-in-out infinite}.mic-b{animation:mic-b 9s ease-in-out infinite}
+@keyframes mic-a{50%{translate:2.5px -2px}}@keyframes mic-b{50%{translate:-2px 2.5px}} }</style>
+<defs><clipPath id="mic-view"><circle cx="76" cy="75" r="58"/></clipPath>
+<radialGradient id="mic-field" cx=".45" cy=".4"><stop offset="0" stop-color="#fffaf0"/><stop offset=".7" stop-color="#ece3cf"/><stop offset="1" stop-color="#b9ae98"/></radialGradient>
+<radialGradient id="mic-vig"><stop offset=".72" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="400" height="150" rx="12" fill="#15171b"/>
+<circle cx="76" cy="75" r="66" fill="#2a2d33"/><circle cx="76" cy="75" r="62" fill="#0b0c0e"/>
+<g clip-path="url(#mic-view)">
+  <rect x="18" y="17" width="116" height="116" fill="url(#mic-field)"/>
+  <g fill="#00B4AB" fill-opacity=".35"><circle cx="54" cy="117" r="0.8"/><circle cx="95" cy="110" r="1.3"/><circle cx="69" cy="95" r="1.8"/><circle cx="105" cy="105" r="0.8"/><circle cx="66" cy="93" r="1.3"/><circle cx="94" cy="66" r="1.8"/><circle cx="93" cy="59" r="0.8"/><circle cx="42" cy="115" r="1.3"/><circle cx="53" cy="73" r="1.8"/><circle cx="107" cy="112" r="0.8"/><circle cx="121" cy="88" r="1.3"/><circle cx="54" cy="117" r="1.8"/><circle cx="95" cy="110" r="0.8"/><circle cx="69" cy="95" r="1.3"/></g>
+  <g class="mic-b" transform="translate(76.0 75.0) rotate(756)"><ellipse rx="11" ry="8" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="2.8" r="3.1" fill="#00B4AB" fill-opacity=".8"/></g><g class="mic-a" transform="translate(96.1 106.1) rotate(777)"><ellipse rx="9" ry="6" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="2.3" r="2.3" fill="#00B4AB" fill-opacity=".8"/></g><g class="mic-b" transform="translate(46.5 97.3) rotate(679)"><ellipse rx="12" ry="6" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="3.0" r="2.3" fill="#00B4AB" fill-opacity=".8"/></g><g class="mic-a" transform="translate(39.1 92.8) rotate(700)"><ellipse rx="13" ry="6" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="3.3" r="2.3" fill="#00B4AB" fill-opacity=".8"/></g><g class="mic-b" transform="translate(60.3 53.1) rotate(665)"><ellipse rx="9" ry="10" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="2.3" r="3.8" fill="#00B4AB" fill-opacity=".8"/></g><g class="mic-a" transform="translate(86.3 38.4) rotate(805)"><ellipse rx="13" ry="6" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="3.3" r="2.3" fill="#00B4AB" fill-opacity=".8"/></g><g class="mic-b" transform="translate(117.0 75.1) rotate(833)"><ellipse rx="11" ry="7" fill="#00B4AB" fill-opacity=".28" stroke="#00B4AB" stroke-opacity=".85" stroke-width="1.2"/><circle cx="2.8" r="2.7" fill="#00B4AB" fill-opacity=".8"/></g>
+  <path d="M76 25V125M26 75H126" stroke="#000" stroke-opacity=".12"/>
+  <circle cx="76" cy="75" r="58" fill="url(#mic-vig)"/>
+</g>
+<rect x="56" y="113" width="40" height="13" rx="6.5" fill="#000" fill-opacity=".6"/>
+<text x="76" y="122.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">×20</text>
+<rect x="150" y="18" width="240" height="114" rx="4" fill="#cfe3ea" fill-opacity=".1" stroke="#cfe3ea" stroke-opacity=".35"/>
+<path d="M156 24L176 24M152 128L170 128" stroke="#fff" stroke-opacity=".25"/>
+<rect x="160" y="28" width="222" height="94" rx="2" fill="#f4f1e8"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" fill="#2a2721">
+  <text x="170" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" fill="#7a7466" letter-spacing="1.5">SLIDE 01 · ESENTIS</text>
+  <text x="170" y="64" font-size="16" font-weight="700">load_switch</text>
+  <text font-size="10.5" fill="#5a564d"><tspan x="170" y="81">A highly customizable toggle</tspan><tspan x="170" y="94">switch with a loading state.</tspan></text>
+  <path d="M170 102H372" stroke="#2a2721" stroke-opacity=".2"/>
+  <text x="170" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5"><tspan fill="#7a7466">MAG</tspan> <tspan font-weight="700">×20</tspan>  <tspan fill="#7a7466">⑂</tspan> <tspan font-weight="700">3</tspan></text>
+  <circle cx="341.2" cy="112" r="3.5" fill="#00B4AB"/>
+  <text x="372" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" text-anchor="end">Dart</text>
+</g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .fl-b{animation:fl-b 2.8s ease-in infinite}@keyframes fl-b{0%{transform:translateY(0);opacity:0}15%,80%{opacity:.85}100%{transform:translateY(-17.8px);opacity:0}} }</style>
+<defs><clipPath id="fl-in"><path d="M68 18V52L30 124Q27 132 36 132H120Q129 132 126 124L88 52V18Z"/></clipPath>
+<linearGradient id="fl-liq" x2="0" y2="1"><stop offset="0" stop-color="#00B4AB" stop-opacity=".75"/><stop offset="1" stop-color="#00B4AB"/></linearGradient></defs>
+<rect width="400" height="150" rx="12" fill="#eef3f6"/>
+<path d="M0 136H400V138A12 12 0 0 1 388 150H12A12 12 0 0 1 0 138Z" fill="#cfd8df"/>
+<g clip-path="url(#fl-in)">
+  <rect x="20" y="100.2" width="120" height="39.8" fill="url(#fl-liq)"/>
+  <ellipse cx="78" cy="100.2" rx="35.4" ry="2.5" fill="#fff" fill-opacity=".35"/>
+  <g fill="#fff" fill-opacity=".7"><circle class="fl-b" cx="87.1" cy="124" r="2.8" transform="translate(0 -14.3)" style="animation-delay:-2.24s"/><circle class="fl-b" cx="96.2" cy="124" r="2.0999999999999996" transform="translate(0 -4.3)" style="animation-delay:-0.68s"/><circle class="fl-b" cx="81.0" cy="124" r="2.8" transform="translate(0 -17.6)" style="animation-delay:-2.76s"/><circle class="fl-b" cx="78.0" cy="124" r="1.4" transform="translate(0 -7.6)" style="animation-delay:-1.20s"/><circle class="fl-b" cx="90.2" cy="124" r="2.8" transform="translate(0 -1.3)" style="animation-delay:-0.20s"/><circle class="fl-b" cx="47.6" cy="124" r="1.4" transform="translate(0 -3.8)" style="animation-delay:-0.60s"/><circle class="fl-b" cx="81.0" cy="124" r="2.8" transform="translate(0 -13.5)" style="animation-delay:-2.12s"/></g>
+</g>
+<path d="M68 18V52L30 124Q27 132 36 132H120Q129 132 126 124L88 52V18Z" fill="#fff" fill-opacity=".25" stroke="#8fa3b3" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="63" y="12" width="30" height="7" rx="2.5" fill="#eef3f6" stroke="#8fa3b3" stroke-width="2"/>
+<path d="M72 24V54L38 122" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round"/>
+<g stroke="#8fa3b3" stroke-width="1.2"><path d="M93 76h6M102 94h6M112 112h6"/></g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="6.5" fill="#7f93a3" text-anchor="end"><text x="91" y="78">150</text><text x="100" y="96">100</text><text x="110" y="114">50</text></g>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="152" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" fill="#7f93a3" letter-spacing="1.5">REAGENT · ESENTIS</text>
+  <text x="152" y="52" font-size="21" font-weight="700" fill="#1f2a33">Lo₄Sw₆</text>
+  <text x="152" y="67" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="#5b6b78">load_switch</text>
+  <text font-size="11" fill="#43525e"><tspan x="152" y="88">A highly customizable toggle switch</tspan><tspan x="152" y="102">with a loading state.</tspan></text>
+  <g transform="translate(152 0)"><circle cx="5" cy="126" r="5" fill="#00B4AB"/><text x="16" y="130.14" font-size="11.5" fill="#1f2a33" font-weight="600">Dart</text></g><g transform="translate(209.6 0)"><path transform="translate(0 119) scale(0.875)" fill-rule="evenodd" fill="#5b6b78" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="130.14" font-size="11.5" fill="#1f2a33" font-weight="600">20</text></g><g transform="translate(257.4 0)"><path transform="translate(0 119) scale(0.875)" fill-rule="evenodd" fill="#5b6b78" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="130.14" font-size="11.5" fill="#1f2a33" font-weight="600">3</text></g>
+</g>
+</svg>

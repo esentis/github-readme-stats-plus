@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .sr-l0{animation:sr-a 1.3s steps(1) infinite}.sr-l1{animation:sr-a 2.1s steps(1) infinite reverse}.sr-l2{animation:sr-b 1.7s steps(1) infinite}
+@keyframes sr-a{0%,30%,62%{opacity:1}12%,48%,80%{opacity:.15}}@keyframes sr-b{0%,40%{opacity:1}20%,70%,90%{opacity:.15}}
+.sr-pw{animation:sr-pw 3s ease-in-out infinite}@keyframes sr-pw{50%{opacity:.35}} }</style>
+<defs><linearGradient id="sr-face" x2="0" y2="1"><stop offset="0" stop-color="#3b3f46"/><stop offset="1" stop-color="#2a2d33"/></linearGradient>
+<pattern id="sr-rail" width="16" height="8" patternUnits="userSpaceOnUse"><rect x="5" y="2" width="5" height="4" fill="#0b0c0e"/></pattern>
+<filter id="sr-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2"/></filter></defs>
+<rect width="400" height="150" rx="10" fill="#17191d"/>
+<g fill="#2b2e34"><rect x="8" y="6" width="16" height="138" rx="2"/><rect x="376" y="6" width="16" height="138" rx="2"/></g>
+<g fill="url(#sr-rail)"><rect x="8" y="6" width="16" height="138"/><rect x="376" y="6" width="16" height="138"/></g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect x="28" y="8" width="344" height="52" rx="3" fill="url(#sr-face)" stroke="#4b5059" stroke-width=".8"/><g fill="#7a808a"><circle cx="34" cy="34" r="2.2"/><circle cx="366" cy="34" r="2.2"/></g>
+  <rect x="44" y="15" width="222" height="38" rx="2" fill="#0c2a21" stroke="#05140f"/>
+  <text x="52" y="32" font-size="13" font-weight="700" fill="#8dffc8">load_switch</text>
+  <text x="52" y="46" font-size="8.5" fill="#8dffc8" fill-opacity=".7">A highly customizable toggle switch wit…</text>
+  <text x="278" y="26" font-size="7.5" fill="#9aa0a8" letter-spacing="1">UPTIME ★</text>
+  <text x="278" y="46" font-size="16" font-weight="700" fill="#eef0f2">20<tspan font-size="10" fill="#9aa0a8"> d</tspan></text>
+  <circle class="sr-pw" cx="354" cy="34" r="8" fill="#00B4AB" filter="url(#sr-glow)"/>
+  <circle cx="354" cy="34" r="5.5" fill="#1b1d21" stroke="#00B4AB" stroke-width="2"/>
+  <path d="M354 30.5V34" stroke="#00B4AB" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="28" y="64" width="344" height="24" rx="3" fill="url(#sr-face)" stroke="#4b5059" stroke-width=".8"/><g fill="#7a808a"><circle cx="34" cy="76" r="2.2"/><circle cx="366" cy="76" r="2.2"/></g>
+  <rect x="42" y="69" width="92" height="14" rx="1.5" fill="#e9ecef"/>
+  <text x="48" y="79" font-size="8.5" fill="#1f2328"><tspan fill="#00B4AB">●</tspan> Dart</text>
+  <rect x="146" y="68" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M151 73h20M151 76h20M151 79h20" stroke="#33373e"/>
+    <circle class="sr-l0" cx="178" cy="76" r="2" fill="#3ef07a" style="animation-delay:-1.2s"/><rect x="188" y="68" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M193 73h20M193 76h20M193 79h20" stroke="#33373e"/>
+    <circle class="sr-l0" cx="220" cy="76" r="2" fill="#3ef07a" style="animation-delay:-1.5s"/><rect x="230" y="68" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M235 73h20M235 76h20M235 79h20" stroke="#33373e"/>
+    <circle class="sr-l1" cx="262" cy="76" r="2" fill="#3ef07a" style="animation-delay:-1s"/><rect x="272" y="68" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M277 73h20M277 76h20M277 79h20" stroke="#33373e"/>
+    <circle class="sr-l1" cx="304" cy="76" r="2" fill="#ffb020" style="animation-delay:-1.3s"/>
+  <path d="M318 69v14M323 69v14M328 69v14M333 69v14M338 69v14M343 69v14" stroke="#15171a" stroke-width="2.4"/>
+  <circle cx="356" cy="76" r="2" fill="#00B4AB"/>
+  <rect x="28" y="91" width="344" height="24" rx="3" fill="url(#sr-face)" stroke="#4b5059" stroke-width=".8"/><g fill="#7a808a"><circle cx="34" cy="103" r="2.2"/><circle cx="366" cy="103" r="2.2"/></g>
+  <rect x="42" y="96" width="92" height="14" rx="1.5" fill="#e9ecef"/>
+  <text x="48" y="106" font-size="8.5" fill="#1f2328">⑂ 3 FORKS</text>
+  <rect x="146" y="95" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M151 100h20M151 103h20M151 106h20" stroke="#33373e"/>
+    <circle class="sr-l2" cx="178" cy="103" r="2" fill="#3ef07a" style="animation-delay:-0s"/><rect x="188" y="95" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M193 100h20M193 103h20M193 106h20" stroke="#33373e"/>
+    <circle class="sr-l1" cx="220" cy="103" r="2" fill="#ffb020" style="animation-delay:-0.3s"/><rect x="230" y="95" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M235 100h20M235 103h20M235 106h20" stroke="#33373e"/>
+    <circle class="sr-l2" cx="262" cy="103" r="2" fill="#3ef07a" style="animation-delay:-1.4s"/><rect x="272" y="95" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M277 100h20M277 103h20M277 106h20" stroke="#33373e"/>
+    <circle class="sr-l0" cx="304" cy="103" r="2" fill="#ffb020" style="animation-delay:-1.4s"/>
+  <path d="M318 96v14M323 96v14M328 96v14M333 96v14M338 96v14M343 96v14" stroke="#15171a" stroke-width="2.4"/>
+  <circle cx="356" cy="103" r="2" fill="#00B4AB"/>
+  <rect x="28" y="118" width="344" height="24" rx="3" fill="url(#sr-face)" stroke="#4b5059" stroke-width=".8"/><g fill="#7a808a"><circle cx="34" cy="130" r="2.2"/><circle cx="366" cy="130" r="2.2"/></g>
+  <rect x="42" y="123" width="92" height="14" rx="1.5" fill="#e9ecef"/>
+  <text x="48" y="133" font-size="8.5" fill="#1f2328">esentis</text>
+  <rect x="146" y="122" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M151 127h20M151 130h20M151 133h20" stroke="#33373e"/>
+    <circle class="sr-l2" cx="178" cy="130" r="2" fill="#3ef07a" style="animation-delay:-0.2s"/><rect x="188" y="122" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M193 127h20M193 130h20M193 133h20" stroke="#33373e"/>
+    <circle class="sr-l0" cx="220" cy="130" r="2" fill="#ffb020" style="animation-delay:-0.6s"/><rect x="230" y="122" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M235 127h20M235 130h20M235 133h20" stroke="#33373e"/>
+    <circle class="sr-l2" cx="262" cy="130" r="2" fill="#3ef07a" style="animation-delay:-0.9s"/><rect x="272" y="122" width="38" height="16" rx="1.5" fill="#202328" stroke="#454a52" stroke-width=".8"/><path d="M277 127h20M277 130h20M277 133h20" stroke="#33373e"/>
+    <circle class="sr-l0" cx="304" cy="130" r="2" fill="#3ef07a" style="animation-delay:-1.2s"/>
+  <path d="M318 123v14M323 123v14M328 123v14M333 123v14M338 123v14M343 123v14" stroke="#15171a" stroke-width="2.4"/>
+  <circle cx="356" cy="130" r="2" fill="#00B4AB"/>
+</g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .gg-h{animation:gg-h 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}@keyframes gg-h{0%{transform:scale(1);opacity:.8}70%,100%{transform:scale(2.2);opacity:0}} }</style>
+<rect x=".5" y=".5" width="399" height="149" rx="12" fill="#0f1218" stroke="#262c36"/>
+<g fill="none" stroke-width="2.6">
+  <path d="M14 100H300" stroke="#8b949e"/>
+  <path d="M72 100C84 100 80 76 91 76H205C216 76 212 100 224 100" stroke="#00B4AB"/>
+  <path d="M186 100C198 100 194 124 205 124H243C254 124 250 100 262 100" stroke="hsl(357, 70%, 62%)"/>
+</g>
+<circle cx="110" cy="76" r="4.5" fill="#00B4AB"/><circle cx="148" cy="76" r="4.5" fill="#00B4AB"/><circle cx="186" cy="76" r="4.5" fill="#00B4AB"/><circle cx="224" cy="124" r="4.5" fill="hsl(357, 70%, 62%)"/>
+<g fill="#0f1218" stroke="#8b949e" stroke-width="2.4"><circle cx="34" cy="100" r="4.5"/><circle cx="72" cy="100" r="4.5"/><circle cx="110" cy="100" r="4.5"/><circle cx="148" cy="100" r="4.5"/><circle cx="186" cy="100" r="4.5"/><circle cx="224" cy="100" r="4.5" stroke="#00B4AB"/><circle cx="262" cy="100" r="4.5" stroke="hsl(357, 70%, 62%)"/></g>
+<circle class="gg-h" cx="300" cy="100" r="6" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
+<circle cx="300" cy="100" r="6" fill="#e6edf3"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">
+  <text x="106" y="66" fill="#00B4AB">feat/load</text>
+  <text x="220" y="143" fill="hsl(357, 70%, 62%)">fix/switch</text>
+  <rect x="312" y="92" width="72" height="16" rx="8" fill="#e6edf3"/>
+  <text x="348" y="103" font-weight="700" fill="#0f1218" text-anchor="middle">HEAD → main</text>
+</g>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="22" y="30" font-size="17" font-weight="700" fill="#e6edf3">load_switch</text>
+  <text x="378" y="30" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#e6edf3" text-anchor="end">★ 20  ⑂ 3</text>
+  <text x="22" y="48" font-size="11" fill="#8b949e">A highly customizable toggle switch with…</text>
+  <circle cx="341.8" cy="44.5" r="4" fill="#00B4AB"/>
+  <text x="378" y="48" font-size="10.5" fill="#c9d1d9" text-anchor="end">Dart</text>
+</g>
+</svg>

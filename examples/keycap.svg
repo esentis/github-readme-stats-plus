@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .kc-p{animation:kc-p 3.7s ease-in-out infinite}@keyframes kc-p{0%,8.1%,100%{transform:translateY(0)}3.2%{transform:translateY(3px)}} }</style>
+<defs><linearGradient id="kc-top" x2="0" y2="1"><stop offset="0" stop-color="#f3f4f6"/><stop offset="1" stop-color="#d6d9df"/></linearGradient>
+<linearGradient id="kc-bg" x2="0" y2="1"><stop offset="0" stop-color="#2d3036"/><stop offset="1" stop-color="#202226"/></linearGradient></defs>
+<rect width="400" height="150" rx="12" fill="url(#kc-bg)"/>
+<rect x="27" y="55" width="346" height="64" rx="8" fill="#16171a"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="22" y="30" font-size="17" font-weight="700" fill="#f1f2f4">load_switch</text>
+  <text x="22" y="46" font-size="11" fill="#9aa0aa">A highly customizable toggle switch with a loading state.</text>
+  <rect x="35" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="35" y="61" width="42" height="48" rx="6" fill="#00B4AB"/><rect x="35" y="61" width="42" height="48" rx="6" fill="#000" fill-opacity=".22"/>
+  <g class="kc-p" style="animation-delay:0.0s">
+    <rect x="39" y="63" width="34" height="38" rx="5" fill="#00B4AB"/>
+    <rect x="39" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="45" y="82" font-size="15" font-weight="700" fill="#fff">L</text>
+  </g><rect x="83" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="83" y="61" width="42" height="48" rx="6" fill="#b9bec7"/>
+  <g class="kc-p" style="animation-delay:0.3s">
+    <rect x="87" y="63" width="34" height="38" rx="5" fill="url(#kc-top)"/>
+    <rect x="87" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="93" y="82" font-size="15" font-weight="700" fill="#2b2d33">O</text>
+  </g><rect x="131" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="131" y="61" width="42" height="48" rx="6" fill="#b9bec7"/>
+  <g class="kc-p" style="animation-delay:0.6s">
+    <rect x="135" y="63" width="34" height="38" rx="5" fill="url(#kc-top)"/>
+    <rect x="135" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="141" y="82" font-size="15" font-weight="700" fill="#2b2d33">A</text>
+  </g><rect x="179" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="179" y="61" width="42" height="48" rx="6" fill="#b9bec7"/>
+  <g class="kc-p" style="animation-delay:0.9s">
+    <rect x="183" y="63" width="34" height="38" rx="5" fill="url(#kc-top)"/>
+    <rect x="183" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="189" y="82" font-size="15" font-weight="700" fill="#2b2d33">D</text>
+  </g><rect x="227" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="227" y="61" width="42" height="48" rx="6" fill="#b9bec7"/>
+  <g class="kc-p" style="animation-delay:1.2s">
+    <rect x="231" y="63" width="34" height="38" rx="5" fill="url(#kc-top)"/>
+    <rect x="231" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="237" y="82" font-size="15" font-weight="700" fill="#2b2d33">S</text>
+  </g><rect x="275" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="275" y="61" width="42" height="48" rx="6" fill="#b9bec7"/>
+  <g class="kc-p" style="animation-delay:1.5s">
+    <rect x="279" y="63" width="34" height="38" rx="5" fill="url(#kc-top)"/>
+    <rect x="279" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="285" y="82" font-size="15" font-weight="700" fill="#2b2d33">W</text>
+  </g><rect x="323" y="64" width="42" height="48" rx="6" fill="#000" fill-opacity=".45"/>
+  <rect x="323" y="61" width="42" height="48" rx="6" fill="#b9bec7"/>
+  <g class="kc-p" style="animation-delay:1.8s">
+    <rect x="327" y="63" width="34" height="38" rx="5" fill="url(#kc-top)"/>
+    <rect x="327" y="63" width="34" height="38" rx="5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+    <text x="333" y="82" font-size="15" font-weight="700" fill="#2b2d33">I</text>
+  </g>
+  <g transform="translate(22 0)"><circle cx="5" cy="134" r="5" fill="#00B4AB"/><text x="16" y="138.14" font-size="11.5" fill="#d5d8de" font-weight="600">Dart</text></g><g transform="translate(81.6 0)"><path transform="translate(0 127) scale(0.875)" fill-rule="evenodd" fill="#9aa0aa" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="138.14" font-size="11.5" fill="#d5d8de" font-weight="600">20</text></g><g transform="translate(131.39999999999998 0)"><path transform="translate(0 127) scale(0.875)" fill-rule="evenodd" fill="#9aa0aa" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="138.14" font-size="11.5" fill="#d5d8de" font-weight="600">3</text></g>
+</g>
+</svg>

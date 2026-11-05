@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .osc-w{animation:osc-w 4s linear infinite}@keyframes osc-w{to{transform:translateX(-115px)}}
+.osc-run{animation:osc-run 2s steps(1) infinite}@keyframes osc-run{50%{opacity:.2}} }</style>
+<defs><clipPath id="osc-scr"><rect x="17" y="39" width="230" height="96" rx="3"/></clipPath>
+<radialGradient id="osc-knob" cx=".4" cy=".35"><stop offset="0" stop-color="#9aa0a8"/><stop offset="1" stop-color="#3a3e45"/></radialGradient>
+<radialGradient id="osc-crt"><stop offset="0" stop-color="#0b2a1f"/><stop offset="1" stop-color="#03100b"/></radialGradient>
+<filter id="osc-glow" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="400" height="150" rx="12" fill="#2e3137"/>
+<rect x=".5" y=".5" width="399" height="149" rx="11.5" fill="none" stroke="#484c54"/>
+<rect x="12" y="34" width="240" height="106" rx="6" fill="#141619"/>
+<rect x="17" y="39" width="230" height="96" rx="3" fill="url(#osc-crt)"/>
+<g fill="none" stroke="#2f7a5c" stroke-opacity=".55"><path d="M40 39V135M63 39V135M86 39V135M109 39V135M132 39V135M155 39V135M178 39V135M201 39V135M224 39V135M17 51H247M17 63H247M17 75H247M17 87H247M17 99H247M17 111H247M17 123H247" stroke-dasharray="1 2.6"/><path d="M17 87H247M132 39V135M21.6 85.5v3M26.200000000000003 85.5v3M30.799999999999997 85.5v3M35.4 85.5v3M40 85.5v3M44.6 85.5v3M49.199999999999996 85.5v3M53.8 85.5v3M58.4 85.5v3M63 85.5v3M67.6 85.5v3M72.19999999999999 85.5v3M76.79999999999998 85.5v3M81.39999999999999 85.5v3M85.99999999999999 85.5v3M90.6 85.5v3M95.19999999999999 85.5v3M99.79999999999998 85.5v3M104.39999999999999 85.5v3M108.99999999999999 85.5v3M113.6 85.5v3M118.19999999999999 85.5v3M122.79999999999998 85.5v3M127.39999999999999 85.5v3M132 85.5v3M136.6 85.5v3M141.2 85.5v3M145.79999999999998 85.5v3M150.39999999999998 85.5v3M154.99999999999997 85.5v3M159.6 85.5v3M164.2 85.5v3M168.79999999999998 85.5v3M173.39999999999998 85.5v3M177.99999999999997 85.5v3M182.6 85.5v3M187.2 85.5v3M191.79999999999998 85.5v3M196.39999999999998 85.5v3M200.99999999999997 85.5v3M205.6 85.5v3M210.2 85.5v3M214.79999999999998 85.5v3M219.39999999999998 85.5v3M223.99999999999997 85.5v3M228.59999999999997 85.5v3M233.2 85.5v3M237.79999999999998 85.5v3M242.39999999999998 85.5v3M130.5 43.8h3M130.5 48.6h3M130.5 53.4h3M130.5 58.2h3M130.5 63h3M130.5 67.8h3M130.5 72.6h3M130.5 77.4h3M130.5 82.19999999999999h3M130.5 87h3M130.5 91.8h3M130.5 96.6h3M130.5 101.4h3M130.5 106.2h3M130.5 111h3M130.5 115.8h3M130.5 120.6h3M130.5 125.39999999999999h3M130.5 130.2h3"/></g>
+<g clip-path="url(#osc-scr)"><g class="osc-w" filter="url(#osc-glow)"><polyline points="17,72.0 19,71.2 21,68.3 23,64.6 25,61.6 27,60.7 29,62.6 31,66.9 33,72.6 35,78.0 37,82.0 39,83.9 41,84.3 43,84.4 45,85.7 47,89.1 49,94.9 51,102.2 53,109.4 55,115.1 57,118.1 59,118.3 61,116.5 63,114.3 65,112.9 67,113.3 69,115.2 71,117.6 73,119.0 75,118.2 77,114.6 79,108.8 81,101.9 83,95.6 85,91.3 87,89.5 89,89.6 91,90.4 93,90.3 95,88.5 97,84.6 99,79.4 101,74.3 103,70.9 105,69.9 107,71.4 109,74.4 111,77.2 113,78.6 115,77.6 117,74.4 119,70.1 121,66.2 123,64.1 125,64.4 127,66.5 129,69.4 131,71.6 133,71.9 135,69.9 137,66.5 139,62.9 141,60.8 143,61.3 145,64.5 147,69.7 149,75.4 151,80.2 153,83.2 155,84.2 157,84.3 159,84.8 161,87.1 163,91.8 165,98.5 167,105.9 169,112.5 171,116.9 173,118.5 175,117.5 177,115.4 179,113.4 181,112.9 183,114.1 185,116.4 187,118.5 189,118.9 191,116.8 193,111.9 195,105.3 197,98.6 199,93.2 201,90.1 203,89.4 205,90.0 207,90.5 209,89.7 211,86.8 213,82.1 215,76.8 217,72.3 219,70.1 221,70.4 223,72.8 225,75.9 227,78.2 229,78.4 231,76.2 233,72.3 235,68.0 237,64.9 239,64.0 241,65.3 243,68.0 245,70.7 247,72.0 249,71.2 251,68.3 253,64.6 255,61.6 257,60.7 259,62.6 261,66.9 263,72.6 265,78.0 267,82.0 269,83.9 271,84.3 273,84.4 275,85.7 277,89.1 279,94.9 281,102.2 283,109.4 285,115.1 287,118.1 289,118.3 291,116.5 293,114.3 295,112.9 297,113.3 299,115.2 301,117.6 303,119.0 305,118.2 307,114.6 309,108.8 311,101.9 313,95.6 315,91.3 317,89.5 319,89.6 321,90.4 323,90.3 325,88.5 327,84.6 329,79.4 331,74.3 333,70.9 335,69.9 337,71.4 339,74.4 341,77.2 343,78.6 345,77.6 347,74.4 349,70.1 351,66.2 353,64.1 355,64.4 357,66.5 359,69.4 361,71.6 363,71.9" fill="none" stroke="#7dffb8" stroke-width="1.8" stroke-linejoin="round"/></g></g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="7.5" fill="#5fd39a"><text x="22" y="49">CH1 2V</text><text x="242" y="49" text-anchor="end">10ms</text></g>
+<rect x="262" y="34" width="126" height="106" rx="6" fill="#26292e"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="18" y="25" font-size="15" font-weight="700" fill="#f1f3f5">load_switch</text>
+  <circle cx="348.8" cy="21" r="4.5" fill="#00B4AB"/>
+  <text x="384" y="25" font-size="10.5" fill="#c3c7ce" text-anchor="end">Dart</text>
+  <g transform="translate(294 66)">
+    <path d="M0 -18V-21" stroke="#6b7079" transform="rotate(0)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(30)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(60)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(90)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(120)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(150)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(180)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(210)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(240)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(270)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(300)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(330)"/>
+    <circle r="15" fill="#18191d" stroke="#4a4e56"/><circle r="11.5" fill="url(#osc-knob)"/>
+    <path d="M0 -3V-10" stroke="#00B4AB" stroke-width="2.4" stroke-linecap="round" transform="rotate(-46)"/>
+  </g>
+  <text x="294" y="104" font-size="13" font-weight="700" fill="#f1f3f5" text-anchor="middle">20</text>
+  <text x="294" y="116" font-size="7.5" fill="#9aa0a8" text-anchor="middle" letter-spacing="1">★ STARS</text>
+  <g transform="translate(356 66)">
+    <path d="M0 -18V-21" stroke="#6b7079" transform="rotate(0)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(30)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(60)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(90)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(120)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(150)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(180)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(210)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(240)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(270)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(300)"/><path d="M0 -18V-21" stroke="#6b7079" transform="rotate(330)"/>
+    <circle r="15" fill="#18191d" stroke="#4a4e56"/><circle r="11.5" fill="url(#osc-knob)"/>
+    <path d="M0 -3V-10" stroke="#00B4AB" stroke-width="2.4" stroke-linecap="round" transform="rotate(-94)"/>
+  </g>
+  <text x="356" y="104" font-size="13" font-weight="700" fill="#f1f3f5" text-anchor="middle">3</text>
+  <text x="356" y="116" font-size="7.5" fill="#9aa0a8" text-anchor="middle" letter-spacing="1">⑂ FORKS</text>
+  <g fill="#5b6069"><circle cx="282" cy="129" r="5.5"/><circle cx="304" cy="129" r="5.5"/></g>
+  <g fill="#1b1d21"><circle cx="282" cy="129" r="2.4"/><circle cx="304" cy="129" r="2.4"/></g>
+  <text x="362" y="132" font-size="7.5" fill="#9aa0a8" text-anchor="end" letter-spacing="1">RUN</text>
+  <circle class="osc-run" cx="372" cy="129" r="3.5" fill="#39ff88"/>
+</g>
+</svg>

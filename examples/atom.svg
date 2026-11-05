@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .at-x{animation:at-x 2s cubic-bezier(.37,0,.63,1) infinite alternate}.at-y{animation:at-y 2s cubic-bezier(.37,0,.63,1) infinite alternate}.at-1{animation-duration:2.5s}.at-2{animation-duration:3s}
+@keyframes at-x{from{transform:translateX(-74px)}to{transform:translateX(74px)}}@keyframes at-y{from{transform:translateY(-22px)}to{transform:translateY(22px)}}
+.at-n{animation:at-n 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes at-n{50%{transform:scale(1.15);opacity:.7}} }</style>
+<defs><radialGradient id="at-bg" cx=".75" cy=".5" r=".8"><stop offset="0" stop-color="#1d1846"/><stop offset="1" stop-color="#0a0918"/></radialGradient>
+<radialGradient id="at-glow"><stop offset="0" stop-color="#00B4AB" stop-opacity=".6"/><stop offset="1" stop-color="#00B4AB" stop-opacity="0"/></radialGradient>
+<filter id="at-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="400" height="150" rx="12" fill="url(#at-bg)"/>
+<g transform="translate(302 75)">
+  <circle class="at-n" r="26" fill="url(#at-glow)"/>
+  <g fill="none" stroke="#a9b2ff" stroke-opacity=".38" stroke-width="1.2"><ellipse rx="74" ry="22" transform="rotate(0)"/><ellipse rx="74" ry="22" transform="rotate(60)"/><ellipse rx="74" ry="22" transform="rotate(120)"/></g>
+  <g stroke="#0a0918" stroke-opacity=".5"><circle cx="0" cy="0" r="4.6" fill="#00B4AB"/><circle cx="5" cy="-3" r="4.6" fill="#c9cde6"/><circle cx="-5" cy="-2" r="4.6" fill="#00B4AB"/><circle cx="2" cy="5" r="4.6" fill="#c9cde6"/><circle cx="-3" cy="5" r="4.6" fill="#00B4AB"/><circle cx="5" cy="3" r="4.6" fill="#c9cde6"/><circle cx="-1" cy="-6" r="4.6" fill="#00B4AB"/><circle cx="-6" cy="3" r="4.6" fill="#c9cde6"/></g>
+  <g fill="#eef1ff" filter="url(#at-blur)"><g transform="rotate(0)"><g class="at-x at-0" transform="translate(-74.0 0)" style="animation-delay:-0.00s">
+    <g class="at-y at-0" transform="translate(0 0.0)" style="animation-delay:-1.00s"><circle r="3.6"/></g></g></g><g transform="rotate(60)"><g class="at-x at-1" transform="translate(-40.0 0)" style="animation-delay:-0.80s">
+    <g class="at-y at-1" transform="translate(0 18.5)" style="animation-delay:-2.05s"><circle r="3.6"/></g></g></g><g transform="rotate(120)"><g class="at-x at-2" transform="translate(30.8 0)" style="animation-delay:-1.91s">
+    <g class="at-y at-2" transform="translate(0 20.0)" style="animation-delay:-3.41s"><circle r="3.6"/></g></g></g></g>
+</g>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <circle cx="26" cy="25" r="4" fill="#00B4AB"/>
+  <text x="36" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="#9aa0c8" letter-spacing="2">DART</text>
+  <text x="22" y="54" font-size="20" font-weight="700" fill="#f1f2ff">load_switch</text>
+  <text font-size="11.5" fill="#aab0d6"><tspan x="22" y="76">A highly customizable toggle</tspan><tspan x="22" y="91">switch with a loading state.</tspan></text>
+  <text x="22" y="127" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" font-weight="700" fill="#f1f2ff"><tspan fill="#8088c0" font-weight="400">Z </tspan>★ 20<tspan dx="12" fill="#8088c0" font-weight="400">e⁻ </tspan>⑂ 3</text>
+</g>
+</svg>
