@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Mid-90s dialog box on a teal desktop.";
 
@@ -17,7 +17,8 @@ const button = (x, label) =>
 export default (r) =>
   svg(
     r.name,
-    `<defs><linearGradient id="title"><stop offset="0" stop-color="#000080"/><stop offset="1" stop-color="#1084d0"/></linearGradient></defs>
+    `${motion(".rw-busy { opacity: 1; transform-box: fill-box; transform-origin: center; animation: rw-busy 4s ease-in-out infinite } @keyframes rw-busy { 0%, 40% { transform: none } 50%, 90% { transform: rotate(180deg) } 100% { transform: rotate(360deg) } }")}
+<defs><linearGradient id="title"><stop offset="0" stop-color="#000080"/><stop offset="1" stop-color="#1084d0"/></linearGradient></defs>
 <rect width="400" height="150" rx="4" fill="#008080"/>
 ${bevel(14, 12, 372, 126)}
 <rect x="18" y="16" width="364" height="18" fill="url(#title)"/>
@@ -30,5 +31,6 @@ ${bevel(14, 12, 372, 126)}
   ${button(168, `★ ${r.stars}`)}
   ${button(240, `⑂ ${r.forks}`)}
   ${button(312, fit(r.lang.name, 56, 11))}
+  <g class="rw-busy" opacity="0" stroke="#000" stroke-linejoin="round"><path d="M136 106h11v2l-4 5l4 5v2h-11v-2l4-5l-4-5Z" fill="#fff"/><path d="M138.5 119.5h6l-3-3.5Z" fill="#000"/></g>
 </g>`,
   );

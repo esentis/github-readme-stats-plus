@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, svg, words, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, svg, words, wrap } from "../card.js";
 
 export const about = "Element tile: stars as the atomic number, a symbol made from the name.";
 
@@ -8,8 +8,9 @@ export default (r) => {
   const symbol = a[0].toUpperCase() + (b[0] ?? "").toLowerCase();
   return svg(
     r.name,
-    `<rect x=".5" y=".5" width="399" height="149" rx="10" fill="#fbfaf7" stroke="#d9d6cf"/>
-<rect x="18" y="18" width="114" height="114" rx="6" fill="${r.lang.color}" fill-opacity=".14" stroke="${r.lang.color}" stroke-width="2.5"/>
+    `${motion(".pd-glow { animation: pd-glow 5s ease-in-out infinite } @keyframes pd-glow { 50% { fill-opacity: .28 } }")}
+<rect x=".5" y=".5" width="399" height="149" rx="10" fill="#fbfaf7" stroke="#d9d6cf"/>
+<rect class="pd-glow" x="18" y="18" width="114" height="114" rx="6" fill="${r.lang.color}" fill-opacity=".14" stroke="${r.lang.color}" stroke-width="2.5"/>
 <g font-family="${FONT}" fill="#1c1b19">
   <text x="28" y="40" font-size="14" font-weight="700">${esc(r.stars)}</text>
   <text x="122" y="40" font-size="11" text-anchor="end" fill="#6b6760">${esc(r.forks)}</text>

@@ -1,4 +1,4 @@
-import { esc, fit, svg } from "../card.js";
+import { esc, fit, motion, svg } from "../card.js";
 
 export const about = "Western wanted poster on aged paper: slab-serif WANTED, the repo name, its crime as the description and a star reward.";
 
@@ -8,10 +8,12 @@ const SLAB = "Rockwell, 'Roboto Slab', 'Courier New', Georgia, serif";
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".wt-sway{transform-origin:200px 7px;animation:wt-sway 6s ease-in-out -1.5s infinite}@keyframes wt-sway{0%,100%{transform:rotate(-.3deg)}50%{transform:rotate(.3deg)}}")}
+<defs>
   <radialGradient id="age" r=".75"><stop offset=".55" stop-color="#ead6a8"/><stop offset="1" stop-color="#c49a5a"/></radialGradient>
   <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" seed="7"/><feColorMatrix values="0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .08 0 0 0 .55 -.18"/></filter>
 </defs>
+<g class="wt-sway">
 <rect width="400" height="150" rx="6" fill="url(#age)"/>
 <rect width="400" height="150" rx="6" filter="url(#grain)"/>
 <rect x="9" y="9" width="382" height="132" fill="none" stroke="#3b2414" stroke-width="2"/>
@@ -30,5 +32,6 @@ export default (r) =>
   </g>
   <text x="70" y="133" font-size="10">${esc(fit(r.lang.name.toUpperCase(), 100, 10, 0.68))}</text>
   <text x="330" y="133" font-size="10">⑂ ${esc(r.forks)}</text>
+</g>
 </g>`,
   );

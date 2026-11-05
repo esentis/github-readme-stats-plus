@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .pd-glow { animation: pd-glow 5s ease-in-out infinite } @keyframes pd-glow { 50% { fill-opacity: .28 } } }</style>
 <rect x=".5" y=".5" width="399" height="149" rx="10" fill="#fbfaf7" stroke="#d9d6cf"/>
-<rect x="18" y="18" width="114" height="114" rx="6" fill="#00B4AB" fill-opacity=".14" stroke="#00B4AB" stroke-width="2.5"/>
+<rect class="pd-glow" x="18" y="18" width="114" height="114" rx="6" fill="#00B4AB" fill-opacity=".14" stroke="#00B4AB" stroke-width="2.5"/>
 <g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" fill="#1c1b19">
   <text x="28" y="40" font-size="14" font-weight="700">20</text>
   <text x="122" y="40" font-size="11" text-anchor="end" fill="#6b6760">3</text>

@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Art nouveau: cream paper, sage whiplash curves and flowers in the language colour, elegant serif.";
 
@@ -9,14 +9,15 @@ const SAGE = "#7f9270";
 const corner = (t, c) => `<g transform="${t}">
   <path d="M15 96C15 58 22 26 44 18C64 11 86 14 96 22C104 29 98 40 90 36C84 33 88 26 93 28" fill="none" stroke="${SAGE}" stroke-width="1.6" stroke-linecap="round"/>
   <path d="M22 70c-6-6-6-14 0-20c6 6 6 14 0 20zM62 14c6-5 14-5 20 1c-6 5-14 5-20-1z" fill="${SAGE}" fill-opacity=".7"/>
-  <g transform="translate(30 30)">${[0, 72, 144, 216, 288].map((a) => `<ellipse cy="-6" rx="3.2" ry="6" fill="${c}" fill-opacity=".85" transform="rotate(${a})"/>`).join("")}<circle r="2.6" fill="#f4eedc"/></g>
+  <g transform="translate(30 30)"><g class="nv-bloom">${[0, 72, 144, 216, 288].map((a) => `<ellipse cy="-6" rx="3.2" ry="6" fill="${c}" fill-opacity=".85" transform="rotate(${a})"/>`).join("")}<circle r="2.6" fill="#f4eedc"/></g></g>
 </g>`;
 
 // Art nouveau: flowing sage curves, lang-coloured flowers in each corner, centred serif text.
 export default (r) =>
   svg(
     r.name,
-    `<rect width="400" height="150" rx="10" fill="#f4eedc"/>
+    `${motion(".nv-bloom { animation: nv-bloom 8s ease-in-out infinite } @keyframes nv-bloom { 50% { transform: rotate(14deg) } }")}
+<rect width="400" height="150" rx="10" fill="#f4eedc"/>
 <rect x="6.5" y="6.5" width="387" height="137" rx="8" fill="none" stroke="${SAGE}" stroke-opacity=".6"/>
 ${corner("", r.lang.color)}
 ${corner("translate(400 0) scale(-1 1)", r.lang.color)}

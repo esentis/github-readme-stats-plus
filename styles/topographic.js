@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Contour-line map with haloed map-label typography and a starred summit.";
 
@@ -23,11 +23,13 @@ const HALO = 'paint-order="stroke" stroke="#f1ead6" stroke-width="4" stroke-line
 export default (r) =>
   svg(
     r.name,
-    `<defs><clipPath id="clip"><rect width="400" height="150" rx="10"/></clipPath></defs>
+    `${motion(".tp-ping{transform-box:fill-box;transform-origin:center;animation:tp-ping 3.5s ease-out infinite}@keyframes tp-ping{0%{transform:scale(.8);opacity:0}15%{opacity:.8}100%{transform:scale(2.2);opacity:0}}")}
+<defs><clipPath id="clip"><rect width="400" height="150" rx="10"/></clipPath></defs>
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#f1ead6"/>
   <g stroke="#b7ad8c" stroke-opacity=".35"><path d="M100 0V150M200 0V150M300 0V150M0 50H400M0 100H400"/></g>
   <g fill="#6f8f4e" fill-opacity=".045" stroke="#8a7d55" stroke-opacity=".6" stroke-width=".8" stroke-linejoin="round">${hill(318, 86, 15)}${hill(30, 160, 9)}</g>
+  <circle class="tp-ping" cx="318" cy="87" r="4" fill="none" stroke="#5b4a2a" vector-effect="non-scaling-stroke" opacity="0"/>
   <path d="M314 90l4-7 4 7z" fill="#5b4a2a"/>
   <text x="318" y="104" font-family="${FONT}" font-size="10" font-weight="700" fill="#5b4a2a" text-anchor="middle" ${HALO}>★ ${esc(r.stars)}</text>
 </g>

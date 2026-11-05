@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Postage stamp: perforated edge, engraved frame, the star count as the denomination and a postmark.";
 
@@ -13,7 +13,8 @@ export default (r) => {
   const wave = (y) => `<path d="M262 ${y}q10-5 20 0t20 0t20 0t20 0t20 0" />`;
   return svg(
     r.name,
-    `<defs>
+    `${motion(".st-mark{transform-origin:322px 104px;animation:st-mark 7s ease-in-out infinite}@keyframes st-mark{0%,82%,100%{transform:none}88%{transform:scale(1.05) rotate(-3deg)}94%{transform:scale(.98)}}")}
+<defs>
   <mask id="perf"><rect width="400" height="150" fill="#fff"/><g fill="#000">${perf.join("")}</g></mask>
   <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V4" stroke="${r.lang.color}" stroke-width="1.2"/></pattern>
 </defs>
@@ -30,7 +31,7 @@ export default (r) => {
   <text x="362" y="62" font-size="${r.stars.length > 3 ? 24 : 32}" font-weight="700" text-anchor="end">${esc(r.stars)}</text>
   <text x="362" y="78" font-size="10" letter-spacing="2" text-anchor="end">★ STARS</text>
 </g>
-<g fill="none" stroke="${INK}" stroke-opacity=".45" stroke-width="1.3">
+<g class="st-mark" fill="none" stroke="${INK}" stroke-opacity=".45" stroke-width="1.3">
   <circle cx="322" cy="104" r="20"/><circle cx="322" cy="104" r="15"/>${[96, 104, 112].map(wave).join("")}
 </g>`,
   );

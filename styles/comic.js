@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, textWidth, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Comic strip: two inked panels on cream with cyan halftone, a narration box, an outlined title and a POW burst with the stars.";
 
@@ -26,7 +26,8 @@ export default (r) => {
   const cap = fit(`MEANWHILE, AT @${r.owner.toUpperCase()}…`, 224, 10.5, 0.72);
   return svg(
     r.name,
-    `<defs>
+    `${motion(".cm-pow{transform-origin:330px 75px;animation:cm-pow 5s ease-in-out infinite}@keyframes cm-pow{0%,70%,100%{transform:none}78%{transform:scale(.92)}86%{transform:scale(1.02)}}")}
+<defs>
   <pattern id="tone" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="3" cy="3" r="1.5" fill="#29b6d8" fill-opacity=".45"/></pattern>
   <clipPath id="act"><rect x="262" y="6" width="132" height="138"/></clipPath>
 </defs>
@@ -37,7 +38,7 @@ export default (r) => {
   <rect x="262" y="6" width="132" height="138" fill="#ffe9a8"/>
   <path d="${speed}" stroke="#111" stroke-opacity=".25" stroke-width="2"/>
 </g>
-<g stroke="#111" stroke-linejoin="round">
+<g class="cm-pow" stroke="#111" stroke-linejoin="round">
   <polygon points="${burst(330, 75, 60, 40, 11)}" fill="#e63946" stroke-width="3"/>
   <polygon points="${burst(330, 75, 46, 32, 11)}" fill="#ffd60a" stroke-width="2"/>
 </g>

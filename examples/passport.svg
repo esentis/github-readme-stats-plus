@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ps-stamp { transform-box: fill-box; transform-origin: center; animation: ps-stamp 7s ease-out infinite } @keyframes ps-stamp { 0%, 70%, 100% { opacity: 1; transform: none } 76% { opacity: .4; transform: scale(1.15) } 84% { opacity: 1; transform: scale(.97) } 90% { transform: none } } }</style>
 <defs>
   <pattern id="guilloche" width="24" height="12" patternUnits="userSpaceOnUse"><path d="M0 6Q6 0 12 6T24 6" fill="none" stroke="#c9b48a" stroke-opacity=".35"/></pattern>
   <path id="ring" d="M262 75a38 38 0 1176 0a38 38 0 11-76 0"/>
@@ -11,7 +12,7 @@
   <text font-size="12.5" font-style="italic" fill="#5a4e3c"><tspan x="22" y="84">A highly customizable toggle</tspan><tspan x="22" y="101">switch with a loading state.</tspan></text>
   <text x="22" y="132" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8a7550">P&#60;ESENTIS&#60;&#60;LOAD&#60;SWITCH&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;</text>
 </g>
-<g transform="rotate(-12 300 75)" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+<g class="ps-stamp"><g transform="rotate(-12 300 75)" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
   <g fill="none" stroke="#b3261e" stroke-opacity=".85">
     <circle cx="300" cy="75" r="52" stroke-width="2.5"/>
     <circle cx="300" cy="75" r="45" stroke-dasharray="2 3"/>
@@ -22,5 +23,5 @@
     <text x="300" y="79.33333333333333" font-size="13">DART</text>
     <text x="300" y="94" font-size="8">⑂ 3</text>
   </g>
-</g>
+</g></g>
 </svg>

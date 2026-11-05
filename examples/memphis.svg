@@ -1,12 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .mp-bob { transform-box: fill-box; transform-origin: center; animation: mp-bob 4s ease-in-out infinite } @keyframes mp-bob { 50% { transform: translateY(-2px) rotate(8deg) } } }</style>
 <defs><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.5" fill="#1a1a1a"/></pattern></defs>
 <rect width="400" height="150" rx="10" fill="#fff"/>
 <rect x="344" y="10" width="46" height="40" fill="url(#dots)"/>
 <path d="M8 138q7-10 14 0t14 0t14 0t14 0t14 0" fill="none" stroke="#20c5b5" stroke-width="4" stroke-linecap="round"/>
 <path d="M352 68l8 8l8-8l8 8l8-8M352 82l8 8l8-8l8 8l8-8" fill="none" stroke="#ff4f9a" stroke-width="3" stroke-linejoin="round"/>
-<path d="M10 12l16 4l-11 12Z" fill="#ffd23f" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
-<path d="M360 120l14-4l-4 14Z" fill="#20c5b5" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
-<path d="M300 132l10 4l-8 7Z" fill="#ff4f9a"/><path d="M106 7l8 3l-6 5Z" fill="#20c5b5"/><path d="M14 64l9 2l-5 7Z" fill="#ff4f9a"/>
+<path class="mp-bob" style="animation-delay:.5s" d="M10 12l16 4l-11 12Z" fill="#ffd23f" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+<path class="mp-bob" style="animation-delay:2s" d="M360 120l14-4l-4 14Z" fill="#20c5b5" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+<path class="mp-bob" style="animation-delay:1s" d="M300 132l10 4l-8 7Z" fill="#ff4f9a"/><path class="mp-bob" style="animation-delay:3s" d="M106 7l8 3l-6 5Z" fill="#20c5b5"/><path class="mp-bob" style="animation-delay:1.5s" d="M14 64l9 2l-5 7Z" fill="#ff4f9a"/>
 <circle cx="386" cy="104" r="5" fill="#ffd23f" stroke="#1a1a1a" stroke-width="2"/>
 <rect x="38" y="28" width="300" height="100" fill="#00B4AB" stroke="#1a1a1a" stroke-width="2"/>
 <rect x="32" y="22" width="300" height="100" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>

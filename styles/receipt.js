@@ -1,4 +1,4 @@
-import { MONO, barcode, esc, fit, lines, svg, wrap } from "../card.js";
+import { MONO, barcode, esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Thermal receipt: torn zig-zag edge, mono line items for stars, forks and language, a highlighted total and a barcode.";
 
@@ -11,7 +11,8 @@ export default (r) => {
   const torn = Array.from({ length: 50 }, (_, i) => `L${396 - i * 8} ${i % 2 ? 146 : 140}`).join("");
   return svg(
     r.name,
-    `<defs><filter id="shadow" x="-5%" y="-10%" width="110%" height="125%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-opacity=".25"/></filter></defs>
+    `${motion(".rc-scan { animation: rc-scan 4s ease-in-out infinite } @keyframes rc-scan { 0%, 100% { opacity: 0; transform: none } 15%, 85% { opacity: .8 } 50% { transform: translateY(15px) } }")}
+<defs><filter id="shadow" x="-5%" y="-10%" width="110%" height="125%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-opacity=".25"/></filter></defs>
 <path d="M4 4H396V140${torn}Z" fill="#fbfbf7" filter="url(#shadow)"/>
 <g font-family="${MONO}" fill="#2a2a28">
   <text x="200" y="24" font-size="15" font-weight="700" text-anchor="middle">${esc(fit(r.name.toUpperCase(), 360, 15))}</text>
@@ -27,6 +28,7 @@ export default (r) => {
   <g font-size="13" font-weight="700"><text x="24" y="117">TOTAL</text><text x="236" y="117" text-anchor="end">★ ${esc(r.stars)}</text></g>
   <text font-size="9" fill="#4a4a45">${lines(wrap(r.description.toUpperCase(), 20, 3), 260, 63, 11)}</text>
   <g>${barcode(r.name, 260, 96, 122, 16)}</g>
+  <rect class="rc-scan" x="257" y="96" width="128" height="1.2" fill="#e5322d" opacity="0"/>
   <text x="321" y="124" font-size="8" text-anchor="middle" letter-spacing="2">THANK YOU</text>
 </g>`,
   );

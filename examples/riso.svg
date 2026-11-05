@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ri-drift{animation:ri-drift 8s ease-in-out infinite}@keyframes ri-drift{0%,100%{transform:translate(2px,1.5px)}33%{transform:translate(3px,.6px)}66%{transform:translate(.8px,2.4px)}} }</style>
 <defs>
   <style>.ink{mix-blend-mode:multiply}</style>
   <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="2.5" cy="2.5" r="1.8" fill="#0078bf"/></pattern>
@@ -7,7 +8,7 @@
 </defs>
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#f5f0e6"/>
-  <g class="ink" fill="#ff48b0" transform="translate(2 1.5)">
+  <g class="ink ri-drift" fill="#ff48b0" transform="translate(2 1.5)">
     <circle cx="328" cy="62" r="54"/>
     <text x="22" y="46" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="24" font-weight="900">load_switch</text>
     <text x="22" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700">★ 20  ⑂ 3</text>

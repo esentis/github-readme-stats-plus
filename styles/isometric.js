@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Isometric 3D: a thick light slab with depth faces and a small staircase of blocks in the language colour.";
 
@@ -19,15 +19,16 @@ export default (r) => {
   const c = r.lang.color;
   return svg(
     r.name,
-    `<defs><pattern id="grid" width="24" height="13.86" patternUnits="userSpaceOnUse"><path d="M0 6.93L12 0L24 6.93L12 13.86Z" fill="none" stroke="#94a3b8" stroke-opacity=".18"/></pattern></defs>
+    `${motion(".is-hop{animation:is-hop 4s ease-in-out infinite}@keyframes is-hop{50%{transform:translateY(-3px)}}")}
+<defs><pattern id="grid" width="24" height="13.86" patternUnits="userSpaceOnUse"><path d="M0 6.93L12 0L24 6.93L12 13.86Z" fill="none" stroke="#94a3b8" stroke-opacity=".18"/></pattern></defs>
 <polygon points="18,4 18,124 6,131 6,11" fill="#b8c3d3"/>
 <polygon points="18,124 394,124 382,131 6,131" fill="#94a3b8"/>
 <rect x="18" y="4" width="376" height="120" rx="3" fill="#f8fafc"/>
 <rect x="18" y="4" width="376" height="120" rx="3" fill="url(#grid)" stroke="#cbd5e1"/>
 ${box(330, 82, 52, 8, "#e2e8f0")}
-${[[344, 74, 14, 42, c], [330, 82, 14, 28, c], [296, 82, 10, 10, "#cbd5e1"], [316, 90, 14, 14, c], [356, 94, 10, 10, "#cbd5e1"]]
+${[[344, 74, 14, 42, c], [330, 82, 14, 28, c], [296, 82, 10, 10, "#cbd5e1"], [316, 90, 14, 14, c]]
   .map(([x, y, a, h, fill]) => box(x, y - h, a, h, fill))
-  .join("")}
+  .join("")}<g class="is-hop">${box(356, 84, 10, 10, "#cbd5e1")}</g>
 <g font-family="${FONT}">
   <text x="36" y="38" font-size="19" font-weight="800" fill="#0f172a">${esc(fit(r.name, 226, 19))}</text>
   <text font-size="12" fill="#475569">${lines(wrap(r.description, 34), 36, 60, 16)}</text>

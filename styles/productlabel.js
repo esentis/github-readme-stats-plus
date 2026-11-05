@@ -1,4 +1,4 @@
-import { FONT, MONO, barcode, esc, fit, isLight, lines, svg, wrap } from "../card.js";
+import { FONT, MONO, barcode, esc, fit, isLight, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Retail product sticker on kraft card: big name, small-print description, barcode and a ★ price tag.";
 
@@ -9,7 +9,8 @@ export default (r) => {
   const price = r.stars.length > 3 ? 24 : 30;
   return svg(
     r.name,
-    `<defs><filter id="lift" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".3"/></filter></defs>
+    `${motion(".pl-shine { animation: pl-shine 7s ease-in-out infinite } @keyframes pl-shine { 0%, 70% { transform: none } 90%, 100% { transform: translateX(150px) } }")}
+<defs><filter id="lift" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".3"/></filter><clipPath id="tag"><rect x="270" y="44" width="106" height="62" rx="4"/></clipPath></defs>
 <rect width="400" height="150" rx="10" fill="#c9a578"/>
 <path d="M0 30H400M0 60H400M0 90H400M0 120H400" stroke="#b8925f" stroke-opacity=".5"/>
 <rect x="10" y="10" width="380" height="130" rx="9" fill="#fff" filter="url(#lift)"/>
@@ -24,6 +25,7 @@ export default (r) => {
   <rect x="270" y="44" width="106" height="62" rx="4" fill="#ffd400"/>
   <text x="323" y="58" font-size="8" font-weight="700" fill="#111" text-anchor="middle" letter-spacing="2">STARS</text>
   <text x="323" y="${82 + price * 0.3}" font-size="${price}" font-weight="900" fill="#111" text-anchor="middle">★${esc(r.stars)}</text>
+  <g clip-path="url(#tag)"><path class="pl-shine" d="M250 44H266L246 106H230Z" fill="#fff" fill-opacity=".55"/></g>
   <text x="376" y="132" font-size="8" fill="#888" text-anchor="end">${esc(fit(`by ${r.owner} · open source`, 200, 8))}</text>
 </g>`,
   );

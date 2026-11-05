@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, textWidth, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Sketchbook doodle on graph paper: a wobbly hand-drawn box, an arrow to a circled star count, handwriting.";
 
@@ -30,12 +30,13 @@ export default (r) => {
   const lang = fit(r.lang.name, 90, 13, 0.55);
   return svg(
     r.name,
-    `<defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#9ec5e8" stroke-opacity=".45" stroke-width=".6"/></pattern></defs>
+    `${motion(".sk-arrow{stroke-dasharray:1 2;animation:sk-arrow 6s ease-in-out infinite}@keyframes sk-arrow{0%,55%,100%{stroke-dashoffset:0}75%{stroke-dashoffset:1}}")}
+<defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#9ec5e8" stroke-opacity=".45" stroke-width=".6"/></pattern></defs>
 <rect width="400" height="150" rx="6" fill="#fdfdf7"/>
 <rect width="400" height="150" rx="6" fill="url(#grid)"/>
 <g fill="none" stroke="#2b2b2b" stroke-width="1.6" stroke-linecap="round">
   <path d="${box(16, 14, 258, 40)}${box(16, 14, 258, 40)}" stroke-width="1.2"/>
-  <path d="${stroke(278, 30, 304, 46)}${stroke(296, 47, 305, 47)}${stroke(304, 47, 302, 38)}"/>
+  <path class="sk-arrow" pathLength="1" d="${stroke(278, 30, 304, 46)}${stroke(296, 47, 305, 47)}${stroke(304, 47, 302, 38)}"/>
   <path d="${scribble(344, 60, 38, 23)}"/>
   <path d="${stroke(344 - textWidth(lang, 13, 0.27), 130, 344 + textWidth(lang, 13, 0.27), 129)}" stroke="${r.lang.color}" stroke-width="9" stroke-opacity=".55"/>
 </g>

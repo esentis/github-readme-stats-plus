@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Low-poly mosaic in shades of the language colour, seeded by the repo name.";
 
@@ -25,15 +25,16 @@ export default (r) => {
       tris.push(...(rand() < 0.5 ? [[a, b, e], [a, e, d]] : [[a, b, d], [b, e, d]]));
     }
   const facets = tris
-    .map((t) => {
+    .map((t, i) => {
       // Lighter toward the top right, plus per-facet noise.
       const s = (t[0][0] / 400) * 0.3 - (t[0][1] / 150) * 0.3 + (rand() - 0.5) * 0.3;
-      return `<path d="M${t.map((p) => p.map((n) => n.toFixed(1)).join(" ")).join("L")}Z" fill="${s > 0 ? "#fff" : "#000"}" fill-opacity="${Math.abs(s).toFixed(2)}"/>`;
+      return `<path d="M${t.map((p) => p.map((n) => n.toFixed(1)).join(" ")).join("L")}Z" fill="${s > 0 ? "#fff" : "#000"}" fill-opacity="${Math.abs(s).toFixed(2)}"${i % 7 ? "" : ` class="lp-glint" style="animation-delay:${(i % 4) * 1.5}s"`}/>`;
     })
     .join("");
   return svg(
     r.name,
-    `<defs>
+    `${motion(".lp-glint { animation: lp-glint 6s ease-in-out infinite } @keyframes lp-glint { 50% { opacity: .3 } }")}
+<defs>
   <clipPath id="clip"><rect width="400" height="150" rx="12"/></clipPath>
   <linearGradient id="scrim"><stop offset="0" stop-color="#000" stop-opacity=".68"/><stop offset=".6" stop-color="#000" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
 </defs>

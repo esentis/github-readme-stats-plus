@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Neumorphism: one soft grey surface with extruded and pressed-in shapes and pill-shaped stat chips.";
 
@@ -8,7 +8,8 @@ const BG = "#e4e8ef";
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".nm-dot{transform-box:fill-box;transform-origin:center;animation:nm-dot 4s ease-in-out infinite}@keyframes nm-dot{50%{transform:scale(.8)}}.nm-go{animation:nm-go 3s ease-in-out infinite}@keyframes nm-go{0%,60%,100%{transform:none}80%{transform:translate(1.5px,-1.5px)}}")}
+<defs>
   <filter id="out" x="-40%" y="-40%" width="180%" height="180%">
     <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/>
     <feOffset in="b" dx="5" dy="5" result="d"/><feFlood flood-color="#a3b1c6" flood-opacity=".8"/><feComposite in2="d" operator="in" result="dark"/>
@@ -25,7 +26,7 @@ export default (r) =>
 <rect width="400" height="150" rx="20" fill="${BG}"/>
 <circle cx="50" cy="48" r="25" fill="${BG}" filter="url(#out)"/>
 <circle cx="50" cy="48" r="15" fill="${BG}" filter="url(#in)"/>
-<circle cx="50" cy="48" r="7" fill="${r.lang.color}"/>
+<circle class="nm-dot" cx="50" cy="48" r="7" fill="${r.lang.color}"/>
 <g font-family="${FONT}">
   <text x="90" y="44" font-size="19" font-weight="700" fill="#3d4555">${esc(fit(r.name, 286, 19))}</text>
   <text font-size="12" fill="#7a8599">${lines(wrap(r.description, 46), 90, 64, 15)}</text>
@@ -38,6 +39,6 @@ export default (r) =>
     12,
   )}
   <rect x="352" y="105" width="28" height="28" rx="14" fill="${BG}" filter="url(#out)"/>
-  <path d="M361 124l10-10m-7 0h7v7" fill="none" stroke="#8a94a6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="nm-go" d="M361 124l10-10m-7 0h7v7" fill="none" stroke="#8a94a6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 </g>`,
   );

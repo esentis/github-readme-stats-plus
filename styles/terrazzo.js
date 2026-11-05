@@ -1,4 +1,4 @@
-import { FONT, esc, fit, isLight, lines, svg, wrap } from "../card.js";
+import { FONT, esc, fit, isLight, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Terrazzo: speckled stone chips unique to each repo, a solid label panel and a round star chip.";
 
@@ -26,13 +26,15 @@ export default (r) => {
   const ink = isLight(r.lang.color) ? "#1f2222" : "#fff";
   return svg(
     r.name,
-    `<defs><clipPath id="clip"><rect width="400" height="150" rx="10"/></clipPath></defs>
+    `${motion(".tz-shine{animation:tz-shine 7s ease-in-out infinite}@keyframes tz-shine{0%,60%{transform:none}90%,100%{transform:translateX(110px)}}")}
+<defs><clipPath id="clip"><rect width="400" height="150" rx="10"/></clipPath><clipPath id="chip"><circle cx="342" cy="75" r="31"/></clipPath></defs>
 <g clip-path="url(#clip)"><rect width="400" height="150" fill="#ece5d8"/><g opacity=".85">${chips}</g></g>
 <rect x="20" y="20" width="268" height="110" rx="3" fill="#000" fill-opacity=".12" transform="translate(2 3)"/>
 <rect x="20" y="20" width="268" height="110" rx="3" fill="#fbf9f4"/>
 <rect x="20" y="20" width="5" height="110" rx="2" fill="${r.lang.color}"/>
 <circle cx="342" cy="75" r="36" fill="#fbf9f4"/>
 <circle cx="342" cy="75" r="31" fill="${r.lang.color}"/>
+<g clip-path="url(#chip)"><path class="tz-shine" d="M290 36h12l-16 78h-12z" fill="#fff" fill-opacity=".3"/></g>
 <g font-family="${FONT}" fill="#1f2222">
   <text x="40" y="48" font-size="18" font-weight="700">${esc(fit(r.name, 234, 18))}</text>
   <text font-size="12" fill="#55595a">${lines(wrap(r.description, 37), 40, 70, 16)}</text>

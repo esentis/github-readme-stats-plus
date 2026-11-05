@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .rm-caret { animation: rm-caret 2s step-end infinite } @keyframes rm-caret { 0% { fill-opacity: 1 } 50% { fill-opacity: 0 } } }</style>
 <defs><pattern id="dither" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#fff"/><rect width="1" height="1" fill="#000"/><rect x="1" y="1" width="1" height="1" fill="#000"/></pattern></defs>
 <rect width="400" height="150" rx="6" fill="url(#dither)"/>
 <rect x="16" y="12" width="368" height="126" fill="#000"/>
@@ -11,7 +12,7 @@
   <text x="198" y="25" font-size="12" font-weight="700" text-anchor="middle">load_switch</text>
   <path d="M30 42H48L56 50V72H30Z" fill="#fff" stroke="#000"/><path d="M48 42V50H56" fill="none" stroke="#000"/>
   <text x="70" y="54" font-size="15" font-weight="700">load_switch</text>
-  <text font-size="11"><tspan x="70" y="72">A highly customizable toggle switch with a loading</tspan><tspan x="70" y="86">state.</tspan></text>
+  <text font-size="11"><tspan x="70" y="72">A highly customizable toggle switch with a loading</tspan><tspan x="70" y="86">state.</tspan><tspan class="rm-caret" fill-opacity="0">|</tspan></text>
   <line x1="14" y1="104" x2="382" y2="104" stroke="#000"/>
   <text x="30" y="124" font-size="11">20 stars</text>
   <text x="150" y="124" font-size="11">3 forks</text>

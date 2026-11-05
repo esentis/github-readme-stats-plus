@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Botanical plate: cream paper, a fine line-drawn fern, an italic species-style name and a Latin family label.";
 
@@ -26,13 +26,14 @@ const fern = () => {
 export default (r) =>
   svg(
     r.name,
-    `<defs><filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 .45  0 0 0 0 .38  0 0 0 0 .25  0 0 0 .5 -.18"/></filter></defs>
+    `${motion(".bt-sway{transform-origin:334px 146px;animation:bt-sway 7s ease-in-out -1.75s infinite}@keyframes bt-sway{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}")}
+<defs><filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 .45  0 0 0 0 .38  0 0 0 0 .25  0 0 0 .5 -.18"/></filter></defs>
 <rect width="400" height="150" rx="4" fill="#f6efdc"/>
 <rect width="400" height="150" rx="4" filter="url(#paper)"/>
 <rect x="7" y="7" width="386" height="136" fill="none" stroke="#8b7d5c" stroke-width=".9"/>
 <rect x="11" y="11" width="378" height="128" fill="none" stroke="#8b7d5c" stroke-width=".4"/>
-<g stroke="#46633a" stroke-width=".9" fill="#7a9a55" fill-opacity=".16" stroke-linejoin="round">${fern()}</g>
-<circle cx="361" cy="15" r="3.5" fill="${r.lang.color}" stroke="#46633a" stroke-width=".6"/>
+<g class="bt-sway"><g stroke="#46633a" stroke-width=".9" fill="#7a9a55" fill-opacity=".16" stroke-linejoin="round">${fern()}</g>
+<circle cx="361" cy="15" r="3.5" fill="${r.lang.color}" stroke="#46633a" stroke-width=".6"/></g>
 <g font-family="${SERIF}" fill="#2f3b24">
   <text x="26" y="32" font-size="8.5" letter-spacing="2.5" fill="#8b7d5c">${esc(fit(`HERBARIUM · @${r.owner}`.toUpperCase(), 250, 8.5, 0.85))}</text>
   <text x="26" y="58" font-size="24" font-style="italic">${esc(fit(r.name, 256, 24, 0.5))}</text>

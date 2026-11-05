@@ -1,4 +1,4 @@
-import { esc, fit, svg } from "../card.js";
+import { esc, fit, motion, svg } from "../card.js";
 
 export const about = "Railway station sign: a platform roundel with the star count, the name and a direction arrow.";
 
@@ -8,12 +8,13 @@ const HELVETICA = "'Helvetica Neue', Helvetica, Arial, sans-serif";
 export default (r) =>
   svg(
     r.name,
-    `<rect width="400" height="150" rx="8" fill="#0f2c56"/>
+    `${motion(".rw-arrow { animation: rw-arrow 3s ease-in-out infinite } @keyframes rw-arrow { 0%, 55%, 100% { transform: none } 75% { transform: translateX(4px) } }")}
+<rect width="400" height="150" rx="8" fill="#0f2c56"/>
 <rect x="10" y="10" width="380" height="94" rx="5" fill="#fff"/>
 <g fill="#9aa7b8"><circle cx="18" cy="18" r="2"/><circle cx="382" cy="18" r="2"/><circle cx="18" cy="96" r="2"/><circle cx="382" cy="96" r="2"/></g>
 <circle cx="58" cy="57" r="30" fill="#fff" stroke="${r.lang.color}" stroke-width="9"/>
 <circle cx="58" cy="57" r="34.5" fill="none" stroke="#0f2c56" stroke-opacity=".25"/>
-<path d="M334 57h32M352 43l14 14l-14 14" fill="none" stroke="#0f2c56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="rw-arrow" d="M334 57h32M352 43l14 14l-14 14" fill="none" stroke="#0f2c56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 <g font-family="${HELVETICA}" fill="#0f2c56">
   <text x="58" y="47" font-size="10" text-anchor="middle">★</text>
   <text x="58" y="67" font-size="${r.stars.length > 3 ? 15 : 19}" font-weight="700" text-anchor="middle">${esc(r.stars)}</text>

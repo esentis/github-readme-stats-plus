@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .vx-top{animation:vx-top 3.5s ease-in-out infinite}@keyframes vx-top{50%{transform:translateY(-3px)}} }</style>
 <defs>
   <clipPath id="clip"><rect width="400" height="150" rx="12"/></clipPath>
   <pattern id="iso" width="26" height="15" patternUnits="userSpaceOnUse"><path d="M0 7.5L13 0L26 7.5L13 15Z" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
@@ -27,11 +28,11 @@
     <path d="M309 87L322 94.5V107.5L309 100Z" fill="#00B4AB"/>
     <path d="M335 87L322 94.5V107.5L335 100Z" fill="#00B4AB"/><path d="M335 87L322 94.5V107.5L335 100Z" fill="#000" fill-opacity=".32"/>
     <path d="M322 79.5L335 87L322 94.5L309 87Z" fill="#00B4AB"/><path d="M322 79.5L335 87L322 94.5L309 87Z" fill="#fff" fill-opacity=".35"/>
-  </g><g stroke="#0c0e15" stroke-width=".6" stroke-linejoin="round">
+  </g><g class="vx-top"><g stroke="#0c0e15" stroke-width=".6" stroke-linejoin="round">
     <path d="M309 74L322 81.5V94.5L309 87Z" fill="#00B4AB"/>
     <path d="M335 74L322 81.5V94.5L335 87Z" fill="#00B4AB"/><path d="M335 74L322 81.5V94.5L335 87Z" fill="#000" fill-opacity=".32"/>
     <path d="M322 66.5L335 74L322 81.5L309 74Z" fill="#00B4AB"/><path d="M322 66.5L335 74L322 81.5L309 74Z" fill="#fff" fill-opacity=".35"/>
-  </g>
+  </g></g>
 <g stroke="#0c0e15" stroke-width=".6" stroke-linejoin="round">
     <path d="M322 107.5L335 115V128L322 120.5Z" fill="#c9cede"/>
     <path d="M348 107.5L335 115V128L348 120.5Z" fill="#c9cede"/><path d="M348 107.5L335 115V128L348 120.5Z" fill="#000" fill-opacity=".32"/>

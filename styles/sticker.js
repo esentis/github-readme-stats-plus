@@ -1,4 +1,4 @@
-import { esc, fit, isLight, lines, svg, wrap } from "../card.js";
+import { esc, fit, isLight, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Die-cut vinyl sticker in the language colour: thick white border, a slight tilt and a peeling corner.";
 
@@ -9,7 +9,8 @@ export default (r) => {
   const ink = isLight(r.lang.color) ? "#1b1b1f" : "#fff";
   return svg(
     r.name,
-    `<defs>
+    `${motion(".stk-peel{transform-origin:357.5px 113.5px;animation:stk-peel 5s ease-in-out infinite}@keyframes stk-peel{0%,100%{transform:rotate(45deg) scaleX(1) rotate(-45deg)}50%{transform:rotate(45deg) scaleX(1.15) rotate(-45deg)}}")}
+<defs>
   <filter id="lift" x="-10%" y="-20%" width="120%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dx="1" dy="4"/><feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <linearGradient id="back" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9c9d1"/><stop offset=".5" stop-color="#fdfdfd"/><stop offset="1" stop-color="#e9e9ee"/></linearGradient>
 </defs>
@@ -26,8 +27,8 @@ export default (r) => {
     <text font-size="12" fill-opacity=".85">${lines(wrap(r.description, 33), 124, 80, 15)}</text>
     <text x="124" y="117" font-size="12" font-weight="700">${esc(fit(`${r.forks} forks · ${r.lang.name}`, 200, 12))}</text>
   </g>
-  <path d="M372 94L338 128L340 96Z" fill="#000" fill-opacity=".18" transform="translate(-3 -2)"/>
-  <path d="M377 94L338 133L339 94Z" fill="url(#back)" stroke="#d4d4da" stroke-width=".8" stroke-linejoin="round"/>
+  <g class="stk-peel"><path d="M372 94L338 128L340 96Z" fill="#000" fill-opacity=".18" transform="translate(-3 -2)"/>
+  <path d="M377 94L338 133L339 94Z" fill="url(#back)" stroke="#d4d4da" stroke-width=".8" stroke-linejoin="round"/></g>
 </g>`,
   );
 };

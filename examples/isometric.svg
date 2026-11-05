@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .is-hop{animation:is-hop 4s ease-in-out infinite}@keyframes is-hop{50%{transform:translateY(-3px)}} }</style>
 <defs><pattern id="grid" width="24" height="13.86" patternUnits="userSpaceOnUse"><path d="M0 6.93L12 0L24 6.93L12 13.86Z" fill="none" stroke="#94a3b8" stroke-opacity=".18"/></pattern></defs>
 <polygon points="18,4 18,124 6,131 6,11" fill="#b8c3d3"/>
 <polygon points="18,124 394,124 382,131 6,131" fill="#94a3b8"/>
@@ -15,9 +16,9 @@
     <polygon points="286,72 296,77.77 296,87.77 286,82" fill="#cbd5e1"/><polygon points="296,77.77 306,72 306,82 296,87.77" fill="#cbd5e1"/><polygon points="296,77.77 306,72 306,82 296,87.77" fill="#0f172a" fill-opacity=".3"/>
     <polygon points="296,66.23 306,72 296,77.77 286,72" fill="#cbd5e1"/><polygon points="296,66.23 306,72 296,77.77 286,72" fill="#fff" fill-opacity=".4"/></g><g stroke="#1e293b" stroke-opacity=".35" stroke-width=".7" stroke-linejoin="round">
     <polygon points="302,76 316,84.078 316,98.078 302,90" fill="#00B4AB"/><polygon points="316,84.078 330,76 330,90 316,98.078" fill="#00B4AB"/><polygon points="316,84.078 330,76 330,90 316,98.078" fill="#0f172a" fill-opacity=".3"/>
-    <polygon points="316,67.922 330,76 316,84.078 302,76" fill="#00B4AB"/><polygon points="316,67.922 330,76 316,84.078 302,76" fill="#fff" fill-opacity=".4"/></g><g stroke="#1e293b" stroke-opacity=".35" stroke-width=".7" stroke-linejoin="round">
+    <polygon points="316,67.922 330,76 316,84.078 302,76" fill="#00B4AB"/><polygon points="316,67.922 330,76 316,84.078 302,76" fill="#fff" fill-opacity=".4"/></g><g class="is-hop"><g stroke="#1e293b" stroke-opacity=".35" stroke-width=".7" stroke-linejoin="round">
     <polygon points="346,84 356,89.77 356,99.77 346,94" fill="#cbd5e1"/><polygon points="356,89.77 366,84 366,94 356,99.77" fill="#cbd5e1"/><polygon points="356,89.77 366,84 366,94 356,99.77" fill="#0f172a" fill-opacity=".3"/>
-    <polygon points="356,78.23 366,84 356,89.77 346,84" fill="#cbd5e1"/><polygon points="356,78.23 366,84 356,89.77 346,84" fill="#fff" fill-opacity=".4"/></g>
+    <polygon points="356,78.23 366,84 356,89.77 346,84" fill="#cbd5e1"/><polygon points="356,78.23 366,84 356,89.77 346,84" fill="#fff" fill-opacity=".4"/></g></g>
 <g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
   <text x="36" y="38" font-size="19" font-weight="800" fill="#0f172a">load_switch</text>
   <text font-size="12" fill="#475569"><tspan x="36" y="60">A highly customizable toggle</tspan><tspan x="36" y="76">switch with a loading state.</tspan></text>

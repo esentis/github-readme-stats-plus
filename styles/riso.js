@@ -1,4 +1,4 @@
-import { FONT, MONO, esc, fit, lines, svg, textWidth, wrap } from "../card.js";
+import { FONT, MONO, esc, fit, lines, motion, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Risograph print: fluorescent pink and blue inks overprinting slightly out of register, with paper grain.";
 
@@ -10,14 +10,15 @@ export default (r) => {
   const name = esc(fit(r.name, 250, 24, 0.62));
   const stat = `★ ${r.stars}  ⑂ ${r.forks}`;
   const lang = fit(r.lang.name, 230 - textWidth(stat, 13), 13);
-  const pink = `<g class="ink" fill="${PINK}" transform="translate(2 1.5)">
+  const pink = `<g class="ink ri-drift" fill="${PINK}" transform="translate(2 1.5)">
     <circle cx="328" cy="62" r="54"/>
     <text x="22" y="46" font-family="${FONT}" font-size="24" font-weight="900">${name}</text>
     <text x="22" y="130" font-family="${MONO}" font-size="13" font-weight="700">${esc(stat)}</text>
   </g>`;
   return svg(
     r.name,
-    `<defs>
+    `${motion(".ri-drift{animation:ri-drift 8s ease-in-out infinite}@keyframes ri-drift{0%,100%{transform:translate(2px,1.5px)}33%{transform:translate(3px,.6px)}66%{transform:translate(.8px,2.4px)}}")}
+<defs>
   <style>.ink{mix-blend-mode:multiply}</style>
   <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="2.5" cy="2.5" r="1.8" fill="${BLUE}"/></pattern>
   <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="7"/><feColorMatrix values="0 0 0 0 .96  0 0 0 0 .94  0 0 0 0 .9  0 0 0 -2.4 1.3"/></filter>

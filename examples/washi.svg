@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ws-brush{animation:ws-brush 8s ease-out infinite}@keyframes ws-brush{0%,65%,100%{clip-path:inset(-6px)}66%{clip-path:inset(-6px calc(100% + 6px) -6px -6px)}} }</style>
 <defs>
   <clipPath id="clip"><rect width="400" height="150" rx="6"/></clipPath>
   <filter id="fiber"><feTurbulence type="fractalNoise" baseFrequency=".02 .9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .47  0 0 0 0 .33  0 0 0 .5 -.12"/></filter>
@@ -9,7 +10,7 @@
 <line x1="38" y1="20" x2="38" y2="130" stroke="#c8322b" stroke-width="1.5"/>
 <circle cx="24" cy="24" r="4" fill="#00B4AB"/>
 <text font-family="'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif" font-size="9" font-weight="700" fill="#3a332a" text-anchor="middle"><tspan x="24" y="42">D</tspan><tspan x="24" y="51.6">A</tspan><tspan x="24" y="61.2">R</tspan><tspan x="24" y="70.8">T</tspan></text>
-<path d="M50 62C120 50 210 55 290 48C296 50 294 56 286 57C210 62 130 64 54 70C46 70 44 64 50 62Z" fill="#1b1a17" fill-opacity=".9" filter="url(#rough)"/>
+<path class="ws-brush" d="M50 62C120 50 210 55 290 48C296 50 294 56 286 57C210 62 130 64 54 70C46 70 44 64 50 62Z" fill="#1b1a17" fill-opacity=".9" filter="url(#rough)"/>
 <g font-family="'Hiragino Mincho ProN', 'Yu Mincho', Georgia, 'Times New Roman', serif">
   <text x="54" y="44" font-size="22" font-weight="700" fill="#1b1a17">load_switch</text>
   <text font-size="12" fill="#4a4238"><tspan x="54" y="90">A highly customizable toggle switch</tspan><tspan x="54" y="106">with a loading state.</tspan></text>

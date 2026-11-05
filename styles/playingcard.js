@@ -1,4 +1,4 @@
-import { esc, fit, isLight, svg } from "../card.js";
+import { esc, fit, isLight, motion, svg } from "../card.js";
 
 export const about = "Playing card: star count as the rank with a suit in the language colour, ornate centre band with the repo name. Shows no description.";
 
@@ -12,10 +12,11 @@ export default (r) => {
   const index = (t) =>
     `<g transform="${t}" text-anchor="middle"><text x="26" y="${28 + rank * 0.3}" font-size="${rank}" font-weight="700" fill="#1b1b1b">${esc(r.stars)}</text><text x="26" y="${52 + rank * 0.3}" font-size="20" fill="${r.lang.color}" ${edge}>${suit}</text></g>`;
   const pips = (y, skip = []) =>
-    Array.from({ length: 9 }, (_, i) => (skip.includes(i) ? "" : `<text x="${116 + i * 21}" y="${y}">${suit}</text>`)).join("");
+    Array.from({ length: 9 }, (_, i) => (skip.includes(i) ? "" : `<text class="pc-pip" style="animation-delay:${i * 0.15}s;transform-origin:${116 + i * 21}px ${y - 4}px" x="${116 + i * 21}" y="${y}">${suit}</text>`)).join("");
   return svg(
     r.name,
-    `<defs><pattern id="lace" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M5 0L10 5L5 10L0 5Z" fill="none" stroke="${r.lang.color}" stroke-opacity=".35"/></pattern></defs>
+    `${motion(".pc-pip { animation: pc-pip 5s ease-in-out infinite } @keyframes pc-pip { 0%, 14%, 100% { transform: none } 7% { transform: scale(1.35) } }")}
+<defs><pattern id="lace" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M5 0L10 5L5 10L0 5Z" fill="none" stroke="${r.lang.color}" stroke-opacity=".35"/></pattern></defs>
 <rect x=".5" y=".5" width="399" height="149" rx="12" fill="#fdfcf8" stroke="#cfcac0"/>
 <g font-family="${SERIF}">
   ${index("")}${index("rotate(180 200 75)")}

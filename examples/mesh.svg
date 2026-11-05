@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .ms-a, .ms-b { transform-box: fill-box; transform-origin: center; animation: ms-a 9s ease-in-out infinite } .ms-b { animation-name: ms-b; animation-duration: 11s } @keyframes ms-a { 50% { transform: translate(14px, 6px) scale(1.08) rotate(6deg) } } @keyframes ms-b { 50% { transform: translate(-12px, 8px) scale(.94) rotate(-8deg) } } }</style>
 <defs>
   <clipPath id="clip"><rect width="400" height="150" rx="16"/></clipPath>
   <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
@@ -8,11 +9,11 @@
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#f4f0ff"/>
   <g filter="url(#soft)">
-    <path fill="#7c5cff" opacity=".7" d="M122.6 164.3Q95.1 188.6 52.4 199.2Q9.6 209.9 -3.9 174.9Q-17.4 140.0 -2.4 107.3Q12.7 74.6 54.3 82.3Q95.9 90.1 123.0 115.0Q150.0 140.0 122.6 164.3Z"/>
-    <path fill="#ff7eb6" opacity=".75" d="M435.6 151.6Q411.2 173.2 373.2 182.7Q335.2 192.1 323.2 161.1Q311.2 130.0 324.6 100.9Q337.9 71.8 374.9 78.7Q411.9 85.6 436.0 107.8Q460.0 130.0 435.6 151.6Z"/>
-    <path fill="#00B4AB" d="M159.5 47.0Q129.0 74.0 81.5 85.8Q34.0 97.6 19.0 58.8Q4.0 20.0 20.7 -16.3Q37.4 -52.7 83.7 -44.1Q129.9 -35.5 160.0 -7.7Q190.0 20.0 159.5 47.0Z"/>
-    <path fill="#00B4AB" filter="url(#h1)" d="M366.0 35.7Q337.1 61.3 291.9 72.5Q246.8 83.7 232.6 46.9Q218.3 10.0 234.2 -24.5Q250.1 -59.1 294.0 -50.9Q337.9 -42.7 366.5 -16.3Q395.0 10.0 366.0 35.7Z"/>
-    <path fill="#00B4AB" filter="url(#h2)" opacity=".8" d="M258.7 98.9Q237.3 117.8 204.1 126.1Q170.8 134.3 160.3 107.2Q149.8 80.0 161.5 54.6Q173.2 29.1 205.6 35.1Q238.0 41.2 259.0 60.6Q280.0 80.0 258.7 98.9Z"/>
+    <path class="ms-a" fill="#7c5cff" opacity=".7" d="M122.6 164.3Q95.1 188.6 52.4 199.2Q9.6 209.9 -3.9 174.9Q-17.4 140.0 -2.4 107.3Q12.7 74.6 54.3 82.3Q95.9 90.1 123.0 115.0Q150.0 140.0 122.6 164.3Z"/>
+    <path class="ms-b" fill="#ff7eb6" opacity=".75" d="M435.6 151.6Q411.2 173.2 373.2 182.7Q335.2 192.1 323.2 161.1Q311.2 130.0 324.6 100.9Q337.9 71.8 374.9 78.7Q411.9 85.6 436.0 107.8Q460.0 130.0 435.6 151.6Z"/>
+    <path class="ms-b" fill="#00B4AB" d="M159.5 47.0Q129.0 74.0 81.5 85.8Q34.0 97.6 19.0 58.8Q4.0 20.0 20.7 -16.3Q37.4 -52.7 83.7 -44.1Q129.9 -35.5 160.0 -7.7Q190.0 20.0 159.5 47.0Z"/>
+    <path class="ms-a" fill="#00B4AB" filter="url(#h1)" d="M366.0 35.7Q337.1 61.3 291.9 72.5Q246.8 83.7 232.6 46.9Q218.3 10.0 234.2 -24.5Q250.1 -59.1 294.0 -50.9Q337.9 -42.7 366.5 -16.3Q395.0 10.0 366.0 35.7Z"/>
+    <path class="ms-b" style="animation-delay:-4s" fill="#00B4AB" filter="url(#h2)" opacity=".8" d="M258.7 98.9Q237.3 117.8 204.1 126.1Q170.8 134.3 160.3 107.2Q149.8 80.0 161.5 54.6Q173.2 29.1 205.6 35.1Q238.0 41.2 259.0 60.6Q280.0 80.0 258.7 98.9Z"/>
   </g>
 </g>
 <rect x="16" y="14" width="66.19999999999999" height="22" rx="11" fill="#fff" fill-opacity=".75"/>

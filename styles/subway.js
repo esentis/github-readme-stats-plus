@@ -1,4 +1,4 @@
-import { FONT, esc, fit, isLight, svg } from "../card.js";
+import { FONT, esc, fit, isLight, motion, svg } from "../card.js";
 
 export const about = "Transit map: one line in the language colour with stations for the owner, language, stars and forks.";
 
@@ -12,9 +12,11 @@ export default (r) => {
   const c = r.lang.color;
   return svg(
     r.name,
-    `<rect x=".5" y=".5" width="399" height="149" rx="12" fill="#fbfbf8" stroke="#e3e3df"/>
+    `${motion(".sw-train{opacity:1}")}
+<rect x=".5" y=".5" width="399" height="149" rx="12" fill="#fbfbf8" stroke="#e3e3df"/>
 <path d="M24 94H180L202 116H376" fill="none" stroke="#e1e1dc" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M24 94H180L202 116H376" fill="none" stroke="${c}" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="sw-train" opacity="0"><circle r="2.8" fill="#fff" stroke="#1b1b1b"><animateMotion dur="9s" repeatCount="indefinite" path="M24 94H180L202 116H376"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.06;.94;1"/></circle></g>
 <g font-family="${FONT}" font-weight="700">
   <circle cx="37" cy="29" r="14" fill="${c}"/>
   <text x="37" y="35" font-size="16" fill="${isLight(c) ? "#111" : "#fff"}" text-anchor="middle">${esc(r.name.slice(0, 1).toUpperCase())}</text>

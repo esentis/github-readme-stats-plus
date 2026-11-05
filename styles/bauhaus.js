@@ -1,4 +1,4 @@
-import { esc, fit, lines, row, svg, textWidth, wrap } from "../card.js";
+import { esc, fit, lines, motion, row, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Bauhaus poster: cream paper, a primary-colour composition of circles, half-circles and squares, lowercase geometric type.";
 
@@ -11,12 +11,13 @@ const item = (marker, label) => [textWidth(label, 12.5, 0.66) + 18, `${marker}<t
 export default (r) =>
   svg(
     r.name,
-    `<defs><clipPath id="clip"><rect width="400" height="150" rx="6"/></clipPath></defs>
+    `${motion(".bh-swing{transform-origin:301px 76px;animation:bh-swing 6s ease-in-out -1.5s infinite}@keyframes bh-swing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}")}
+<defs><clipPath id="clip"><rect width="400" height="150" rx="6"/></clipPath></defs>
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#f1e9d6"/>
   <rect x="268" width="66" height="76" fill="#f2c12e"/>
   <circle cx="366" cy="38" r="30" fill="#d7332a"/>
-  <path d="M268 76h66a33 33 0 0 1-66 0Z" fill="#1f4e9c"/>
+  <path class="bh-swing" d="M268 76h66a33 33 0 0 1-66 0Z" fill="#1f4e9c"/>
   <rect x="334" y="80" width="66" height="70" fill="#1a1a1a"/>
   <path d="M334 150V104A46 46 0 0 1 380 150Z" fill="${r.lang.color}"/>
   <circle cx="301" cy="126" r="9" fill="none" stroke="#1a1a1a" stroke-width="3"/>

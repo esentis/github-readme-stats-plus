@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Vaporwave: pastel pink and cyan sky, a checkerboard floor, a marble column and a chromatic serif title.";
 
@@ -25,7 +25,8 @@ export default (r) => {
   const pill = items.reduce((w, [iw]) => w + iw + 14, 10);
   return svg(
     r.name,
-    `<defs>
+    `${motion(".vw-floor{transform-origin:0 104px;animation:vw-floor 10s linear -5s infinite}@keyframes vw-floor{0%{transform:skewX(-36.47deg)}25%{transform:skewX(-20.28deg)}50%{transform:skewX(0)}75%{transform:skewX(20.28deg)}100%{transform:skewX(36.47deg)}}")}
+<defs>
   <clipPath id="clip"><rect width="400" height="150" rx="10"/></clipPath>
   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa6dc"/><stop offset=".55" stop-color="#ffd6ee"/><stop offset="1" stop-color="#a8f0ff"/></linearGradient>
   <linearGradient id="marble" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e6d7ff"/><stop offset=".4" stop-color="#fff"/><stop offset="1" stop-color="#cdb8f0"/></linearGradient>
@@ -33,7 +34,7 @@ export default (r) => {
 <g clip-path="url(#clip)">
   <rect width="400" height="104" fill="url(#sky)"/>
   <rect y="104" width="400" height="46" fill="#fdf2ff"/>
-  <g fill="#7ee3ff">${floor()}</g>
+  <g class="vw-floor" fill="#7ee3ff">${floor()}</g>
   <line x1="0" y1="104" x2="400" y2="104" stroke="#ff5fb4" stroke-width="1.5"/>
   <g fill="url(#marble)" stroke="#a37fd6" stroke-width=".8">
     <rect x="322" y="20" width="56" height="7" rx="2"/><circle cx="324" cy="30" r="5"/><circle cx="376" cy="30" r="5"/>

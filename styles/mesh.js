@@ -1,4 +1,4 @@
-import { FONT, esc, fit, row, stats, svg, textWidth } from "../card.js";
+import { FONT, esc, fit, motion, row, stats, svg, textWidth } from "../card.js";
 
 export const about = "Gradient mesh: big soft organic blobs in the language colour and its hue-shifted complements behind a clean white label.";
 
@@ -17,7 +17,8 @@ export default (r) => {
   const owner = fit(r.owner, 200, 11);
   return svg(
     r.name,
-    `<defs>
+    `${motion(".ms-a, .ms-b { transform-box: fill-box; transform-origin: center; animation: ms-a 9s ease-in-out infinite } .ms-b { animation-name: ms-b; animation-duration: 11s } @keyframes ms-a { 50% { transform: translate(14px, 6px) scale(1.08) rotate(6deg) } } @keyframes ms-b { 50% { transform: translate(-12px, 8px) scale(.94) rotate(-8deg) } }")}
+<defs>
   <clipPath id="clip"><rect width="400" height="150" rx="16"/></clipPath>
   <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
   <filter id="h1"><feColorMatrix type="hueRotate" values="140"/></filter>
@@ -26,11 +27,11 @@ export default (r) => {
 <g clip-path="url(#clip)">
   <rect width="400" height="150" fill="#f4f0ff"/>
   <g filter="url(#soft)">
-    ${blob(60, 140, 90, 'fill="#7c5cff" opacity=".7"')}
-    ${blob(380, 130, 80, 'fill="#ff7eb6" opacity=".75"')}
-    ${blob(90, 20, 100, `fill="${c}"`)}
-    ${blob(300, 10, 95, `fill="${c}" filter="url(#h1)"`)}
-    ${blob(210, 80, 70, `fill="${c}" filter="url(#h2)" opacity=".8"`)}
+    ${blob(60, 140, 90, 'class="ms-a" fill="#7c5cff" opacity=".7"')}
+    ${blob(380, 130, 80, 'class="ms-b" fill="#ff7eb6" opacity=".75"')}
+    ${blob(90, 20, 100, `class="ms-b" fill="${c}"`)}
+    ${blob(300, 10, 95, `class="ms-a" fill="${c}" filter="url(#h1)"`)}
+    ${blob(210, 80, 70, `class="ms-b" style="animation-delay:-4s" fill="${c}" filter="url(#h2)" opacity=".8"`)}
   </g>
 </g>
 <rect x="16" y="14" width="${textWidth(owner, 11) + 20}" height="22" rx="11" fill="#fff" fill-opacity=".75"/>

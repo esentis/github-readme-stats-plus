@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Isometric voxel blocks: the stars stacked as a cube tower in the language colour.";
 
@@ -21,7 +21,8 @@ export default (r) => {
   const [x, y] = [322, 100];
   return svg(
     r.name,
-    `<defs>
+    `${motion(".vx-top{animation:vx-top 3.5s ease-in-out infinite}@keyframes vx-top{50%{transform:translateY(-3px)}}")}
+<defs>
   <clipPath id="clip"><rect width="400" height="150" rx="12"/></clipPath>
   <pattern id="iso" width="26" height="15" patternUnits="userSpaceOnUse"><path d="M0 7.5L13 0L26 7.5L13 15Z" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
 </defs>
@@ -29,7 +30,7 @@ export default (r) => {
   <rect width="400" height="150" fill="#151826"/><rect width="400" height="150" fill="url(#iso)"/>
 </g>
 ${tower(x, y + V, 1, "#3b4157")}${tower(x - W, y + V + H, 1, "#3b4157")}${tower(x + W, y + V + H, 1, "#3b4157")}
-${tower(x, y, n, r.lang.color)}
+${tower(x, y, n - 1, r.lang.color)}<g class="vx-top">${cube(x, y - (n - 1) * V, r.lang.color)}</g>
 ${tower(x + W, y + H, f, "#c9cede")}
 <g font-family="${FONT}">
   <text x="${x}" y="${y - (n - 1) * V - H - 7}" font-size="12" font-weight="800" fill="#fff" text-anchor="middle">★ ${esc(r.stars)}</text>

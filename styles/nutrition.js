@@ -1,4 +1,4 @@
-import { esc, fit, lines, svg, wrap } from "../card.js";
+import { esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Black-and-white nutrition-facts label: Repository Facts with stars, forks and language rows, the description as the ingredients.";
 
@@ -10,7 +10,8 @@ export default (r) => {
     `<text x="20" y="${y}" font-size="${size}"><tspan font-weight="900">${label}</tspan></text><text x="196" y="${y}" font-size="${size}" font-weight="900" text-anchor="end">${esc(value)}</text><rect x="20" y="${y + 5}" width="176" height="${rule}"/>`;
   return svg(
     r.name,
-    `<rect x="1" y="1" width="398" height="148" rx="4" fill="#fff" stroke="#000" stroke-width="2"/>
+    `${motion(".nf-dot { transform-box: fill-box; transform-origin: center; animation: nf-dot 5s ease-in-out infinite } @keyframes nf-dot { 50% { transform: scale(1.25) rotate(45deg) } }")}
+<rect x="1" y="1" width="398" height="148" rx="4" fill="#fff" stroke="#000" stroke-width="2"/>
 <g font-family="${HEAVY}" fill="#000">
   <text x="20" y="34" font-size="21" font-weight="900" letter-spacing="-.5">Repository Facts</text>
   <text x="20" y="48" font-size="9">Serving size <tspan font-weight="700">1 repo (${esc(fit(r.owner, 70, 9))})</tspan></text>
@@ -19,7 +20,7 @@ export default (r) => {
   ${fact(90, "Stars ★", r.stars, 17, 4)}
   ${fact(110, "Forks ⑂", r.forks, 11, 1)}
   <text x="20" y="130" font-size="11" font-weight="900">Language</text>
-  <rect x="80" y="122" width="8" height="8" fill="${r.lang.color}" stroke="#000" stroke-width=".6"/>
+  <rect class="nf-dot" x="80" y="122" width="8" height="8" fill="${r.lang.color}" stroke="#000" stroke-width=".6"/>
   <text x="196" y="130" font-size="11" text-anchor="end">${esc(fit(r.lang.name, 96, 11, 0.56))}</text>
   <rect x="20" y="135" width="176" height="1"/>
   <rect x="210" y="14" width="1.5" height="122"/>

@@ -1,4 +1,4 @@
-import { MONO, esc, fit, svg } from "../card.js";
+import { MONO, esc, fit, motion, svg } from "../card.js";
 
 export const about = "Instant photo: a sunset scene in the language colour and a hand-written caption. Shows no description.";
 
@@ -8,7 +8,8 @@ const HAND = "'Marker Felt', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cur
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".pl-dev { animation: pl-dev 12s ease-in-out infinite } @keyframes pl-dev { 0%, 55%, 100% { opacity: 0 } 62% { opacity: .5 } }")}
+<defs>
   <linearGradient id="sky" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".25"/><stop offset=".7" stop-color="#fff" stop-opacity=".35"/></linearGradient>
   <radialGradient id="sun"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".4" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
   <clipPath id="photo"><rect x="20" y="16" width="360" height="88"/></clipPath>
@@ -22,6 +23,7 @@ export default (r) =>
   <circle cx="290" cy="64" r="40" fill="url(#sun)"/>
   <path d="M20 80Q90 52 160 76T300 72T380 78V104H20Z" fill="#000" fill-opacity=".28"/>
   <path d="M20 94Q120 74 220 92T380 88V104H20Z" fill="#000" fill-opacity=".5"/>
+  <rect class="pl-dev" x="20" y="16" width="360" height="88" fill="#6f7470" opacity="0"/>
   <rect x="20" y="16" width="360" height="88" fill="none" stroke="#000" stroke-opacity=".15"/>
   <text x="372" y="98" font-family="${MONO}" font-size="10" font-weight="700" fill="#ff9a3c" stroke="#1a1208" stroke-opacity=".6" stroke-width="2.5" paint-order="stroke" text-anchor="end">★${esc(r.stars)} ⑂${esc(r.forks)}</text>
 </g>

@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
 
 export const about = "Claymorphism: puffy pastel shapes with soft shadows, inner highlights and a squishy blob in the language colour.";
 
@@ -9,7 +9,8 @@ const INK = "#4a3a73";
 export default (r) =>
   svg(
     r.name,
-    `<defs>
+    `${motion(".cl-blob{transform-box:fill-box;transform-origin:50% 100%;animation:cl-blob 4s ease-in-out infinite}@keyframes cl-blob{0%,60%,100%{transform:none}75%{transform:scale(1.08,.92)}88%{transform:scale(.97,1.03)}}")}
+<defs>
   <filter id="puff" x="-20%" y="-30%" width="140%" height="180%">
     <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
     <feOffset in="blur" dy="6" result="drop"/><feFlood flood-color="#7c5cc4" flood-opacity=".3"/><feComposite in2="drop" operator="in" result="shadow"/>
@@ -23,8 +24,8 @@ export default (r) =>
   <rect width="400" height="150" fill="#efe7ff"/>
   <circle cx="14" cy="8" r="44" fill="#d8f1ff"/><circle cx="392" cy="150" r="52" fill="#ffd9ec"/>
   <rect x="12" y="10" width="376" height="126" rx="30" fill="#fffafd" filter="url(#puff)"/>
-  <circle cx="340" cy="50" r="24" fill="${r.lang.color}" filter="url(#puff)"/>
-  <ellipse cx="332" cy="40" rx="8" ry="5" fill="#fff" fill-opacity=".55"/>
+  <g class="cl-blob"><circle cx="340" cy="50" r="24" fill="${r.lang.color}" filter="url(#puff)"/>
+  <ellipse cx="332" cy="40" rx="8" ry="5" fill="#fff" fill-opacity=".55"/></g>
   <circle cx="364" cy="84" r="9" fill="#ffd1e6" filter="url(#puff)"/>
 </g>
 <g font-family="${FONT}" fill="${INK}">

@@ -1,4 +1,4 @@
-import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
+import { FONT, MONO, esc, fit, lines, motion, svg, wrap } from "../card.js";
 
 export const about = "Passport page with a machine-readable line and a red entry stamp.";
 
@@ -11,7 +11,8 @@ export default (r) => {
   const langSize = Math.min(13, 54 / (lang.length * 0.65));
   return svg(
     r.name,
-    `<defs>
+    `${motion(".ps-stamp { transform-box: fill-box; transform-origin: center; animation: ps-stamp 7s ease-out infinite } @keyframes ps-stamp { 0%, 70%, 100% { opacity: 1; transform: none } 76% { opacity: .4; transform: scale(1.15) } 84% { opacity: 1; transform: scale(.97) } 90% { transform: none } }")}
+<defs>
   <pattern id="guilloche" width="24" height="12" patternUnits="userSpaceOnUse"><path d="M0 6Q6 0 12 6T24 6" fill="none" stroke="#c9b48a" stroke-opacity=".35"/></pattern>
   <path id="ring" d="M262 75a38 38 0 1176 0a38 38 0 11-76 0"/>
 </defs>
@@ -23,7 +24,7 @@ export default (r) => {
   <text font-size="12.5" font-style="italic" fill="#5a4e3c">${lines(wrap(r.description, 32), 22, 84, 17)}</text>
   <text x="22" y="132" font-family="${MONO}" font-size="10" fill="#8a7550">${esc(mrz)}</text>
 </g>
-<g transform="rotate(-12 300 75)" font-family="${FONT}" font-weight="700" text-anchor="middle">
+<g class="ps-stamp"><g transform="rotate(-12 300 75)" font-family="${FONT}" font-weight="700" text-anchor="middle">
   <g fill="none" stroke="#b3261e" stroke-opacity=".85">
     <circle cx="300" cy="75" r="52" stroke-width="2.5"/>
     <circle cx="300" cy="75" r="45" stroke-dasharray="2 3"/>
@@ -34,6 +35,6 @@ export default (r) => {
     <text x="300" y="${75 + langSize / 3}" font-size="${langSize}">${esc(lang)}</text>
     <text x="300" y="94" font-size="8">⑂ ${esc(r.forks)}</text>
   </g>
-</g>`,
+</g></g>`,
   );
 };
