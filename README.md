@@ -1,6 +1,6 @@
 # github-readme-stats-plus
 
-Repository pin cards for your GitHub profile README, in 26 styles. You host it yourself, for yourself: one small Vercel function with no dependencies.
+Repository pin cards for your GitHub profile README, in more than 200 animated styles. [Browse the gallery](STYLES.md). You host it yourself, for yourself: one small Vercel function with no dependencies.
 
 <p>
   <img src="examples/aurora.svg" width="49%" alt="Aurora style" />
