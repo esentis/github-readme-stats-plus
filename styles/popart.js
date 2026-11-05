@@ -3,6 +3,8 @@ import { esc, fit, isLight, lines, svg, wrap } from "../card.js";
 export const about = "Pop art comic panel: yellow with red halftone dots, bold black outlines and a speech burst with the star count.";
 
 const COMIC = "'Arial Black', 'Helvetica Neue', Impact, sans-serif";
+// Speech-burst tail. Its base sits inside the burst; it's outlined first and filled again last, so the join has no seam.
+const TAIL = "M294 100L262 138L312 110Z";
 
 // A jagged speech burst: points alternate between two radii.
 const burst = (cx, cy, rx, ry, n = 14) =>
@@ -32,9 +34,9 @@ export default (r) => {
   <rect x="18" y="108" width="${lang.length * 9 + 22}" height="24" fill="${r.lang.color}" stroke="#111" stroke-width="3"/>
   <text x="29" y="125" font-size="11" fill="${ink}">${esc(lang)}</text>
   <text x="${lang.length * 9 + 54}" y="126" font-size="14" stroke="#fff" stroke-width="4" paint-order="stroke">⑂ ${esc(r.forks)}</text>
+  <path d="${TAIL}" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
   <polygon points="${burst(330, 76, 58, 54)}" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M286 112L262 138L300 118Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M290 110L280 122L296 116Z" fill="#fff"/>
+  <path d="${TAIL}" fill="#fff"/>
   <text x="330" y="70" font-size="13" fill="#ef3b2c" text-anchor="middle">★ WOW!</text>
   <text x="330" y="94" font-size="22" text-anchor="middle">${esc(r.stars)}</text>
 </g>`,
