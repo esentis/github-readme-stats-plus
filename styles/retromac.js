@@ -1,5 +1,7 @@
 import { esc, fit, lines, svg, textWidth, wrap } from "../card.js";
 
+export const about = "Black-and-white early-90s window over a dithered desktop.";
+
 const SYSTEM = "Chicago, Charcoal, Geneva, 'Helvetica Neue', Arial, sans-serif";
 
 // A black-and-white early-90s desktop window over a dithered grey desktop.

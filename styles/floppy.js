@@ -1,5 +1,7 @@
 import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Floppy disk in the language colour, with the repo on its label.";
+
 const HAND = "'Marker Felt', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive";
 
 // A 3.5" floppy disk in the language colour, with the repo written on its label.

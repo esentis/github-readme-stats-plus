@@ -1,5 +1,7 @@
 import { FONT, esc, fit, svg } from "../card.js";
 
+export const about = "Cassette tape with a hand-written label and spinning reels. Shows no description.";
+
 const HAND = "'Marker Felt', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive";
 
 const reel = (cx) => `<g transform="translate(${cx} 82)">

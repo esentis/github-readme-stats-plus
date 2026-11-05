@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "The star count is the hero, over a pulsing glow.";
+
 // The star count is the hero, over a pulsing glow in the language colour.
 export default (r) => {
   const [lang, , forks] = stats(r, { cy: 121, text: 'fill="#e5e7eb"', icon: 'fill="#b6bcc8"' });

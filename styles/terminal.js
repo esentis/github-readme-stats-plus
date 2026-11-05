@@ -1,5 +1,7 @@
 import { MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Green phosphor terminal with scanlines and a blinking cursor.";
+
 // Green phosphor terminal window with scanlines and a blinking cursor.
 export default (r) => {
   const status = [

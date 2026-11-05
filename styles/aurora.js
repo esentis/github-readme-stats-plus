@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "Slowly drifting blurred glow in the repo's language colour.";
+
 // Dark card with two slowly drifting blurred blobs, one in the language colour.
 export default (r) =>
   svg(

@@ -1,5 +1,7 @@
 import { MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Vintage \"admit one\" ticket with notched edges and a numbered stub.";
+
 const SERIF = "Georgia, 'Times New Roman', serif";
 
 // A vintage cinema ticket with notched edges and a tear-off stub numbered by stars.

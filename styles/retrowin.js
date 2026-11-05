@@ -1,5 +1,7 @@
 import { esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Mid-90s dialog box on a teal desktop.";
+
 const SANS = "'MS Sans Serif', Tahoma, Geneva, Verdana, sans-serif";
 
 // A raised grey control: white light from the top left, dark shadow bottom right.

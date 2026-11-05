@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { isLight, normalize, wrap } from "../card.js";
-import styles from "../styles/index.js";
+import styles, { groups } from "../styles/index.js";
 import { xp } from "../styles/pixel.js";
 import { GET } from "../api/pin.js";
 
@@ -39,6 +39,11 @@ test("pixel XP bar fills toward the next star milestone", () => {
   assert.deepEqual(xp(20), { next: 25, blocks: 8 });
   assert.deepEqual(xp(25), { next: 50, blocks: 5 });
   assert.equal(xp(2_000_000).blocks, 10);
+});
+
+test("every style has an about line for the gallery", () => {
+  for (const group of Object.values(groups))
+    for (const [name, style] of Object.entries(group)) assert.ok(style.about?.length > 10, `${name} needs an about`);
 });
 
 for (const [name, render] of Object.entries(styles)) {

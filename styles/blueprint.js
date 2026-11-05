@@ -1,5 +1,7 @@
 import { MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Technical drawing: stars as a dimension line, language and forks in a title block.";
+
 // Technical drawing: the stars as a dimension line, language and forks in a title block.
 export default (r) =>
   svg(

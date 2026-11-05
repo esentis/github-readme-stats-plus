@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "Full gradient in the language colour, with the language as a watermark.";
+
 // Full-bleed gradient from the language colour, with the language name as a watermark.
 export default (r) =>
   svg(

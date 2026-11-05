@@ -1,5 +1,7 @@
 import { esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Light editorial poster with a huge star count and one red accent.";
+
 const HELVETICA = "'Helvetica Neue', Helvetica, Arial, sans-serif";
 
 // Light editorial poster: a huge star count, a strict grid and one red accent.

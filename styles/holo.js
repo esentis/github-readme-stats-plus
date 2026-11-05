@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "Iridescent foil with a shine sweeping across, like a rare trading card.";
+
 // Iridescent foil that slowly shifts, with a shine sweeping across, like a rare trading card.
 export default (r) =>
   svg(

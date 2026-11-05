@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "Light or dark, following the viewer's system theme. The default.";
+
 // Light or dark depending on the viewer's system colour scheme.
 export default (r) =>
   svg(

@@ -1,5 +1,7 @@
 import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "90s handheld console with a green dot-matrix screen.";
+
 // A 90s handheld console: green dot-matrix screen on the left, D-pad and buttons on the right.
 export default (r) =>
   svg(

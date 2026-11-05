@@ -1,5 +1,7 @@
 import { FONT, MONO, esc, fit, svg } from "../card.js";
 
+export const about = "Dark payment card. The star count is the card number. Shows no description.";
+
 // A dark payment card: the star count is the card number, the owner is the card holder.
 export default (r) => {
   const number = r.starCount < 10000 ? String(r.starCount).padStart(4, "0") : r.stars;

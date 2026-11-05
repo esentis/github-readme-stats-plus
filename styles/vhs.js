@@ -1,5 +1,7 @@
 import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "VHS cover with a chrome title, rainbow stripes and a stars:forks timecode.";
+
 const STRIPES = ["#ff2975", "#ff8a00", "#ffd319", "#1fd1b2", "#3b82f6"];
 
 // A VHS cover: chrome title, rainbow stripes and a VCR on-screen display with a stars:forks timecode.

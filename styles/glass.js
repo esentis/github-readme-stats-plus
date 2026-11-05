@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "Frosted panel over a colourful gradient.";
+
 // Frosted panel over a colourful gradient with a drifting light.
 export default (r) =>
   svg(

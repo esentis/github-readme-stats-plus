@@ -1,5 +1,7 @@
 import { MONO, esc, svg } from "../card.js";
 
+export const about = "Airport split-flap departures board. Shows no description.";
+
 const tiles = (text, x, y, fill) =>
   [...text]
     .map(

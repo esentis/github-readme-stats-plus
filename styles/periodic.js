@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, svg, words, wrap } from "../card.js";
 
+export const about = "Element tile: stars as the atomic number, a symbol made from the name.";
+
 // A periodic table element tile: stars as the atomic number, a two-letter symbol from the name.
 export default (r) => {
   const [a, b = a.slice(1)] = words(r.name);

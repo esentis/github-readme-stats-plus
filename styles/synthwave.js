@@ -1,5 +1,7 @@
 import { FONT, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "80s sunset with a striped sun over a scrolling neon grid.";
+
 // 80s sunset: a striped sun over a neon grid that scrolls toward the viewer.
 export default (r) => {
   const items = stats(r, { cy: 125, text: 'fill="#fff" font-weight="600"', icon: 'fill="#ffd319"' });

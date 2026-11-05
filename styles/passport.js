@@ -1,5 +1,7 @@
 import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
 
+export const about = "Passport page with a machine-readable line and a red entry stamp.";
+
 const SERIF = "Georgia, 'Times New Roman', serif";
 
 // A passport page with a machine-readable line and a red entry stamp.

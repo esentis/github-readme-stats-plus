@@ -1,5 +1,7 @@
 import { MONO, barcode, esc, fit, svg, words } from "../card.js";
 
+export const about = "Kraft-paper luggage tag with a string, an airport-style code and a barcode. Shows no description.";
+
 // A kraft-paper luggage tag with a string, an airport-style code and a barcode.
 export default (r) => {
   const parts = words(r.name);

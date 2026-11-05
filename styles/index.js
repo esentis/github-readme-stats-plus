@@ -1,57 +1,37 @@
-// Every style is a function from repo data to an SVG string; listing it here makes it available as ?style=<name>.
-import adaptive from "./adaptive.js";
-import aurora from "./aurora.js";
-import blueprint from "./blueprint.js";
-import boarding from "./boarding.js";
-import bold from "./bold.js";
-import brutalist from "./brutalist.js";
-import cassette from "./cassette.js";
-import cinema from "./cinema.js";
-import creditcard from "./creditcard.js";
-import floppy from "./floppy.js";
-import glass from "./glass.js";
-import handheld from "./handheld.js";
-import holo from "./holo.js";
-import luggage from "./luggage.js";
-import neon from "./neon.js";
-import passport from "./passport.js";
-import periodic from "./periodic.js";
-import pixel from "./pixel.js";
-import retromac from "./retromac.js";
-import retrowin from "./retrowin.js";
-import splitflap from "./splitflap.js";
-import spotlight from "./spotlight.js";
-import swiss from "./swiss.js";
-import synthwave from "./synthwave.js";
-import terminal from "./terminal.js";
-import vhs from "./vhs.js";
+// Each style module exports a default render function (repo data → SVG string) and a one-line `about`.
+// Listing it in a group here makes it available as ?style=<name> and puts it on the STYLES.md gallery.
+import * as adaptive from "./adaptive.js";
+import * as aurora from "./aurora.js";
+import * as blueprint from "./blueprint.js";
+import * as boarding from "./boarding.js";
+import * as bold from "./bold.js";
+import * as brutalist from "./brutalist.js";
+import * as cassette from "./cassette.js";
+import * as cinema from "./cinema.js";
+import * as creditcard from "./creditcard.js";
+import * as floppy from "./floppy.js";
+import * as glass from "./glass.js";
+import * as handheld from "./handheld.js";
+import * as holo from "./holo.js";
+import * as luggage from "./luggage.js";
+import * as neon from "./neon.js";
+import * as passport from "./passport.js";
+import * as periodic from "./periodic.js";
+import * as pixel from "./pixel.js";
+import * as retromac from "./retromac.js";
+import * as retrowin from "./retrowin.js";
+import * as splitflap from "./splitflap.js";
+import * as spotlight from "./spotlight.js";
+import * as swiss from "./swiss.js";
+import * as synthwave from "./synthwave.js";
+import * as terminal from "./terminal.js";
+import * as vhs from "./vhs.js";
 
-export default {
-  adaptive,
-  aurora,
-  neon,
-  spotlight,
-  brutalist,
-  glass,
-  terminal,
-  bold,
-  holo,
-  blueprint,
-  synthwave,
-  pixel,
-  swiss,
-  boarding,
-  // Everyday objects
-  periodic,
-  creditcard,
-  passport,
-  luggage,
-  cinema,
-  cassette,
-  floppy,
-  vhs,
-  handheld,
-  retrowin,
-  retromac,
-  splitflap,
+export const groups = {
+  Originals: { adaptive, aurora, neon, spotlight, brutalist, glass, terminal, bold, holo, blueprint, synthwave, pixel, swiss, boarding },
+  "Everyday objects": { periodic, creditcard, passport, luggage, cinema, cassette, floppy, vhs, handheld, retrowin, retromac, splitflap },
 };
+
+export default Object.fromEntries(
+  Object.values(groups).flatMap((group) => Object.entries(group).map(([name, style]) => [name, style.default])),
+);

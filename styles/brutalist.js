@@ -1,5 +1,7 @@
 import { esc, fit, lines, row, svg, textWidth, wrap } from "../card.js";
 
+export const about = "Cream card, thick outline, hard shadow and a highlighter title.";
+
 const BLACK = "'Arial Black', 'Helvetica Neue', Arial, sans-serif";
 
 // Cream card, thick black outline, hard offset shadow and a highlighter behind the name.

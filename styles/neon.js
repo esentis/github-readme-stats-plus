@@ -1,5 +1,7 @@
 import { MONO, esc, fit, lines, row, stats, svg, wrap } from "../card.js";
 
+export const about = "Monospace, with a rotating gradient border.";
+
 // Monospace card with a rotating gradient border.
 export default (r) => {
   const full = `${r.owner}/${r.name}`;

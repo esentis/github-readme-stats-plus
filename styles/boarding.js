@@ -1,5 +1,7 @@
 import { FONT, barcode, esc, fit, isLight, svg } from "../card.js";
 
+export const about = "Boarding pass with a tear-off stub and a barcode unique to each repo. Shows no description.";
+
 // A ticket with a tear-off stub. The barcode comes from the repo name, so each repo keeps its own.
 export default (r) => {
   const light = isLight(r.lang.color);
