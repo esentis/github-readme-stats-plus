@@ -1,0 +1,9 @@
+{
+  "name": "github-readme-stats-plus",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "gallery": "node scripts/gallery.js"
+  }
+}
