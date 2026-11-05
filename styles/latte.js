@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Top-down latte with a heart rosetta on a saucer, steam drifting up, and the repo chalked on a café board.";
 
@@ -44,5 +44,5 @@ ${motion(`.lat-steam{animation:lat-rise 5s ease-in-out infinite}.lat-steam2{anim
   <text font-size="10.5" fill="#cfd2ca">${lines(wrap(r.description, 30), 190, 81, 14)}</text>
   <path d="M190 104h180" stroke="#f2efe6" stroke-opacity=".35" stroke-dasharray="4 3"/>
 </g>
-<g font-family="${FONT}">${row(stats(r, { cy: 119, size: 11.5, text: 'fill="#f2efe6"', icon: 'fill="#bfc4bd"' }), 190, 12)}</g>`,
+<g font-family="${FONT}">${row(stats({ ...r, lang: { ...r.lang, name: fit(r.lang.name, Math.max(30, 114 - textWidth(r.stars + r.forks, 11.5)), 11.5) } }, { cy: 119, size: 11.5, text: 'fill="#f2efe6"', icon: 'fill="#bfc4bd"' }), 190, 12)}</g>`,
   );

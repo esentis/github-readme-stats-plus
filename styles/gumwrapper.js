@@ -30,7 +30,7 @@ ${END}<g transform="matrix(-1 0 0 1 400 0)">${END}</g>
   <text x="196" y="${76 + size * 0.36}" font-size="${size}" fill="#fff" stroke="#c2185b" stroke-width="5" stroke-linejoin="round" paint-order="stroke">${esc(fit(r.name, 220, size, 0.62))}</text>
   <text x="80" y="38" font-size="10" fill="#fff" text-anchor="start" letter-spacing="1">BUBBLE GUM</text>
   <rect x="100" y="110" width="200" height="16" rx="8" fill="${r.lang.color}" stroke="#fff" stroke-width="1.5"/>
-  <text x="200" y="122" font-size="10" fill="${ink}">${esc(fit(r.lang.name.toUpperCase(), 110, 10, 0.68))} FLAVOUR · ⑂ ${esc(r.forks)}</text>
+  <text x="200" y="122" font-size="10" fill="${ink}">${esc(fit(r.lang.name.toUpperCase(), 70, 10, 0.68))} FLAVOUR · ⑂ ${esc(r.forks)}</text>
   <g transform="translate(316 32) rotate(-12)">
     <g><polygon points="${burst}" fill="#ffe14d" stroke="#e0478f" stroke-width="1.5"/>
       <animateTransform attributeName="transform" type="scale" values="1;1.08;1" dur="1.6s" repeatCount="indefinite"/></g>

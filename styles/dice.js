@@ -14,7 +14,7 @@ const die = (x, y, rot, n, face, pip, cls = "") =>
 
 const chip = (x, fill, ink, glyph, value) =>
   `<g transform="translate(${x} 122)"><circle r="15" fill="${fill}"/><circle r="13.5" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="4 3.07"/><circle r="10.5" fill="none" stroke="${ink}" stroke-opacity=".45"/>
-  <text y="-2" font-size="7" text-anchor="middle" fill="${ink}">${glyph}</text><text y="7.5" font-size="8.5" font-weight="700" text-anchor="middle" fill="${ink}">${esc(fit(value, 24, 8.5, 0.55))}</text></g>`;
+  <text y="-2" font-size="7" text-anchor="middle" fill="${ink}">${glyph}</text><text y="7.5" font-size="${value.length > 4 ? 7 : 8.5}" font-weight="700" text-anchor="middle" fill="${ink}">${esc(fit(value, 24, 8.5, 0.55))}</text></g>`;
 
 // Green felt inside a wooden rail; dice to the left, gilt type and chips to the right.
 export default (r) => {
@@ -36,8 +36,8 @@ ${die(50, 48, -12, d[0], "#faf7ef", "#1a1a1a")}
 ${die(108, 64, 9, d[1], "#faf7ef", "#b91c1c")}
 ${die(58, 106, 18, d[2], c, ink, "dc-wob")}
 <g font-family="${SERIF}">
-  <text x="164" y="32" font-size="9.5" font-weight="700" letter-spacing="2.5" fill="#d4af37">${esc(fit(`HIGH ROLLER · ${r.lang.name.toUpperCase()}`, 220, 9.5, 0.8))}</text>
-  <text x="164" y="58" font-size="20" font-weight="700" fill="#f4d58d">${esc(fit(r.name, 222, 20, 0.58))}</text>
+  <text x="164" y="32" font-size="9.5" font-weight="700" letter-spacing="2.5" fill="#d4af37">${esc(fit(`HIGH ROLLER · ${r.lang.name.toUpperCase()}`, 220, 9.5, 0.95))}</text>
+  <text x="164" y="58" font-size="20" font-weight="700" fill="#f4d58d">${esc(fit(r.name, 222, 20, 0.62))}</text>
   <text font-size="11.5" font-style="italic" fill="#e8e2c8">${lines(wrap(r.description, 34), 164, 78, 15)}</text>
   ${chip(180, c, ink, "★", r.stars)}${chip(216, "#1c1c1c", "#fff", "⑂", r.forks)}
   <text x="242" y="119" font-size="8.5" letter-spacing="2" fill="#d4af37">ROLLED</text>

@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, motion, svg, words, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, svg, textWidth, words, wrap } from "../card.js";
 
 export const about = "Element tile: stars as the atomic number, a symbol made from the name.";
 
@@ -6,6 +6,7 @@ export const about = "Element tile: stars as the atomic number, a symbol made fr
 export default (r) => {
   const [a, b = a.slice(1)] = words(r.name);
   const symbol = a[0].toUpperCase() + (b[0] ?? "").toLowerCase();
+  const tail = `STARS ${r.stars} · FORKS ${r.forks} · `;
   return svg(
     r.name,
     `${motion(".pd-glow { animation: pd-glow 5s ease-in-out infinite } @keyframes pd-glow { 50% { fill-opacity: .28 } }")}
@@ -19,7 +20,7 @@ export default (r) => {
   <text x="75" y="125" font-size="9" text-anchor="middle" fill="#6b6760">${esc(fit(r.lang.name, 100, 9))}</text>
   <text x="152" y="44" font-size="20" font-weight="700">${esc(fit(r.name, 230, 20))}</text>
   <text font-size="12.5" fill="#4a4740">${lines(wrap(r.description, 34), 152, 68, 17)}</text>
-  <text x="152" y="124" font-size="11" fill="#6b6760" letter-spacing=".5">STARS ${esc(r.stars)} · FORKS ${esc(r.forks)} · ${esc(fit(r.lang.name.toUpperCase(), 90, 11))}</text>
+  <text x="152" y="124" font-size="11" fill="#6b6760" letter-spacing=".5">${esc(tail + fit(r.lang.name.toUpperCase(), 236 - textWidth(tail, 11, 0.55), 11, 0.7))}</text>
 </g>`,
   );
 };

@@ -1,4 +1,4 @@
-import { FONT, MONO, esc, fit, lines, motion, svg, wrap } from "../card.js";
+import { FONT, MONO, esc, fit, lines, motion, svg, textWidth, wrap } from "../card.js";
 
 export const about = "CPU package: gold pins, a heat spreader engraved with the name and a clock speed from the stars (1.2K stars = 1.2 GHz), a die shot whose cores pulse with load.";
 
@@ -9,6 +9,8 @@ const eng = (s, x, y, size, w = 400) => `<text x="${x}" y="${y + 0.7}" font-size
 export default (r) => {
   const c = (i) => r.name.charCodeAt(i % r.name.length);
   const clock = /K$/.test(r.stars) ? `${r.stars.slice(0, -1)} GHz` : /M$/.test(r.stars) ? `${r.stars.slice(0, -1)} THz` : `${r.stars} MHz`;
+  // The language gets what the CLK/CORES line leaves (mono, 10px).
+  const lang = fit(r.lang.name, Math.min(60, 216 - textWidth(`CLK ★ ${clock}  CORES ⑂ ${r.forks}`, 10, 0.62)), 10);
   const pins = Array.from({ length: 15 }, (_, i) => {
     const p = 21 + i * 7.5;
     return `<rect x="${p}" y="9" width="2.6" height="6"/><rect x="${p}" y="135" width="2.6" height="6"/><rect x="9" y="${p}" width="6" height="2.6"/><rect x="135" y="${p}" width="6" height="2.6"/>`;
@@ -44,8 +46,8 @@ ${cores}
   <text x="152" y="52" font-size="17" font-weight="700" fill="#eef0f3">${esc(fit(r.name, 164, 17))}</text>
   <text font-size="11" fill="#a3a9b3">${lines(wrap(r.description, 28, 3), 152, 74, 14)}</text>
   <text x="152" y="132" font-family="${MONO}" font-size="10" fill="#eef0f3"><tspan fill="#8a909a">CLK</tspan> ★ ${esc(clock)}  <tspan fill="#8a909a">CORES</tspan> ⑂ ${esc(r.forks)}</text>
-  <circle cx="${376 - Math.min(60, r.lang.name.length * 6)}" cy="128.5" r="4" fill="${r.lang.color}"/>
-  <text x="384" y="132" font-family="${MONO}" font-size="10" fill="#eef0f3" text-anchor="end">${esc(fit(r.lang.name, 60, 10))}</text>
+  <circle cx="${376 - lang.length * 6}" cy="128.5" r="4" fill="${r.lang.color}"/>
+  <text x="384" y="132" font-family="${MONO}" font-size="10" fill="#eef0f3" text-anchor="end">${esc(lang)}</text>
 </g>`,
   );
 };

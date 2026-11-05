@@ -5,7 +5,7 @@ export const about = "Green phosphor terminal with scanlines and a blinking curs
 // Green phosphor terminal window with scanlines and a blinking cursor.
 export default (r) => {
   const status = [
-    ["lang", r.lang.name.toLowerCase(), "#5eead4"],
+    ["lang", fit(r.lang.name.toLowerCase(), 90, 12.5), "#5eead4"],
     ["stars", r.stars, "#fde047"],
     ["forks", r.forks, "#f9a8d4"],
   ];

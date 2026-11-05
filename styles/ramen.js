@@ -1,4 +1,4 @@
-import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, textWidth, wrap } from "../card.js";
 
 export const about = "Ramen shop: an indigo noren curtain with the repo name, a steaming bowl with egg, nori and naruto, and chopsticks gently lifting noodles.";
 
@@ -37,7 +37,7 @@ ${motion(`.rm-steam{animation:rm-rise 4.5s ease-in-out infinite}@keyframes rm-ri
 <g font-family="${FONT}">
   <text x="196" y="72" font-size="9" font-weight="700" letter-spacing="2" fill="#a89f94">${esc(fit(`BY ${r.owner.toUpperCase()}`, 186, 9, 0.95))}</text>
   <text font-size="11" fill="#e2d9cc">${lines(wrap(r.description, 30), 196, 90, 14)}</text>
-  ${row(stats(r, { cy: 139, size: 11, text: 'fill="#f3efe6" font-weight="600"', icon: 'fill="#d9b98a"' }), 196, 12)}
+  ${row(stats({ ...r, lang: { ...r.lang, name: fit(r.lang.name, Math.max(30, 116 - textWidth(r.stars + r.forks, 11)), 11) } }, { cy: 139, size: 11, text: 'fill="#f3efe6" font-weight="600"', icon: 'fill="#d9b98a"' }), 196, 12)}
 </g>`,
   );
 };

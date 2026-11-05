@@ -38,7 +38,7 @@ ${motion(`.tb-plume{transform-box:fill-box;transform-origin:center top;animation
 <circle cx="208" cy="45" r="3" fill="#eef2e8" stroke="#c9d3cf"/>
 <path d="M200 50L208 45" stroke="#a89c80" stroke-width="1.2"/>
 <g font-family="${FONT}">
-  <text x="218" y="48" font-size="8.5" font-weight="700" letter-spacing="2" fill="#7f8f72">${esc(fit(`${r.lang.name.toUpperCase()} BLEND`, 158, 8.5, 0.8))}</text>
+  <text x="218" y="48" font-size="8.5" font-weight="700" letter-spacing="2" fill="#7f8f72">${esc(fit(r.lang.name.toUpperCase(), 116, 8.5, 0.95))} BLEND</text>
   <text x="210" y="70" font-size="16" font-weight="700" fill="#2f3a2a">${esc(fit(r.name, 166, 16))}</text>
   <text font-size="10" fill="#66705f">${lines(wrap(r.description, 27), 210, 87, 13)}</text>
   ${row(stats(r, { cy: 121, size: 11, text: 'fill="#2f3a2a" font-weight="600"', icon: 'fill="#7f8f72"' }).slice(1), 210, 14)}
