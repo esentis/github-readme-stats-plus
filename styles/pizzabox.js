@@ -1,0 +1,41 @@
+import { FONT, esc, fit, isLight, motion, svg } from "../card.js";
+
+export const about = "Pizza delivery box lid: kraft cardboard with a retro printed badge, a HOT & FRESH star ribbon and steam from the vents. Shows no description.";
+
+const INK = "#8f2a1c";
+
+// A printed pizza slice icon for the sides of the lid.
+const slice = (x, y, flip) => `<g transform="translate(${x} ${y}) scale(${flip} 1)" fill="none" stroke="${INK}" stroke-width="2" stroke-linejoin="round">
+    <path d="M-16-14Q0-22 16-14L0 22Z"/><path d="M-13-10Q0-17 13-10"/>
+    <g fill="${INK}" stroke="none"><circle cx="-4" cy="-4" r="2.6"/><circle cx="5" cy="-2" r="2.2"/><circle cx="0" cy="7" r="2.2"/></g>
+  </g>`;
+
+// A vent slot with a wisp of steam curling out of it.
+const vent = (x, d) => `<rect x="${x - 12}" y="38" width="24" height="5" rx="2.5" fill="#6e4b25"/>
+  <path class="pz-steam" style="animation-delay:${d}s" d="M${x - 3} 34q-5-6 0-11t0-11" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>`;
+
+// The lid of a kraft pizza box with a one-colour printed badge and a ribbon in the language colour.
+export default (r) => {
+  const c = r.lang.color;
+  const ink = isLight(c) ? "#2a1608" : "#fff";
+  return svg(
+    r.name,
+    `<defs><linearGradient id="kraft" x2="1" y2="1"><stop offset="0" stop-color="#d6ab72"/><stop offset="1" stop-color="#bf9158"/></linearGradient></defs>
+${motion(`.pz-steam{animation:pz-rise 4.5s ease-in-out infinite}@keyframes pz-rise{0%,100%{transform:translateY(0);opacity:.7}50%{transform:translateY(-6px);opacity:.1}}`)}
+<rect width="400" height="150" rx="10" fill="url(#kraft)"/>
+<path d="M0 12H400M0 128H400" stroke="#a87c45" stroke-width="1.5"/>
+<rect y="128" width="400" height="22" fill="#000" fill-opacity=".07"/>
+${vent(42, 0)}${vent(358, -2.2)}
+${slice(42, 88, 1)}${slice(358, 88, -1)}
+<g fill="none" stroke="${INK}"><ellipse cx="200" cy="62" rx="120" ry="46" stroke-width="3"/><ellipse cx="200" cy="62" rx="114" ry="40"/></g>
+<path d="M98 116L112 108L106 100H128V124H112ZM302 116L288 108L294 100H272V124H288Z" fill="${c}" stroke="${INK}" stroke-opacity=".5"/>
+<rect x="116" y="98" width="168" height="22" rx="2" fill="${c}" stroke="${INK}" stroke-opacity=".5"/>
+<g font-family="${FONT}" text-anchor="middle" font-weight="800">
+  <text x="200" y="45" font-size="8" letter-spacing="3" fill="${INK}">★ FRESH FROM THE OVEN ★</text>
+  <text x="200" y="73" font-size="23" font-style="italic" fill="${INK}">${esc(fit(r.name, 196, 23, 0.64))}</text>
+  <text x="200" y="89" font-size="8" letter-spacing="2" fill="${INK}" fill-opacity=".85">${esc(fit(`EST. BY ${r.owner.toUpperCase()}`, 150, 8, 0.8))}</text>
+  <text x="200" y="113.5" font-size="11.5" letter-spacing="1" fill="${ink}">HOT &amp; FRESH ★ ${esc(r.stars)}</text>
+  <text x="200" y="143" font-size="8.5" font-weight="700" letter-spacing="2" fill="#6e4b25">${esc(fit(`${r.lang.name.toUpperCase()} · ⑂ ${r.forks} SLICES SHARED · THIS SIDE UP`, 360, 8.5, 0.8))}</text>
+</g>`,
+  );
+};

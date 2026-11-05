@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs><clipPath id="card"><rect width="400" height="150" rx="10"/></clipPath></defs>
+<style>@media (prefers-reduced-motion: no-preference) { .ce-drop{animation:ce-bob 2.8s ease-in-out infinite}@keyframes ce-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.ce-glow{transform-box:fill-box;transform-origin:center;animation:ce-pulse 3s ease-in-out infinite}@keyframes ce-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}} }</style>
+<g clip-path="url(#card)">
+  <rect width="400" height="150" fill="#ffc21a"/>
+  <g fill="#ffd84d"><path d="M310 112L710 112L704 181Z"/><path d="M310 112L686 249L656 312Z"/><path d="M310 112L616 369L567 418Z"/><path d="M310 112L510 458L447 488Z"/><path d="M310 112L379 506L310 512Z"/><path d="M310 112L241 506L173 488Z"/><path d="M310 112L110 458L53 418Z"/><path d="M310 112L4 369L-36 312Z"/><path d="M310 112L-66 249L-84 181Z"/><path d="M310 112L-90 112L-84 43Z"/><path d="M310 112L-66 -25L-36 -88Z"/><path d="M310 112L4 -145L53 -194Z"/><path d="M310 112L110 -234L173 -264Z"/><path d="M310 112L241 -282L310 -288Z"/><path d="M310 112L379 -282L447 -264Z"/><path d="M310 112L510 -234L567 -194Z"/><path d="M310 112L616 -145L656 -88Z"/><path d="M310 112L686 -25L704 43Z"/></g>
+  <rect y="138" width="400" height="12" fill="#e3262e"/>
+</g>
+<rect x="18" y="14" width="80.8" height="16" rx="8" fill="#e3262e"/>
+<text x="26" y="26" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" letter-spacing="1.5" fill="#fff">ESENTIS&#39;S</text>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="900">
+  <text x="18" y="62" font-size="27" fill="#fff" stroke="#c0262d" stroke-width="6" stroke-linejoin="round" paint-order="stroke" transform="rotate(-4 18 62)">LOAD_SWITCH</text>
+  <text font-size="10" font-weight="700" fill="#7a2d00"><tspan x="20" y="86">A highly customizable toggle</tspan><tspan x="20" y="99">switch with a loading state.</tspan></text>
+  <text x="20" y="147" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#fff">WITH REAL DART · ⑂ 3 FORKS</text>
+</g>
+<ellipse cx="310" cy="102" rx="64" ry="12" fill="#fffaf0"/>
+<path class="ce-drop" d="M262 90q-6-14 4-22q-2 10 4 16ZM356 90q6-14-4-22q2 10-4 16Z" fill="#fffaf0"/>
+<g class="ce-drop" style="animation-delay:-1.4s" fill="#fffaf0"><circle cx="276" cy="74" r="3"/><circle cx="346" cy="72" r="2.5"/><circle cx="312" cy="78" r="2"/></g>
+<ellipse cx="276" cy="100" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/><ellipse cx="298" cy="96" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/><ellipse cx="322" cy="101" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/><ellipse cx="344" cy="97" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/><ellipse cx="310" cy="106" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/><ellipse cx="288" cy="108" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/><ellipse cx="334" cy="108" rx="7" ry="4.5" fill="none" stroke="#00B4AB" stroke-width="3.5"/>
+<path d="M246 102H374C372 126 344 140 310 140C276 140 248 126 246 102Z" fill="#2f7fd8"/>
+<path d="M256 112Q310 124 364 112" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+<polygon class="ce-glow" points="352.0,8.0 356.7,16.5 364.2,10.4 365.3,20.0 374.6,17.4 372.0,26.7 381.6,27.8 375.5,35.3 384.0,40.0 375.5,44.7 381.6,52.2 372.0,53.3 374.6,62.6 365.3,60.0 364.2,69.6 356.7,63.5 352.0,72.0 347.3,63.5 339.8,69.6 338.7,60.0 329.4,62.6 332.0,53.3 322.4,52.2 328.5,44.7 320.0,40.0 328.5,35.3 322.4,27.8 332.0,26.7 329.4,17.4 338.7,20.0 339.8,10.4 347.3,16.5" fill="#fff" fill-opacity=".55"/>
+<polygon points="352.0,12.0 356.1,19.4 362.7,14.1 363.7,22.5 371.8,20.2 369.5,28.3 377.9,29.3 372.6,35.9 380.0,40.0 372.6,44.1 377.9,50.7 369.5,51.7 371.8,59.8 363.7,57.5 362.7,65.9 356.1,60.6 352.0,68.0 347.9,60.6 341.3,65.9 340.3,57.5 332.2,59.8 334.5,51.7 326.1,50.7 331.4,44.1 324.0,40.0 331.4,35.9 326.1,29.3 334.5,28.3 332.2,20.2 340.3,22.5 341.3,14.1 347.9,19.4" fill="#e3262e"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="900" fill="#fff" text-anchor="middle" transform="rotate(10 352 40)">
+  <text x="352" y="36" font-size="11">NEW!</text>
+  <text x="352" y="50" font-size="12">20 ★</text>
+</g>
+</svg>
