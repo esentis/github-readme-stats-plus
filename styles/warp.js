@@ -1,13 +1,12 @@
 // Hyperspace jump: star streaks rush out from the centre while the name holds steady in the dark eye of the tunnel.
-import { FONT, esc, fit, motion, row, stats, svg, textWidth } from "../card.js";
-import { seeded } from "./starmap.js";
+import { FONT, esc, fit, motion, row, stats, svg, textWidth, rng } from "../card.js";
 
 export const about = "Hyperspace warp: star streaks radiate and rush outward from the centre, with the name held in the middle.";
 
 const PERIODS = [70, 95, 120]; // dash period of each streak layer; each layer slides two periods per loop
 
 export default (r) => {
-  const rnd = seeded(r.name);
+  const rnd = rng(r.name);
   const layers = PERIODS.map((p, k) => {
     const d = Array.from({ length: 22 }, () => {
       const a = rnd() * 2 * Math.PI, r0 = 40 + rnd() * 30;

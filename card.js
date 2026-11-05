@@ -83,6 +83,12 @@ export const barcode = (seed, x, y, width, height) => {
   return bars.join("");
 };
 
+// Repeatable pseudo-random numbers in [0, 1) from a string, so generated art stays the same for a repo.
+export const rng = (seed) => {
+  let x = [...seed].reduce((a, c) => Math.imul(a ^ c.charCodeAt(0), 16777619), 2166136261) || 1;
+  return () => ((x ^= x << 13), (x ^= x >>> 17), (x ^= x << 5), (x >>> 0) / 2 ** 32);
+};
+
 // Whether dark text is needed on top of this colour (perceived brightness, accepts #rgb and #rrggbb).
 export const isLight = (hex) => {
   const h = hex.length < 7 ? hex.replace(/\w/g, "$&$&") : hex;

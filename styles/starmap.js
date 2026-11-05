@@ -1,24 +1,13 @@
 // Antique constellation chart: gold coordinate grid on navy, a constellation drawn from the repo name, serif chart labels.
-import { FONT, esc, fit, lines, motion, row, stats, svg, wrap } from "../card.js";
+import { FONT, esc, fit, lines, motion, row, stats, svg, wrap, rng } from "../card.js";
 
 export const about = "Constellation chart: a star pattern unique to each repo name on a gold coordinate grid, with chart labels.";
 
 const SERIF = "Georgia, 'Times New Roman', serif";
 const GOLD = "#c9a74a";
 
-// A small seeded random generator (FNV hash into mulberry32), so a name always gives the same sky.
-export const seeded = (s) => {
-  let a = [...s].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 16777619), 2166136261);
-  return () => {
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-};
-
 export default (r) => {
-  const rnd = seeded(r.name);
+  const rnd = rng(r.name);
   const n = 6 + (r.name.length % 3);
   const pts = Array.from({ length: n }, (_, i) => [244 + i * (128 / (n - 1)) + (rnd() - 0.5) * 12, 32 + rnd() * 84, 1.2 + rnd() * 1.8]);
   const path = pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`).join("") + `L${pts[n - 3][0].toFixed(1)} ${pts[n - 3][1].toFixed(1)}`;

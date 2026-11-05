@@ -1,6 +1,5 @@
 // Green phosphor radar scope: a sweep turns over range rings and lights up blips, one blip per few stars.
-import { MONO, esc, fit, lines, motion, svg, wrap } from "../card.js";
-import { seeded } from "./starmap.js";
+import { MONO, esc, fit, lines, motion, svg, wrap, rng } from "../card.js";
 
 export const about = "Radar scope in green phosphor: a rotating sweep lights up blips (stars as contacts), readouts beside it.";
 
@@ -8,7 +7,7 @@ const G = "#4ade80";
 const D = 4; // seconds per sweep
 
 export default (r) => {
-  const rnd = seeded(r.name);
+  const rnd = rng(r.name);
   const count = Math.min(9, 2 + Math.round(Math.log2(r.starCount + 1)));
   // Each blip flashes when the sweep passes its bearing: a negative delay lines its keyframe 0% up with that moment.
   const blips = Array.from({ length: count }, () => {

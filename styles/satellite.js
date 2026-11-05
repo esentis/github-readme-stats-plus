@@ -1,13 +1,12 @@
 // A gold-foil satellite with solar wings drifting above a dark planet limb lit in the language colour, telemetry beside it.
-import { FONT, MONO, esc, fit, lines, motion, svg, wrap } from "../card.js";
-import { seeded } from "./starmap.js";
+import { FONT, MONO, esc, fit, lines, motion, svg, wrap, rng } from "../card.js";
 
 export const about = "Satellite with solar panels over a curved planet horizon lit in the language colour, with telemetry readouts.";
 
 const wing = (x) => `<rect x="${x}" y="46" width="52" height="18" fill="#1e3a8a" stroke="#93c5fd" stroke-width=".6"/><path d="M${x + 13} 46V64M${x + 26} 46V64M${x + 39} 46V64M${x} 55H${x + 52}" stroke="#60a5fa" stroke-opacity=".55" stroke-width=".6"/>`;
 
 export default (r) => {
-  const rnd = seeded(r.owner + r.name);
+  const rnd = rng(r.owner + r.name);
   const sky = Array.from({ length: 26 }, () => `<circle cx="${(rnd() * 400).toFixed(1)}" cy="${(rnd() * 110).toFixed(1)}" r="${(0.3 + rnd() * 0.6).toFixed(2)}"/>`).join("");
   const cell = (x, k, v) => `<text x="${x}" y="112" font-size="7.5" fill="#7dd3fc" fill-opacity=".75" letter-spacing="1">${k}</text><text x="${x}" y="127" font-size="11" font-weight="700" fill="#e2e8f0">${v}</text>`;
   return svg(
