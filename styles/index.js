@@ -17,6 +17,7 @@ import * as blocks from "./blocks.js";
 import * as blueprint from "./blueprint.js";
 import * as boardgame from "./boardgame.js";
 import * as boarding from "./boarding.js";
+import * as bokeh from "./bokeh.js";
 import * as bold from "./bold.js";
 import * as boombox from "./boombox.js";
 import * as borealis from "./borealis.js";
@@ -52,7 +53,10 @@ import * as dna from "./dna.js";
 import * as donut from "./donut.js";
 import * as dunes from "./dunes.js";
 import * as duotone from "./duotone.js";
+import * as eclipse from "./eclipse.js";
 import * as equalizer from "./equalizer.js";
+import * as fireflies from "./fireflies.js";
+import * as fireworks from "./fireworks.js";
 import * as flask from "./flask.js";
 import * as floppy from "./floppy.js";
 import * as forest from "./forest.js";
@@ -72,9 +76,11 @@ import * as isometric from "./isometric.js";
 import * as jersey from "./jersey.js";
 import * as keycap from "./keycap.js";
 import * as keynote from "./keynote.js";
+import * as lanterns from "./lanterns.js";
 import * as latte from "./latte.js";
 import * as lava from "./lava.js";
 import * as ledmatrix from "./ledmatrix.js";
+import * as lighthouse from "./lighthouse.js";
 import * as lowpoly from "./lowpoly.js";
 import * as luggage from "./luggage.js";
 import * as maze from "./maze.js";
@@ -111,6 +117,7 @@ import * as placard from "./placard.js";
 import * as playingcard from "./playingcard.js";
 import * as polaroid from "./polaroid.js";
 import * as popart from "./popart.js";
+import * as prism from "./prism.js";
 import * as productlabel from "./productlabel.js";
 import * as punchcard from "./punchcard.js";
 import * as puzzlecube from "./puzzlecube.js";
@@ -118,6 +125,7 @@ import * as racetiming from "./racetiming.js";
 import * as radar from "./radar.js";
 import * as radio from "./radio.js";
 import * as railway from "./railway.js";
+import * as rainbow from "./rainbow.js";
 import * as ramen from "./ramen.js";
 import * as receipt from "./receipt.js";
 import * as retromac from "./retromac.js";
@@ -133,6 +141,7 @@ import * as sheetmusic from "./sheetmusic.js";
 import * as sketch from "./sketch.js";
 import * as slots from "./slots.js";
 import * as smartwatch from "./smartwatch.js";
+import * as snowglobe from "./snowglobe.js";
 import * as splitflap from "./splitflap.js";
 import * as spotlight from "./spotlight.js";
 import * as stamp from "./stamp.js";
@@ -142,6 +151,7 @@ import * as sticker from "./sticker.js";
 import * as storm from "./storm.js";
 import * as subway from "./subway.js";
 import * as sudoku from "./sudoku.js";
+import * as sunrise from "./sunrise.js";
 import * as sushi from "./sushi.js";
 import * as swiss from "./swiss.js";
 import * as synth from "./synth.js";
@@ -185,6 +195,7 @@ export const groups = {
   "Music and sound": { equalizer, waveform, synth, piano, pedal, gigposter, sheetmusic, radio, boombox, mixer, metronome, headphones },
   "Games and toys": { blocks, puzzlecube, chess, dice, pinball, slots, crossword, sudoku, mines, maze, boardgame, clawmachine },
   "Science and tech": { pcb, oscilloscope, dna, microscope, flask, atom, punchcard, serverrack, keycap, gitgraph, cpu, morse },
+  "Light and sky": { rainbow, sunrise, fireflies, bokeh, prism, lanterns, fireworks, snowglobe, lighthouse, eclipse },
 };
 
 export default Object.fromEntries(

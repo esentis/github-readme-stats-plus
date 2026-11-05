@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="sr-clip"><rect width="400" height="150" rx="14"/></clipPath>
+  <radialGradient id="sr-sky" gradientUnits="userSpaceOnUse" cx="318" cy="101" r="330"><stop offset="0" stop-color="#ffe9b8"/><stop offset=".1" stop-color="#ffc27c"/><stop offset=".26" stop-color="#f2876c"/><stop offset=".48" stop-color="#b14f84"/><stop offset=".75" stop-color="#4d3378"/><stop offset="1" stop-color="#241d4c"/></radialGradient>
+  <radialGradient id="sr-halo"><stop offset=".3" stop-color="#fff3c4" stop-opacity=".75"/><stop offset="1" stop-color="#ffb36b" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sr-sun" x2="0" y2="1"><stop offset="0" stop-color="#fffbe8"/><stop offset="1" stop-color="#ffd27a"/></linearGradient>
+  <linearGradient id="sr-haze" x2="0" y2="1"><stop offset="0" stop-color="#ffc98a" stop-opacity="0"/><stop offset=".6" stop-color="#ffc98a" stop-opacity=".35"/><stop offset="1" stop-color="#ffc98a" stop-opacity="0"/></linearGradient>
+  <filter id="sr-shadow"><feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#1b1236" flood-opacity=".6"/></filter>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .sr-sun{animation:sr-rise 10s ease-in-out infinite alternate}.sr-halo{transform-origin:318px 101px;animation:sr-breathe 5s ease-in-out infinite alternate}
+.sr-wing{animation:sr-flap 1.3s ease-in-out infinite}
+@keyframes sr-rise{to{transform:translateY(-9px)}}@keyframes sr-breathe{to{transform:scale(1.14);opacity:.75}}@keyframes sr-flap{50%{transform:scaleY(.3)}} }</style>
+<g clip-path="url(#sr-clip)">
+  <rect width="400" height="150" fill="url(#sr-sky)"/>
+  <g fill="#fff"><circle cx="18" cy="14" r=".8" opacity=".6"/><circle cx="96" cy="9" r=".6" opacity=".45"/><circle cx="168" cy="18" r=".7" opacity=".35"/><circle cx="232" cy="8" r=".6" opacity=".3"/><circle cx="140" cy="6" r=".5" opacity=".4"/></g>
+  <g class="sr-sun"><circle class="sr-halo" cx="318" cy="101" r="66" fill="url(#sr-halo)"/><circle cx="318" cy="101" r="23" fill="url(#sr-sun)"/></g>
+  <rect y="82" width="400" height="34" fill="url(#sr-haze)"/>
+  <path d="M0 104C50 96 110 93 170 98S282 106 338 100 384 92 400 95V150H0Z" fill="#c2607f"/>
+  <path d="M0 104C50 96 110 93 170 98S282 106 338 100 384 92 400 95" fill="none" stroke="#ffd3a6" stroke-opacity=".55"/>
+  <path d="M0 117C60 109 124 112 186 118S304 114 356 108 392 110 400 112V150H0Z" fill="#7b3d74"/>
+  <path d="M0 133C70 125 140 120 212 126S330 137 400 125V150H0Z" fill="#2d1d40"/>
+  <g fill="none" stroke="#2b1538" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(256 44) scale(1.35)"><path class="sr-wing" style="animation-delay:0s" d="M-7 -1Q-3.5 -5 0 0Q3.5 -5 7 -1"/></g><g transform="translate(282 33) scale(1)"><path class="sr-wing" style="animation-delay:-0.45s" d="M-7 -1Q-3.5 -5 0 0Q3.5 -5 7 -1"/></g><g transform="translate(279 57) scale(0.85)"><path class="sr-wing" style="animation-delay:-0.85s" d="M-7 -1Q-3.5 -5 0 0Q3.5 -5 7 -1"/></g></g>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="13.5" fill="none" stroke="#fff" stroke-opacity=".14"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" filter="url(#sr-shadow)">
+  <text x="24" y="32" font-size="9.5" font-weight="600" letter-spacing="1.6" fill="#d9b6e0">ESENTIS</text>
+  <text x="24" y="54" font-size="20" font-weight="700" fill="#fff">load_switch</text>
+  <text font-size="12" fill="#f4dbe9"><tspan x="24" y="75">A highly customizable toggle</tspan><tspan x="24" y="91">switch with a loading state.</tspan></text>
+  <g transform="translate(24 0)"><circle cx="5" cy="129" r="5" fill="#00B4AB"/><text x="16" y="133.32" font-size="12" fill="#fff">Dart</text></g><g transform="translate(81.8 0)"><path transform="translate(0 122) scale(0.875)" fill-rule="evenodd" fill="#f6b8c8" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="133.32" font-size="12" fill="#fff">20</text></g><g transform="translate(129.2 0)"><path transform="translate(0 122) scale(0.875)" fill-rule="evenodd" fill="#f6b8c8" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="133.32" font-size="12" fill="#fff">3</text></g>
+</g>
+</svg>

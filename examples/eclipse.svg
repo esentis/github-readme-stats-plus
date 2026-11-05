@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="ec-clip"><rect width="400" height="150" rx="14"/></clipPath>
+  <radialGradient id="ec-bg" cx=".79" cy=".5" r=".75"><stop offset="0" stop-color="#11131d"/><stop offset="1" stop-color="#030409"/></radialGradient>
+  <radialGradient id="ec-halo" gradientUnits="userSpaceOnUse" cx="316" cy="75" r="86"><stop offset=".33" stop-color="#fff" stop-opacity=".95"/><stop offset=".4" stop-color="#00B4AB" stop-opacity=".55"/><stop offset=".55" stop-color="#00B4AB" stop-opacity=".2"/><stop offset="1" stop-color="#00B4AB" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ec-ray" x2="0" y2="1"><stop offset="0" stop-color="#00B4AB" stop-opacity="0"/><stop offset=".55" stop-color="#00B4AB" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity=".8"/></linearGradient>
+  <radialGradient id="ec-spark"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <filter id="ec-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <filter id="ec-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5"/></filter>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .ec-a,.ec-b,.ec-ring{transform-origin:316px 75px}.ec-a{animation:ec-breathe 7s ease-in-out infinite}.ec-b{animation:ec-breathe 9s ease-in-out -4s infinite}
+.ec-ring{animation:ec-flash 10s ease-in-out infinite}.ec-halo{animation:ec-shim 5s ease-in-out infinite alternate}
+@keyframes ec-breathe{50%{transform:scale(1.07) rotate(2deg);opacity:.6}}@keyframes ec-shim{to{opacity:.75}}
+@keyframes ec-flash{0%,78%{opacity:0;transform:scale(.6)}86%{opacity:1;transform:scale(1)}94%,100%{opacity:0;transform:scale(.8)}} }</style>
+<g clip-path="url(#ec-clip)">
+  <rect width="400" height="150" fill="url(#ec-bg)"/>
+  <g fill="#fff" opacity=".45"><circle cx="232" cy="16" r=".6"/><circle cx="388" cy="22" r=".7"/><circle cx="376" cy="132" r=".6"/><circle cx="246" cy="134" r=".5"/><circle cx="204" cy="40" r=".5"/><circle cx="150" cy="10" r=".5"/></g>
+  <circle class="ec-halo" cx="316" cy="75" r="86" fill="url(#ec-halo)"/>
+  <g class="ec-a" fill="url(#ec-ray)" filter="url(#ec-soft)"><path transform="translate(316 75) rotate(8.2) translate(0 -25)" d="M-7.7412085686810315 0Q-2.7 -25.8 0 -51.6Q2.7 -25.8 7.7412085686810315 0Z"/><path transform="translate(316 75) rotate(53.9) translate(0 -25)" d="M-4.018174697179347 0Q-1.4 -15.1 0 -30.1Q1.4 -15.1 4.018174697179347 0Z"/><path transform="translate(316 75) rotate(84.1) translate(0 -25)" d="M-5.397311874898151 0Q-1.9 -26.6 0 -53.1Q1.9 -26.6 5.397311874898151 0Z"/><path transform="translate(316 75) rotate(130.1) translate(0 -25)" d="M-7.580819832859561 0Q-2.7 -25.1 0 -50.2Q2.7 -25.1 7.580819832859561 0Z"/><path transform="translate(316 75) rotate(170.9) translate(0 -25)" d="M-5.625714423134923 0Q-2.0 -15.7 0 -31.4Q2.0 -15.7 5.625714423134923 0Z"/><path transform="translate(316 75) rotate(216.2) translate(0 -25)" d="M-7.381640025181696 0Q-2.6 -16.8 0 -33.6Q2.6 -16.8 7.381640025181696 0Z"/><path transform="translate(316 75) rotate(242.8) translate(0 -25)" d="M-5.658248899038881 0Q-2.0 -25.3 0 -50.6Q2.0 -25.3 5.658248899038881 0Z"/><path transform="translate(316 75) rotate(296.3) translate(0 -25)" d="M-5.686334710102528 0Q-2.0 -27.6 0 -55.1Q2.0 -27.6 5.686334710102528 0Z"/><path transform="translate(316 75) rotate(337.6) translate(0 -25)" d="M-6.213178665842861 0Q-2.2 -25.2 0 -50.3Q2.2 -25.2 6.213178665842861 0Z"/></g>
+  <g class="ec-b" fill="url(#ec-ray)" filter="url(#ec-soft)" opacity=".8"><path transform="translate(316 75) rotate(20.3) translate(0 -25)" d="M-8.102259896462783 0Q-2.8 -24.5 0 -49.0Q2.8 -24.5 8.102259896462783 0Z"/><path transform="translate(316 75) rotate(62.8) translate(0 -25)" d="M-6.8438401070889086 0Q-2.4 -14.3 0 -28.6Q2.4 -14.3 6.8438401070889086 0Z"/><path transform="translate(316 75) rotate(116.2) translate(0 -25)" d="M-7.451151673216373 0Q-2.6 -18.8 0 -37.5Q2.6 -18.8 7.451151673216373 0Z"/><path transform="translate(316 75) rotate(145.0) translate(0 -25)" d="M-8.672813311917707 0Q-3.0 -21.2 0 -42.4Q3.0 -21.2 8.672813311917707 0Z"/><path transform="translate(316 75) rotate(181.8) translate(0 -25)" d="M-7.190356676932424 0Q-2.5 -24.0 0 -48.1Q2.5 -24.0 7.190356676932424 0Z"/><path transform="translate(316 75) rotate(225.5) translate(0 -25)" d="M-7.564620346296579 0Q-2.6 -16.8 0 -33.7Q2.6 -16.8 7.564620346296579 0Z"/><path transform="translate(316 75) rotate(276.1) translate(0 -25)" d="M-8.448245068779215 0Q-3.0 -27.1 0 -54.2Q3.0 -27.1 8.448245068779215 0Z"/><path transform="translate(316 75) rotate(313.2) translate(0 -25)" d="M-4.731046894798055 0Q-1.7 -27.8 0 -55.7Q1.7 -27.8 4.731046894798055 0Z"/><path transform="translate(316 75) rotate(355.7) translate(0 -25)" d="M-7.02545145037584 0Q-2.5 -17.2 0 -34.4Q2.5 -17.2 7.02545145037584 0Z"/></g>
+  <circle cx="316" cy="75" r="30" fill="none" stroke="#fff" stroke-width="2.5" filter="url(#ec-glow)"/>
+  <circle cx="316" cy="75" r="29" fill="#000"/>
+  <circle cx="316" cy="75" r="29" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width=".8"/>
+  <g class="ec-ring" opacity="0" style="transform-origin:334.0px 52.3px">
+    <circle cx="334.0" cy="52.3" r="13" fill="url(#ec-spark)"/>
+    <path d="M310 52.3H358M334.0 32.3V72.3" stroke="#fff" stroke-opacity=".8" stroke-width=".8"/>
+    <circle cx="334.0" cy="52.3" r="2.6" fill="#fff"/>
+  </g>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="13.5" fill="none" stroke="#fff" stroke-opacity=".09"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="24" y="32" font-size="9" font-weight="600" letter-spacing="3" fill="#8b92a4">TOTALITY · ESENTIS</text>
+  <text x="24" y="58" font-size="22" font-weight="300" letter-spacing=".3" fill="#f5f6f8">load_switch</text>
+  <rect x="24" y="68" width="18" height="1.5" fill="#00B4AB"/>
+  <text font-size="11.5" fill="#9097a8"><tspan x="24" y="88">A highly customizable toggle</tspan><tspan x="24" y="103">switch with a loading state.</tspan></text>
+  <g transform="translate(24 0)"><circle cx="5" cy="126" r="5" fill="#00B4AB"/><text x="16" y="130.14" font-size="11.5" fill="#e7e9ef">Dart</text></g><g transform="translate(80.6 0)"><path transform="translate(0 119) scale(0.875)" fill-rule="evenodd" fill="#6f7585" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="130.14" font-size="11.5" fill="#e7e9ef">20</text></g><g transform="translate(127.39999999999999 0)"><path transform="translate(0 119) scale(0.875)" fill-rule="evenodd" fill="#6f7585" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="130.14" font-size="11.5" fill="#e7e9ef">3</text></g>
+</g>
+</svg>

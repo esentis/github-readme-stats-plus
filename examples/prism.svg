@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="pr-clip"><rect width="400" height="150" rx="14"/></clipPath>
+  <radialGradient id="pr-bg" cx=".78" cy=".55" r=".7"><stop offset="0" stop-color="#161a26"/><stop offset="1" stop-color="#05060a"/></radialGradient>
+  <linearGradient id="pr-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".55" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#00B4AB" stop-opacity=".22"/></linearGradient>
+  <linearGradient id="pr-fade" x2="0" y2="1"><stop offset=".25" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
+  <mask id="pr-mask"><rect x="200" y="90" width="200" height="62" fill="url(#pr-fade)"/></mask>
+  <filter id="pr-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="pr-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .pr-band{animation:pr-shimmer 3.9s ease-in-out infinite}.pr-photon{animation:pr-photon 3s linear infinite}
+@keyframes pr-shimmer{50%{opacity:.5}}@keyframes pr-photon{to{stroke-dashoffset:-150}} }</style>
+<g clip-path="url(#pr-clip)">
+  <rect width="400" height="150" fill="url(#pr-bg)"/>
+  <g mask="url(#pr-mask)"><g opacity=".7" filter="url(#pr-glow)"><path class="pr-band" style="animation-delay:0.00s" d="M306 98L236 152H253Z" fill="#ff4d5e"/><path class="pr-band" style="animation-delay:-0.55s" d="M307.6 98L252 152H269Z" fill="#ff9a3d"/><path class="pr-band" style="animation-delay:-1.10s" d="M309.2 98L268 152H285Z" fill="#ffe04a"/><path class="pr-band" style="animation-delay:-1.65s" d="M310.8 98L284 152H301Z" fill="#4bdc7b"/><path class="pr-band" style="animation-delay:-2.20s" d="M312.4 98L300 152H317Z" fill="#3cc4ff"/><path class="pr-band" style="animation-delay:-2.75s" d="M314 98L316 152H333Z" fill="#5a6bff"/><path class="pr-band" style="animation-delay:-3.30s" d="M315.6 98L332 152H349Z" fill="#b25cff"/></g><g opacity=".8"><path class="pr-band" style="animation-delay:0.00s" d="M306 98L236 152H253Z" fill="#ff4d5e"/><path class="pr-band" style="animation-delay:-0.55s" d="M307.6 98L252 152H269Z" fill="#ff9a3d"/><path class="pr-band" style="animation-delay:-1.10s" d="M309.2 98L268 152H285Z" fill="#ffe04a"/><path class="pr-band" style="animation-delay:-1.65s" d="M310.8 98L284 152H301Z" fill="#4bdc7b"/><path class="pr-band" style="animation-delay:-2.20s" d="M312.4 98L300 152H317Z" fill="#3cc4ff"/><path class="pr-band" style="animation-delay:-2.75s" d="M314 98L316 152H333Z" fill="#5a6bff"/><path class="pr-band" style="animation-delay:-3.30s" d="M315.6 98L332 152H349Z" fill="#b25cff"/></g></g>
+  <ellipse cx="292" cy="152" rx="70" ry="10" fill="#fff" opacity=".06" filter="url(#pr-glow)"/>
+  <path d="M410 2L336,52L310,98" fill="none" stroke="#fff" stroke-width="7" stroke-opacity=".35" filter="url(#pr-soft)"/>
+  <path d="M410 2L336,52" fill="none" stroke="#fff" stroke-width="2.2"/>
+  <path d="M336,52L310,98" fill="none" stroke="#fff" stroke-width="2.4" stroke-opacity=".5"/>
+  <path class="pr-photon" d="M410 2L336,52L310,98" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 149" filter="url(#pr-soft)"/>
+  <path d="M318 20L364 99H272Z" fill="url(#pr-glass)" stroke="#fff" stroke-opacity=".55" stroke-linejoin="round"/>
+  <path d="M318 26L276 96" stroke="#00B4AB" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M320 26L359 94" stroke="#fff" stroke-opacity=".35" stroke-width=".8"/>
+  <path d="M276 99.5H364" stroke="#fff" stroke-opacity=".25" stroke-width="3" filter="url(#pr-soft)"/>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="13.5" fill="none" stroke="#fff" stroke-opacity=".1"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="24" y="32" font-size="9" font-weight="600" letter-spacing="3" fill="#8b92a4">ESENTIS</text>
+  <rect x="24" y="40" width="22" height="2" rx="1" fill="#00B4AB"/>
+  <text x="24" y="64" font-size="20" font-weight="600" letter-spacing=".2" fill="#f4f5f8">load_switch</text>
+  <text font-size="11.5" fill="#8f96a7"><tspan x="24" y="84">A highly customizable toggle</tspan><tspan x="24" y="99">switch with a loading state.</tspan></text>
+  <g transform="translate(24 0)"><circle cx="5" cy="126" r="5" fill="#00B4AB"/><text x="16" y="130.14" font-size="11.5" fill="#e6e8ee">Dart</text></g><g transform="translate(80.6 0)"><path transform="translate(0 119) scale(0.875)" fill-rule="evenodd" fill="#7d8496" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="130.14" font-size="11.5" fill="#e6e8ee">20</text></g><g transform="translate(127.39999999999999 0)"><path transform="translate(0 119) scale(0.875)" fill-rule="evenodd" fill="#7d8496" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="130.14" font-size="11.5" fill="#e6e8ee">3</text></g>
+</g>
+</svg>
