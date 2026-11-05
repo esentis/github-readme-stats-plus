@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <filter id="lift" x="-10%" y="-20%" width="120%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dx="1" dy="4"/><feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="back" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9c9d1"/><stop offset=".5" stop-color="#fdfdfd"/><stop offset="1" stop-color="#e9e9ee"/></linearGradient>
+</defs>
+<g transform="rotate(-2.5 200 76)">
+  <path d="M60 24H340A32 32 0 0 1 372 56V94L338 128H60A32 32 0 0 1 28 96V56A32 32 0 0 1 60 24Z" fill="#00B4AB" stroke="#fff" stroke-width="10" stroke-linejoin="round" filter="url(#lift)"/>
+  <circle cx="78" cy="76" r="31" fill="#fff"/>
+  <circle cx="78" cy="76" r="26" fill="none" stroke="#00B4AB" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <g font-family="'Arial Rounded MT Bold', 'Varela Round', 'Trebuchet MS', sans-serif" font-weight="700" text-anchor="middle">
+    <text x="78" y="73" font-size="20" fill="#f5a400">★</text>
+    <text x="78" y="93" font-size="15" fill="#1b1b1f">20</text>
+  </g>
+  <g font-family="'Arial Rounded MT Bold', 'Varela Round', 'Trebuchet MS', sans-serif" fill="#fff">
+    <text x="124" y="60" font-size="22" font-weight="700">load_switch</text>
+    <text font-size="12" fill-opacity=".85"><tspan x="124" y="80">A highly customizable toggle</tspan><tspan x="124" y="95">switch with a loading state.</tspan></text>
+    <text x="124" y="117" font-size="12" font-weight="700">3 forks · Dart</text>
+  </g>
+  <path d="M372 94L338 128L340 96Z" fill="#000" fill-opacity=".18" transform="translate(-3 -2)"/>
+  <path d="M377 94L338 133L339 94Z" fill="url(#back)" stroke="#d4d4da" stroke-width=".8" stroke-linejoin="round"/>
+</g>
+</svg>

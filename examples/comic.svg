@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <pattern id="tone" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="3" cy="3" r="1.5" fill="#29b6d8" fill-opacity=".45"/></pattern>
+  <clipPath id="act"><rect x="262" y="6" width="132" height="138"/></clipPath>
+</defs>
+<rect width="400" height="150" rx="4" fill="#fffdf6"/>
+<rect x="6" y="6" width="250" height="138" fill="#fdf3d8"/>
+<rect x="6" y="6" width="250" height="138" fill="url(#tone)"/>
+<g clip-path="url(#act)">
+  <rect x="262" y="6" width="132" height="138" fill="#ffe9a8"/>
+  <path d="M360.0 75.0L450.0 75.0M359.0 82.8L445.9 106.1M356.0 90.0L433.9 135.0M351.2 96.2L414.9 159.9M345.0 101.0L390.0 178.9M337.8 104.0L361.1 190.9M330.0 105.0L330.0 195.0M322.2 104.0L298.9 190.9M315.0 101.0L270.0 178.9M308.8 96.2L245.1 159.9M304.0 90.0L226.1 135.0M301.0 82.8L214.1 106.1M300.0 75.0L210.0 75.0M301.0 67.2L214.1 43.9M304.0 60.0L226.1 15.0M308.8 53.8L245.1 -9.9M315.0 49.0L270.0 -28.9M322.2 46.0L298.9 -40.9M330.0 45.0L330.0 -45.0M337.8 46.0L361.1 -40.9M345.0 49.0L390.0 -28.9M351.2 53.8L414.9 -9.9M356.0 60.0L433.9 15.0M359.0 67.2L445.9 43.9" stroke="#111" stroke-opacity=".25" stroke-width="2"/>
+</g>
+<g stroke="#111" stroke-linejoin="round">
+  <polygon points="330.0,15.0 342.2,33.5 367.6,16.4 361.4,47.8 391.1,47.1 369.6,69.3 394.1,84.2 372.2,94.3 377.2,115.9 354.2,112.7 346.9,132.6 330.0,118.2 310.4,141.8 307.5,110.0 279.2,119.0 293.6,91.6 265.9,84.2 284.1,68.4 273.2,49.1 296.1,45.7 297.6,24.5 317.8,33.5" fill="#e63946" stroke-width="3"/>
+  <polygon points="330.0,29.0 339.7,41.8 358.8,30.1 355.2,53.2 376.9,53.6 361.7,70.4 379.2,82.1 363.8,90.4 366.2,106.3 349.4,105.2 343.0,119.1 330.0,109.6 315.0,126.2 312.0,103.0 291.1,108.7 300.9,88.3 280.8,82.1 293.3,69.7 286.5,55.1 302.9,51.5 305.1,36.3 320.3,41.8" fill="#ffd60a" stroke-width="2"/>
+</g>
+<g fill="none" stroke="#111" stroke-width="3.5"><rect x="6" y="6" width="250" height="138"/><rect x="262" y="6" width="132" height="138"/></g>
+<rect x="6" y="6" width="189.88" height="22" fill="#ffe14d" stroke="#111" stroke-width="2.5"/>
+<g font-family="'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', cursive" font-weight="700" fill="#111">
+  <text x="14" y="21" font-size="10.5">MEANWHILE, AT @ESENTIS…</text>
+  <text font-size="11.5" font-weight="400"><tspan x="16" y="86">A highly customizable toggle switch</tspan><tspan x="16" y="101">with a loading state.</tspan></text>
+  <circle cx="21" cy="127" r="5" fill="#00B4AB" stroke="#111" stroke-width="1.5"/>
+  <text x="31" y="131" font-size="11.5">DART · 3 FORKS</text>
+</g>
+<g font-family="'Bangers', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif" text-anchor="middle">
+  <text x="330" y="79.8" font-size="26" fill="#111">20</text>
+  <text x="330" y="94.8" font-size="12" fill="#e63946" letter-spacing="1">★ STARS!</text>
+</g>
+<g font-family="'Bangers', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif" font-size="26" stroke-linejoin="round">
+  <text x="19" y="62" fill="#00B4AB" stroke="#111" stroke-width="5" paint-order="stroke">LOAD_SWITCH</text>
+  <text x="16" y="59" fill="#fff" stroke="#111" stroke-width="5" paint-order="stroke">LOAD_SWITCH</text>
+</g>
+</svg>
