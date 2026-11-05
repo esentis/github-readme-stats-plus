@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "gallery": "node scripts/gallery.js"
+    "gallery": "node scripts/gallery.js",
+    "new": "node scripts/new-style.js"
   }
 }

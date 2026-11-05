@@ -86,9 +86,11 @@ After changing a variable, redeploy for it to take effect.
 
 ## Add your own style
 
-1. Create `styles/<name>.js`. Its default export takes the repo data and returns an SVG string, and `export const about = "…"` is its one-line description for the gallery. Copy the closest existing style as a starting point.
-2. Import it in `styles/index.js` and add it to a group.
+1. Run `npm run new -- <name> "Group title"`. It creates `styles/<name>.js` from a starter template and registers it in `styles/index.js`, under that group in the gallery (a new group if it doesn't exist yet).
+2. Edit the file. Its default export takes the repo data and returns an SVG string, and `about` is its one-line description for the gallery. Copying the closest existing style is often the fastest start.
 3. Run `npm run gallery` to regenerate the previews in `examples/` and the `STYLES.md` page, then `npm test`. The tests check every style escapes its text, truncates long names and has an `about`.
+
+For micro-animations, wrap CSS keyframes in `motion()`: they then stay off for viewers whose system asks for reduced motion. For rotations and scaling, add `transform-box: fill-box; transform-origin: center` so elements turn around their own centre.
 
 The repo object a style receives:
 
@@ -105,7 +107,7 @@ The repo object a style receives:
 }
 ```
 
-`card.js` has the shared helpers: `svg()` for the frame, `esc()` for escaping, `fit()` and `wrap()` for truncating text, and `stats()` with `row()` for the language, star and fork line. Always pass repo text through `esc()`: names and descriptions come from strangers' repositories.
+`card.js` has the shared helpers: `svg()` for the frame, `esc()` for escaping, `fit()` and `wrap()` for truncating text, `stats()` with `row()` for the language, star and fork line, and `motion()` for animations. Always pass repo text through `esc()`: names and descriptions come from strangers' repositories.
 
 ## Development
 

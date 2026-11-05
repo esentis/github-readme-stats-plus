@@ -90,6 +90,9 @@ export const isLight = (hex) => {
   return 0.299 * r + 0.587 * g + 0.114 * b > 160;
 };
 
+// CSS animations that stay off for viewers whose system asks for reduced motion.
+export const motion = (css) => `<style>@media (prefers-reduced-motion: no-preference) { ${css} }</style>`;
+
 export const svg = (title, body) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>${esc(title)}</title>
 ${body}
