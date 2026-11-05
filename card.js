@@ -59,8 +59,10 @@ export const row = (items, x, gap) =>
 // The language, star and fork items most styles show, centred on the line cy.
 export const stats = (r, { cy, size = 12.5, text = "", icon: iconAttrs = "" }) => {
   const label = (x, s) => `<text x="${x}" y="${cy + size * 0.36}" font-size="${size}" ${text}>${esc(s)}</text>`;
+  const lang = fit(r.lang.name, 80, size);
   return [
-    [16 + textWidth(r.lang.name, size), `<circle cx="5" cy="${cy}" r="5" fill="${r.lang.color}"/>${label(16, r.lang.name)}`],
+    // Capped so long names like "Jupyter Notebook" can't push the star and fork counts off the card.
+    [16 + textWidth(lang, size), `<circle cx="5" cy="${cy}" r="5" fill="${r.lang.color}"/>${label(16, lang)}`],
     [20 + textWidth(r.stars, size), icon("star", 0, cy - 7, 14, iconAttrs) + label(20, r.stars)],
     [20 + textWidth(r.forks, size), icon("fork", 0, cy - 7, 14, iconAttrs) + label(20, r.forks)],
   ];

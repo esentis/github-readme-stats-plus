@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .wc-b{animation:wc-b 9s ease-in-out infinite}@keyframes wc-b{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}} }</style>
+<defs>
+  <filter id="wc-wash" x="-30%" y="-30%" width="160%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".022" numOctaves="4" seed="11"/><feDisplacementMap in="SourceGraphic" scale="26" xChannelSelector="R" yChannelSelector="G"/><feGaussianBlur stdDeviation="1.3"/></filter>
+  <filter id="wc-paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" seed="2"/><feColorMatrix values="0 0 0 0 .42  0 0 0 0 .36  0 0 0 0 .3  0 0 0 -1.1 .62"/></filter>
+  <radialGradient id="wc-g0"><stop offset="0" stop-color="#00B4AB" stop-opacity=".16"/><stop offset=".75" stop-color="#00B4AB" stop-opacity=".3"/><stop offset="1" stop-color="#00B4AB" stop-opacity=".55"/></radialGradient><radialGradient id="wc-g1"><stop offset="0" stop-color="hsl(217, 62%, 66%)" stop-opacity=".16"/><stop offset=".75" stop-color="hsl(217, 62%, 66%)" stop-opacity=".3"/><stop offset="1" stop-color="hsl(217, 62%, 66%)" stop-opacity=".55"/></radialGradient><radialGradient id="wc-g2"><stop offset="0" stop-color="hsl(137, 62%, 66%)" stop-opacity=".16"/><stop offset=".75" stop-color="hsl(137, 62%, 66%)" stop-opacity=".3"/><stop offset="1" stop-color="hsl(137, 62%, 66%)" stop-opacity=".55"/></radialGradient>
+  <clipPath id="wc-card"><rect width="400" height="150" rx="10"/></clipPath>
+</defs>
+<g clip-path="url(#wc-card)">
+  <rect width="400" height="150" fill="#fbf8f1"/>
+  <g filter="url(#wc-wash)">
+    <ellipse class="wc-b" style="transform-origin:338px 52px;animation-delay:0s" cx="338" cy="52" rx="70" ry="48" fill="url(#wc-g0)" stroke="#00B4AB" stroke-opacity=".35" stroke-width="1.5"/>
+    <ellipse class="wc-b" style="transform-origin:300px 76px;animation-delay:-4.5s" cx="300" cy="76" rx="30" ry="22" fill="url(#wc-g0)" stroke="#00B4AB" stroke-opacity=".35" stroke-width="1.5"/>
+    <ellipse class="wc-b" style="transform-origin:384px 124px;animation-delay:-3s" cx="384" cy="124" rx="50" ry="36" fill="url(#wc-g1)" stroke="hsl(217, 62%, 66%)" stroke-opacity=".35" stroke-width="1.5"/>
+    <ellipse class="wc-b" style="transform-origin:274px 126px;animation-delay:-6s" cx="274" cy="126" rx="40" ry="27" fill="url(#wc-g2)" stroke="hsl(137, 62%, 66%)" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M18 57.25H184.00000000000003" stroke="#00B4AB" stroke-opacity=".3" stroke-width="17.5" stroke-linecap="round"/>
+    <g fill="#00B4AB" fill-opacity=".45"><circle cx="262" cy="30" r="3"/><circle cx="252" cy="42" r="1.6"/><circle cx="388" cy="70" r="2.2"/><circle cx="318" cy="132" r="1.8"/></g>
+  </g>
+  <rect width="400" height="150" filter="url(#wc-paper)" opacity=".55"/>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="9.5" fill="none" stroke="#d8cfbf"/>
+<g fill="#2e2a3a">
+  <text x="24" y="30" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="10.5" fill="#7a6f80">painted by esentis</text>
+  <text x="22" y="64" font-family="'Bradley Hand', 'Segoe Print', 'Marker Felt', 'Comic Sans MS', cursive" font-size="25" font-weight="700">load_switch</text>
+  <text font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12" fill="#4a4452"><tspan x="24" y="88">A highly customizable toggle switch</tspan><tspan x="24" y="103">with a loading state.</tspan></text>
+  <circle cx="29" cy="127.5" r="5" fill="#00B4AB" fill-opacity=".8"/>
+  <text x="40" y="132" font-family="'Bradley Hand', 'Segoe Print', 'Marker Felt', 'Comic Sans MS', cursive" font-size="13" font-weight="700">Dart<tspan dx="14">★ 20</tspan><tspan dx="14">⑂ 3</tspan></text>
+</g>
+</svg>

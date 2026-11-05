@@ -19,6 +19,7 @@ import * as boardgame from "./boardgame.js";
 import * as boarding from "./boarding.js";
 import * as bokeh from "./bokeh.js";
 import * as bold from "./bold.js";
+import * as bookshelf from "./bookshelf.js";
 import * as boombox from "./boombox.js";
 import * as borealis from "./borealis.js";
 import * as botanical from "./botanical.js";
@@ -40,9 +41,11 @@ import * as comic from "./comic.js";
 import * as confetti from "./confetti.js";
 import * as console from "./console.js";
 import * as constructivist from "./constructivist.js";
+import * as corkboard from "./corkboard.js";
 import * as countdown from "./countdown.js";
 import * as cpu from "./cpu.js";
 import * as creditcard from "./creditcard.js";
+import * as crossstitch from "./crossstitch.js";
 import * as crossword from "./crossword.js";
 import * as cyberpunk from "./cyberpunk.js";
 import * as darkglass from "./darkglass.js";
@@ -58,6 +61,7 @@ import * as duotone from "./duotone.js";
 import * as eclipse from "./eclipse.js";
 import * as equalizer from "./equalizer.js";
 import * as fireflies from "./fireflies.js";
+import * as fireplace from "./fireplace.js";
 import * as fireworks from "./fireworks.js";
 import * as flask from "./flask.js";
 import * as floppy from "./floppy.js";
@@ -80,11 +84,13 @@ import * as jersey from "./jersey.js";
 import * as kaleidoscope from "./kaleidoscope.js";
 import * as keycap from "./keycap.js";
 import * as keynote from "./keynote.js";
+import * as knit from "./knit.js";
 import * as lanterns from "./lanterns.js";
 import * as latte from "./latte.js";
 import * as lava from "./lava.js";
 import * as lavalamp from "./lavalamp.js";
 import * as ledmatrix from "./ledmatrix.js";
+import * as letterpress from "./letterpress.js";
 import * as lighthouse from "./lighthouse.js";
 import * as liquid from "./liquid.js";
 import * as lowpoly from "./lowpoly.js";
@@ -124,10 +130,12 @@ import * as placard from "./placard.js";
 import * as playingcard from "./playingcard.js";
 import * as polaroid from "./polaroid.js";
 import * as popart from "./popart.js";
+import * as pottery from "./pottery.js";
 import * as prism from "./prism.js";
 import * as productlabel from "./productlabel.js";
 import * as punchcard from "./punchcard.js";
 import * as puzzlecube from "./puzzlecube.js";
+import * as quilt from "./quilt.js";
 import * as racetiming from "./racetiming.js";
 import * as radar from "./radar.js";
 import * as radio from "./radio.js";
@@ -169,6 +177,7 @@ import * as synthwave from "./synthwave.js";
 import * as tarot from "./tarot.js";
 import * as teabag from "./teabag.js";
 import * as terminal from "./terminal.js";
+import * as terrarium from "./terrarium.js";
 import * as terrazzo from "./terrazzo.js";
 import * as ticker from "./ticker.js";
 import * as topographic from "./topographic.js";
@@ -182,6 +191,7 @@ import * as voxel from "./voxel.js";
 import * as wanted from "./wanted.js";
 import * as warp from "./warp.js";
 import * as washi from "./washi.js";
+import * as watercolor from "./watercolor.js";
 import * as waveform from "./waveform.js";
 import * as waves from "./waves.js";
 import * as weather from "./weather.js";
@@ -207,6 +217,7 @@ export const groups = {
   "Science and tech": { pcb, oscilloscope, dna, microscope, flask, atom, punchcard, serverrack, keycap, gitgraph, cpu, morse },
   "Light and sky": { rainbow, sunrise, fireflies, bokeh, prism, lanterns, fireworks, snowglobe, lighthouse, eclipse },
   "Abstract motion": { liquid, ripple, kaleidoscope, spirograph, lavalamp, flowfield, pendulums, dotwave, ribbon, confetti },
+  "Cozy handmade": { knit, quilt, pottery, crossstitch, letterpress, watercolor, terrarium, bookshelf, corkboard, fireplace },
 };
 
 export default Object.fromEntries(
