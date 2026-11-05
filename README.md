@@ -1,6 +1,6 @@
 # github-readme-stats-plus
 
-Repository pin cards for your GitHub profile README, in eight styles. You host it yourself, for yourself: one small Vercel function with no dependencies.
+Repository pin cards for your GitHub profile README, in 26 styles. You host it yourself, for yourself: one small Vercel function with no dependencies.
 
 <p>
   <img src="examples/aurora.svg" width="49%" alt="Aurora style" />
@@ -21,8 +21,31 @@ Pick one with `&style=<name>`. The default is `adaptive`.
 | `glass` | <img src="examples/glass.svg" width="320" alt="Glass style" /> | Frosted panel over a colourful gradient. |
 | `terminal` | <img src="examples/terminal.svg" width="320" alt="Terminal style" /> | Green phosphor terminal with scanlines and a blinking cursor. |
 | `bold` | <img src="examples/bold.svg" width="320" alt="Bold style" /> | Full gradient in the language colour, with the language as a watermark. |
+| `holo` | <img src="examples/holo.svg" width="320" alt="Holo style" /> | Iridescent foil with a shine sweeping across, like a rare trading card. |
+| `blueprint` | <img src="examples/blueprint.svg" width="320" alt="Blueprint style" /> | Technical drawing: stars as a dimension line, language and forks in a title block. |
+| `synthwave` | <img src="examples/synthwave.svg" width="320" alt="Synthwave style" /> | 80s sunset with a striped sun over a scrolling neon grid. |
+| `pixel` | <img src="examples/pixel.svg" width="320" alt="Pixel style" /> | 8-bit dialog box. The XP bar fills toward the next star milestone (10, 25, 50, 100…). |
+| `swiss` | <img src="examples/swiss.svg" width="320" alt="Swiss style" /> | Light editorial poster with a huge star count and one red accent. |
+| `boarding` | <img src="examples/boarding.svg" width="320" alt="Boarding pass style" /> | A ticket with a tear-off stub and a barcode unique to each repo. Shows no description. |
 
-Every style takes its accent from the repository's main language colour, as GitHub shows it.
+### Everyday objects
+
+| Style | Preview | Notes |
+| --- | --- | --- |
+| `periodic` | <img src="examples/periodic.svg" width="320" alt="Periodic style" /> | An element tile: stars as the atomic number, a symbol made from the name. |
+| `creditcard` | <img src="examples/creditcard.svg" width="320" alt="Credit card style" /> | A dark payment card. The star count is the card number. Shows no description. |
+| `passport` | <img src="examples/passport.svg" width="320" alt="Passport style" /> | A passport page with a machine-readable line and a red entry stamp. |
+| `luggage` | <img src="examples/luggage.svg" width="320" alt="Luggage tag style" /> | Kraft-paper tag with a string, an airport-style code and a barcode. Shows no description. |
+| `cinema` | <img src="examples/cinema.svg" width="320" alt="Cinema ticket style" /> | Vintage "admit one" ticket with notched edges and a numbered stub. |
+| `cassette` | <img src="examples/cassette.svg" width="320" alt="Cassette style" /> | Cassette tape with a hand-written label and spinning reels. Shows no description. |
+| `floppy` | <img src="examples/floppy.svg" width="320" alt="Floppy disk style" /> | A floppy disk in the language colour, with the repo on its label. |
+| `vhs` | <img src="examples/vhs.svg" width="320" alt="VHS style" /> | VHS cover with a chrome title, rainbow stripes and a stars:forks timecode. |
+| `handheld` | <img src="examples/handheld.svg" width="320" alt="Handheld console style" /> | 90s handheld console with a green dot-matrix screen. |
+| `retrowin` | <img src="examples/retrowin.svg" width="320" alt="Retro Windows style" /> | A mid-90s dialog box on a teal desktop. |
+| `retromac` | <img src="examples/retromac.svg" width="320" alt="Retro Mac style" /> | A black-and-white early-90s window over a dithered desktop. |
+| `splitflap` | <img src="examples/splitflap.svg" width="320" alt="Split-flap style" /> | An airport departures board. Shows no description. |
+
+Most styles take their accent from the repository's main language colour, as GitHub shows it.
 
 ## Usage
 
@@ -85,7 +108,7 @@ After changing a variable, redeploy for it to take effect.
 ### Good to know
 
 - **`adaptive` follows the viewer's operating system theme**, not their GitHub theme setting. Someone with a dark OS who chose GitHub's light theme sees a dark card.
-- **The animations** (aurora, neon, spotlight, glass, terminal) are plain SVG animations. They play in browsers, but GitHub may cache images for a while, and some email or RSS readers show a still frame.
+- **The animations** (aurora, neon, spotlight, glass, terminal, holo, synthwave, pixel, cassette, vhs, handheld, splitflap) are plain SVG animations. They play in browsers, but GitHub may cache images for a while, and some email or RSS readers show a still frame.
 - **Fonts** come from the viewer's system. `brutalist` looks best where Arial Black is installed (macOS and Windows) and falls back to bold Arial elsewhere.
 
 ## Add your own style
@@ -102,6 +125,7 @@ The repo object a style receives:
   name: "load_switch",
   description: "A highly customizable toggle switch with a loading state.",
   stars: "20",   // already formatted: "1.2K", "3.4M"
+  starCount: 20, // the raw number, for anything that needs maths
   forks: "3",
   lang: { name: "Dart", color: "#00B4AB" },
 }

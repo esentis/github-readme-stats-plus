@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <pattern id="guilloche" width="24" height="12" patternUnits="userSpaceOnUse"><path d="M0 6Q6 0 12 6T24 6" fill="none" stroke="#c9b48a" stroke-opacity=".35"/></pattern>
+  <path id="ring" d="M262 75a38 38 0 1176 0a38 38 0 11-76 0"/>
+</defs>
+<rect x=".5" y=".5" width="399" height="149" rx="8" fill="#f4ecd8" stroke="#d8c8a4"/>
+<rect x="8" y="8" width="384" height="134" rx="4" fill="url(#guilloche)"/>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#3b3226">
+  <text x="22" y="32" font-size="9.5" letter-spacing="2" fill="#8a7550">REPOSITORY · ESENTIS</text>
+  <text x="22" y="60" font-size="22" font-weight="700">load_switch</text>
+  <text font-size="12.5" font-style="italic" fill="#5a4e3c"><tspan x="22" y="84">A highly customizable toggle</tspan><tspan x="22" y="101">switch with a loading state.</tspan></text>
+  <text x="22" y="132" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8a7550">P&#60;ESENTIS&#60;&#60;LOAD&#60;SWITCH&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;&#60;</text>
+</g>
+<g transform="rotate(-12 300 75)" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+  <g fill="none" stroke="#b3261e" stroke-opacity=".85">
+    <circle cx="300" cy="75" r="52" stroke-width="2.5"/>
+    <circle cx="300" cy="75" r="45" stroke-dasharray="2 3"/>
+    <circle cx="300" cy="75" r="29"/>
+  </g>
+  <g fill="#b3261e" fill-opacity=".85">
+    <text font-size="8" letter-spacing="1"><textPath href="#ring" startOffset="25%">★ 20 STARS ★</textPath></text>
+    <text x="300" y="79.33333333333333" font-size="13">DART</text>
+    <text x="300" y="94" font-size="8">⑂ 3</text>
+  </g>
+</g>
+</svg>

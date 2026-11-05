@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs><pattern id="dither" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#fff"/><rect width="1" height="1" fill="#000"/><rect x="1" y="1" width="1" height="1" fill="#000"/></pattern></defs>
+<rect width="400" height="150" rx="6" fill="url(#dither)"/>
+<rect x="16" y="12" width="368" height="126" fill="#000"/>
+<rect x="14" y="10" width="368" height="126" fill="#fff" stroke="#000"/>
+<path d="M18 14H378M18 16H378M18 18H378M18 20H378M18 22H378M18 24H378M18 26H378" stroke="#000"/>
+<rect x="24" y="13" width="13" height="13" fill="#fff" stroke="#000"/>
+<rect x="150.4" y="11" width="95.2" height="18" fill="#fff"/>
+<line x1="14" y1="30" x2="382" y2="30" stroke="#000"/>
+<g font-family="Chicago, Charcoal, Geneva, 'Helvetica Neue', Arial, sans-serif" fill="#000">
+  <text x="198" y="25" font-size="12" font-weight="700" text-anchor="middle">load_switch</text>
+  <path d="M30 42H48L56 50V72H30Z" fill="#fff" stroke="#000"/><path d="M48 42V50H56" fill="none" stroke="#000"/>
+  <text x="70" y="54" font-size="15" font-weight="700">load_switch</text>
+  <text font-size="11"><tspan x="70" y="72">A highly customizable toggle switch with a loading</tspan><tspan x="70" y="86">state.</tspan></text>
+  <line x1="14" y1="104" x2="382" y2="104" stroke="#000"/>
+  <text x="30" y="124" font-size="11">20 stars</text>
+  <text x="150" y="124" font-size="11">3 forks</text>
+  <text x="366" y="124" font-size="11" text-anchor="end">Dart</text>
+</g>
+</svg>

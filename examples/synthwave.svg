@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="clip"><rect width="400" height="150" rx="14"/></clipPath>
+  <clipPath id="ground"><rect y="100" width="400" height="50"/></clipPath>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12002b"/><stop offset="1" stop-color="#4a0d63"/></linearGradient>
+  <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd319"/><stop offset="1" stop-color="#ff2975"/></linearGradient>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="400" height="150" fill="url(#sky)"/>
+  <circle cx="322" cy="84" r="46" fill="url(#sun)"/>
+  <path d="M270 82h110v2H270zM270 89h110v3H270zM270 95h110v4H270z" fill="#3d0a58"/>
+  <rect y="100" width="400" height="50" fill="#14002e"/>
+  <g clip-path="url(#ground)" stroke="#ff2975" stroke-opacity=".7">
+    <line x1="200" y1="100" x2="-300" y2="150"/><line x1="200" y1="100" x2="-100" y2="150"/><line x1="200" y1="100" x2="100" y2="150"/><line x1="200" y1="100" x2="200" y2="150"/><line x1="200" y1="100" x2="300" y2="150"/><line x1="200" y1="100" x2="500" y2="150"/><line x1="200" y1="100" x2="700" y2="150"/>
+    <path d="M0 104H400M0 112H400M0 124H400M0 140H400"><animateTransform attributeName="transform" type="translate" values="0 -8;0 0" dur="1.2s" repeatCount="indefinite"/></path>
+  </g>
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#ff2975" stroke-width="1.5"/>
+</g>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="22" y="40" font-size="22" font-weight="800" fill="#fff" stroke="#ff2975" stroke-width=".6">load_switch</text>
+  <text font-size="12.5" fill="#e9c9ff"><tspan x="22" y="62">A highly customizable toggle switch</tspan><tspan x="22" y="78">with a loading state.</tspan></text>
+  <rect x="16" y="113" width="168.5" height="24" rx="12" fill="#14002e" fill-opacity=".85"/>
+  <g transform="translate(28 0)"><circle cx="5" cy="125" r="5" fill="#00B4AB"/><text x="16" y="129.5" font-size="12.5" fill="#fff" font-weight="600">Dart</text></g><g transform="translate(92 0)"><path transform="translate(0 118) scale(0.875)" fill-rule="evenodd" fill="#ffd319" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="129.5" font-size="12.5" fill="#fff" font-weight="600">20</text></g><g transform="translate(145 0)"><path transform="translate(0 118) scale(0.875)" fill-rule="evenodd" fill="#ffd319" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="129.5" font-size="12.5" fill="#fff" font-weight="600">3</text></g>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<rect x=".5" y=".5" width="399" height="149" rx="10" fill="#e9edf2" stroke="#cfd6de"/>
+<path d="M20 15H128L140 27V135H20Z" fill="#00B4AB"/>
+<path d="M20 15H128L140 27V135H20Z" fill="#000" fill-opacity=".15"/>
+<rect x="48" y="15" width="64" height="38" fill="#c7cdd4"/>
+<rect x="88" y="21" width="14" height="26" fill="#6b7280"/>
+<rect x="26" y="122" width="8" height="8" fill="#111"/>
+<rect x="34" y="68" width="92" height="60" rx="3" fill="#fff"/>
+<path d="M40 96H120M40 110H120" stroke="#dbe3ec"/>
+<text x="40" y="88" font-family="'Marker Felt', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive" font-size="13" fill="#1e3a8a">load_switch</text>
+<text x="40" y="106" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#374151">★20 ⑂3</text>
+<text x="40" y="121" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" font-size="9" fill="#6b7280">Dart</text>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="160" y="44" font-size="20" font-weight="700" fill="#111827">load_switch</text>
+  <text font-size="12.5" fill="#4b5563"><tspan x="160" y="68">A highly customizable toggle</tspan><tspan x="160" y="85">switch with a loading state.</tspan></text>
+  <text x="160" y="126" font-size="10.5" font-weight="600" fill="#6b7280" letter-spacing="1">CAPACITY  ★ 20 · ⑂ 3</text>
+</g>
+</svg>

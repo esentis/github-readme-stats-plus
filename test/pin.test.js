@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { normalize, wrap } from "../card.js";
+import { isLight, normalize, wrap } from "../card.js";
 import styles from "../styles/index.js";
+import { xp } from "../styles/pixel.js";
 import { GET } from "../api/pin.js";
 
 const raw = {
@@ -27,12 +28,26 @@ test("wrap limits lines and marks truncation", () => {
   assert.equal(wrap("x".repeat(30), 20)[0].length, 20);
 });
 
+test("isLight tells light language colours from dark ones", () => {
+  assert.equal(isLight("#f1e05a"), true); // JavaScript yellow
+  assert.equal(isLight("#00B4AB"), false); // Dart teal
+  assert.equal(isLight("#fff"), true);
+});
+
+test("pixel XP bar fills toward the next star milestone", () => {
+  assert.deepEqual(xp(0), { next: 10, blocks: 0 });
+  assert.deepEqual(xp(20), { next: 25, blocks: 8 });
+  assert.deepEqual(xp(25), { next: 50, blocks: 5 });
+  assert.equal(xp(2_000_000).blocks, 10);
+});
+
 for (const [name, render] of Object.entries(styles)) {
   test(`${name} escapes text and truncates long names`, () => {
-    const body = render(normalize({ ...raw, name: "a".repeat(80) })).replace(/<title>.*?<\/title>/, "");
-    assert.ok(body.includes("&#60;b&#62;switch"));
-    assert.ok(!body.includes("<b>"));
-    assert.ok(!body.includes("a".repeat(60)));
+    const evil = render(normalize({ ...raw, name: "<b>x" }));
+    assert.ok(evil.includes("&#60;b&#62;x"));
+    assert.ok(!evil.includes("<b>"));
+    const long = render(normalize({ ...raw, name: "a".repeat(80) })).replace(/<title>.*?<\/title>/, "");
+    assert.ok(!long.includes("a".repeat(60)));
   });
 }
 

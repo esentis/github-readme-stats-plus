@@ -7,6 +7,7 @@ const repo = {
   name: "load_switch",
   description: "A highly customizable toggle switch with a loading state.",
   stars: "20",
+  starCount: 20,
   forks: "3",
   lang: { name: "Dart", color: "#00B4AB" },
 };

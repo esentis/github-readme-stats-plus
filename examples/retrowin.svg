@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs><linearGradient id="title"><stop offset="0" stop-color="#000080"/><stop offset="1" stop-color="#1084d0"/></linearGradient></defs>
+<rect width="400" height="150" rx="4" fill="#008080"/>
+<rect x="14" y="12" width="372" height="126" fill="#c0c0c0"/>
+  <path d="M14 138V12H386" fill="none" stroke="#fff"/>
+  <path d="M14 138H386V12" fill="none" stroke="#404040"/>
+<rect x="18" y="16" width="364" height="18" fill="url(#title)"/>
+<g font-family="'MS Sans Serif', Tahoma, Geneva, Verdana, sans-serif" font-size="11">
+  <text x="24" y="29" font-weight="700" fill="#fff">load_switch.exe</text>
+  <rect x="330" y="19" width="14" height="12" fill="#c0c0c0"/>
+  <path d="M330 31V19H344" fill="none" stroke="#fff"/>
+  <path d="M330 31H344V19" fill="none" stroke="#404040"/><text x="337" y="27" text-anchor="middle" font-size="9" font-weight="700">_</text><rect x="346" y="19" width="14" height="12" fill="#c0c0c0"/>
+  <path d="M346 31V19H360" fill="none" stroke="#fff"/>
+  <path d="M346 31H360V19" fill="none" stroke="#404040"/><text x="353" y="29" text-anchor="middle" font-size="9" font-weight="700">□</text><rect x="364" y="19" width="14" height="12" fill="#c0c0c0"/>
+  <path d="M364 31V19H378" fill="none" stroke="#fff"/>
+  <path d="M364 31H378V19" fill="none" stroke="#404040"/><text x="371" y="29" text-anchor="middle" font-size="9" font-weight="700">×</text>
+  <circle cx="42" cy="64" r="13" fill="#1a5fd6" stroke="#00255f"/>
+  <text x="42" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#fff">i</text>
+  <text><tspan x="68" y="58">A highly customizable toggle switch with a</tspan><tspan x="68" y="73">loading state.</tspan></text>
+  <rect x="168" y="104" width="64" height="22" fill="#c0c0c0"/>
+  <path d="M168 126V104H232" fill="none" stroke="#fff"/>
+  <path d="M168 126H232V104" fill="none" stroke="#404040"/><text x="200" y="119" text-anchor="middle">★ 20</text>
+  <rect x="240" y="104" width="64" height="22" fill="#c0c0c0"/>
+  <path d="M240 126V104H304" fill="none" stroke="#fff"/>
+  <path d="M240 126H304V104" fill="none" stroke="#404040"/><text x="272" y="119" text-anchor="middle">⑂ 3</text>
+  <rect x="312" y="104" width="64" height="22" fill="#c0c0c0"/>
+  <path d="M312 126V104H376" fill="none" stroke="#fff"/>
+  <path d="M312 126H376V104" fill="none" stroke="#404040"/><text x="344" y="119" text-anchor="middle">Dart</text>
+</g>
+</svg>

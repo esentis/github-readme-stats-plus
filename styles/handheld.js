@@ -1,0 +1,27 @@
+import { FONT, MONO, esc, fit, lines, svg, wrap } from "../card.js";
+
+// A 90s handheld console: green dot-matrix screen on the left, D-pad and buttons on the right.
+export default (r) =>
+  svg(
+    r.name,
+    `<defs><pattern id="dots" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="1" height="2" fill="#0f380f" fill-opacity=".07"/></pattern></defs>
+<rect width="400" height="150" rx="14" fill="#cfcfc6"/>
+<rect x="16" y="14" width="264" height="122" rx="8" fill="#5d6070"/>
+<path d="M28 24H80M180 24H268" stroke="#9b2c5e" stroke-width="1.5"/>
+<text x="130" y="27" font-family="${FONT}" font-size="7" font-style="italic" fill="#c8c8d0" text-anchor="middle" letter-spacing="1">DOT MATRIX</text>
+<circle cx="32" cy="70" r="3" fill="#e33"/>
+<text x="32" y="82" font-family="${FONT}" font-size="5.5" fill="#c8c8d0" text-anchor="middle">POWER</text>
+<rect x="48" y="34" width="218" height="92" fill="#9bbc0f"/>
+<rect x="48" y="34" width="218" height="92" fill="url(#dots)"/>
+<g font-family="${MONO}" fill="#0f380f">
+  <text x="56" y="54" font-size="14" font-weight="700">${esc(fit(r.name, 204, 14))}</text>
+  <text font-size="9.5">${lines(wrap(r.description, 35), 56, 70, 12)}</text>
+  <text x="56" y="114" font-size="10" font-weight="700">${esc(fit(r.lang.name.toUpperCase(), 80, 10))}  ★${esc(r.stars)}  ⑂${esc(r.forks)}</text>
+  <text x="252" y="114" font-size="10">▶<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/></text>
+</g>
+<text x="296" y="40" font-family="${FONT}" font-size="13" font-weight="800" font-style="italic" fill="#3b3b6d">${esc(fit(r.owner, 92, 13))}</text>
+<g fill="#2b2b2b"><rect x="296" y="88" width="30" height="10" rx="2"/><rect x="306" y="78" width="10" height="30" rx="2"/></g>
+<g fill="#9b2c5e"><circle cx="352" cy="100" r="9"/><circle cx="376" cy="86" r="9"/></g>
+<g font-family="${FONT}" font-size="8" font-weight="700" fill="#3b3b6d" text-anchor="middle"><text x="352" y="120">B</text><text x="376" y="106">A</text></g>
+<path d="M346 142l14-14M356 142l14-14M366 142l14-14M376 142l12-12" stroke="#a8a89e" stroke-width="3" stroke-linecap="round"/>`,
+  );

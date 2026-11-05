@@ -66,6 +66,30 @@ export const stats = (r, { cy, size = 12.5, text = "", icon: iconAttrs = "" }) =
   ];
 };
 
+// "load_switch" → ["load", "switch"], for styles that abbreviate the name.
+export const words = (name) => {
+  const parts = name.split(/[-_.\s]+/).filter(Boolean);
+  return parts.length ? parts : [name];
+};
+
+// A barcode that stays the same for a given seed: bar widths come from its character codes.
+export const barcode = (seed, x, y, width, height) => {
+  const bars = [];
+  for (let i = 0, bx = x; bx < x + width - 4; i++) {
+    const w = 1 + (seed.charCodeAt(i % seed.length) % 4);
+    bars.push(`<rect x="${bx}" y="${y}" width="${w}" height="${height}"/>`);
+    bx += w + 2;
+  }
+  return bars.join("");
+};
+
+// Whether dark text is needed on top of this colour (perceived brightness, accepts #rgb and #rrggbb).
+export const isLight = (hex) => {
+  const h = hex.length < 7 ? hex.replace(/\w/g, "$&$&") : hex;
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  return 0.299 * r + 0.587 * g + 0.114 * b > 160;
+};
+
 export const svg = (title, body) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>${esc(title)}</title>
 ${body}
@@ -78,6 +102,7 @@ export function normalize(r) {
     name: r.name,
     description: r.description || "No description provided",
     stars: compact.format(r.stargazerCount),
+    starCount: r.stargazerCount,
     forks: compact.format(r.forkCount),
     // The colour goes into attributes unescaped, so only accept a plain hex value.
     lang: { name: lang.name, color: /^#[0-9a-f]{3,8}$/i.test(lang.color) ? lang.color : "#858585" },

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <mask id="hole"><rect width="400" height="150" fill="#fff"/><circle cx="36" cy="75" r="7" fill="#000"/></mask>
+  <clipPath id="tag"><polygon points="42,8 392,8 392,142 42,142 14,114 14,36"/></clipPath>
+</defs>
+<g mask="url(#hole)">
+  <polygon points="42,8 392,8 392,142 42,142 14,114 14,36" fill="#d8b98a" stroke="#a8865a"/>
+  <rect clip-path="url(#tag)" y="8" width="400" height="8" fill="#00B4AB"/>
+</g>
+<circle cx="36" cy="75" r="10" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3"/>
+<path d="M36 75C22 58 10 96 0 66" fill="none" stroke="#6b4f2a" stroke-width="2"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#2b1d0e">
+  <g font-size="9" fill="#6b4f2a" letter-spacing="1"><text x="62" y="36">NAME</text><text x="62" y="80">FROM</text><text x="170" y="80">LANG</text></g>
+  <text x="62" y="56" font-size="18" font-weight="700">load_switch</text>
+  <text x="62" y="98" font-size="13" font-weight="700">esentis</text>
+  <text x="170" y="98" font-size="13" font-weight="700">Dart</text>
+  <text x="62" y="128" font-size="13" font-weight="700">★ 20   ⑂ 3</text>
+  <text x="380" y="82" font-size="22" font-weight="700" text-anchor="end">LO-SW</text>
+  <g fill="#2b1d0e"><rect x="300" y="92" width="1" height="36"/><rect x="303" y="92" width="4" height="36"/><rect x="309" y="92" width="2" height="36"/><rect x="313" y="92" width="1" height="36"/><rect x="316" y="92" width="4" height="36"/><rect x="322" y="92" width="4" height="36"/><rect x="328" y="92" width="4" height="36"/><rect x="334" y="92" width="2" height="36"/><rect x="338" y="92" width="1" height="36"/><rect x="341" y="92" width="4" height="36"/><rect x="347" y="92" width="1" height="36"/><rect x="350" y="92" width="1" height="36"/><rect x="353" y="92" width="4" height="36"/><rect x="359" y="92" width="2" height="36"/><rect x="363" y="92" width="1" height="36"/><rect x="366" y="92" width="4" height="36"/><rect x="372" y="92" width="4" height="36"/></g>
+</g>
+</svg>
