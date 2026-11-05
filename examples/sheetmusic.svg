@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<style>@media (prefers-reduced-motion: no-preference) { .sm-cur{animation:sm-cur 8s linear infinite}@keyframes sm-cur{to{transform:translateX(296px)}} }</style>
+<rect width="400" height="150" rx="8" fill="#f7f1e3"/>
+<rect x=".5" y=".5" width="399" height="149" rx="7.5" fill="none" stroke="#2b2620" stroke-opacity=".15"/>
+<rect class="sm-cur" x="68" y="56" width="16" height="48" rx="3" fill="#00B4AB" fill-opacity=".25"/>
+<g stroke="#2b2620">
+  <path d="M20 64H372M20 72H372M20 80H372M20 88H372M20 96H372" stroke-width=".9" stroke-opacity=".75"/>
+  <path d="M20 64V96M142 64V96M218 64V96M294 64V96M366 64V96" stroke-width="1.1"/>
+  <rect x="369" y="64" width="3" height="32" fill="#2b2620" stroke="none"/>
+  <path d="M29 107C26 110 29 114 33 112C35 110 35 106 34 100L32 56C32 50 36 46 38 49C41 54 36 62 30 68C25 74 23 80 25 87C27 94 36 97 41 92C45 87 41 80 35 81C30 82 30 89 34 90" fill="none" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="30" cy="108" r="2.6" fill="#2b2620" stroke="none"/>
+  <g stroke-width="1.2"><ellipse cx="80" cy="96" rx="4.6" ry="3.3" transform="rotate(-20 80 96)" fill="#2b2620"/><path d="M84.2 96V70"/><ellipse cx="97" cy="88" rx="4.6" ry="3.3" transform="rotate(-20 97 88)" fill="#2b2620"/><path d="M101.2 88V62"/><ellipse cx="114" cy="88" rx="4.6" ry="3.3" transform="rotate(-20 114 88)" fill="#2b2620"/><path d="M118.2 88V62"/><ellipse cx="131" cy="80" rx="4.6" ry="3.3" transform="rotate(-20 131 80)" fill="#f7f1e3" stroke="#2b2620" stroke-width="1.6"/><path d="M126.8 80V106"/><ellipse cx="156" cy="80" rx="4.6" ry="3.3" transform="rotate(-20 156 80)" fill="#f7f1e3" stroke="#2b2620" stroke-width="1.6"/><path d="M151.8 80V106"/><ellipse cx="173" cy="64" rx="4.6" ry="3.3" transform="rotate(-20 173 64)" fill="#f7f1e3" stroke="#2b2620" stroke-width="1.6"/><path d="M168.8 64V90"/><ellipse cx="190" cy="64" rx="4.6" ry="3.3" transform="rotate(-20 190 64)" fill="#2b2620"/><path d="M185.8 64V90"/><ellipse cx="207" cy="64" rx="4.6" ry="3.3" transform="rotate(-20 207 64)" fill="#f7f1e3" stroke="#2b2620" stroke-width="1.6"/><path d="M202.8 64V90"/><ellipse cx="232" cy="84" rx="4.6" ry="3.3" transform="rotate(-20 232 84)" fill="#2b2620"/><path d="M236.2 84V58"/><ellipse cx="249" cy="96" rx="4.6" ry="3.3" transform="rotate(-20 249 96)" fill="#2b2620"/><path d="M253.2 96V70"/><ellipse cx="266" cy="68" rx="4.6" ry="3.3" transform="rotate(-20 266 68)" fill="#2b2620"/><path d="M261.8 68V94"/><ellipse cx="283" cy="68" rx="4.6" ry="3.3" transform="rotate(-20 283 68)" fill="#2b2620"/><path d="M278.8 68V94"/><ellipse cx="308" cy="96" rx="4.6" ry="3.3" transform="rotate(-20 308 96)" fill="#2b2620"/><path d="M312.2 96V70"/><ellipse cx="325" cy="96" rx="4.6" ry="3.3" transform="rotate(-20 325 96)" fill="#2b2620"/><path d="M329.2 96V70"/><ellipse cx="342" cy="88" rx="4.6" ry="3.3" transform="rotate(-20 342 88)" fill="#f7f1e3" stroke="#2b2620" stroke-width="1.6"/><path d="M346.2 88V62"/><ellipse cx="359" cy="88" rx="4.6" ry="3.3" transform="rotate(-20 359 88)" fill="#f7f1e3" stroke="#2b2620" stroke-width="1.6"/><path d="M363.2 88V62"/></g>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#2b2620">
+  <text x="200" y="26" font-size="18" font-weight="700" text-anchor="middle">load_switch</text>
+  <text x="20" y="46" font-size="10.5" font-weight="700" font-style="italic">Andante <tspan font-weight="400">♩ = 20</tspan></text>
+  <text x="380" y="46" font-size="10.5" font-style="italic" text-anchor="end">Music by esentis</text>
+  <text x="54" y="80" font-size="17" font-weight="700" text-anchor="middle">4</text><text x="54" y="96" font-size="17" font-weight="700" text-anchor="middle">4</text>
+  <text x="68" y="121" font-size="10.5" font-style="italic" fill="#5c5348">A highly customizable toggle switch with a loading state.</text>
+  <text x="200" y="140" font-size="9.5" fill="#7a7064" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" letter-spacing=".5"><tspan fill="#00B4AB">●</tspan> Dart   ★ 20   ⑂ 3</text>
+</g>
+</svg>

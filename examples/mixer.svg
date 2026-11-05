@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <linearGradient id="mx-panel" x2="0" y2="1"><stop offset="0" stop-color="#25272d"/><stop offset="1" stop-color="#121317"/></linearGradient>
+  <linearGradient id="mx-face" x2="0" y2="1"><stop offset="0" stop-color="#fbf0cf"/><stop offset="1" stop-color="#e3cf98"/></linearGradient>
+  <linearGradient id="mx-cap" x2="0" y2="1"><stop offset="0" stop-color="#eef0f3"/><stop offset="1" stop-color="#9aa0a9"/></linearGradient>
+</defs>
+<style>@media (prefers-reduced-motion: no-preference) { .mx-n{transform-origin:38px 48px;animation:mx-n 1.8s ease-in-out infinite}.mx-x{animation:mx-x 7s ease-in-out infinite}
+@keyframes mx-n{0%,100%{transform:rotate(0)}20%{transform:rotate(7deg)}35%{transform:rotate(-3deg)}55%{transform:rotate(9deg)}75%{transform:rotate(-5deg)}}
+@keyframes mx-x{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}} }</style>
+<rect width="400" height="150" rx="12" fill="url(#mx-panel)"/>
+<rect x="1" y="1" width="398" height="148" rx="11" fill="none" stroke="#fff" stroke-opacity=".07"/>
+<path d="M212 54V140" stroke="#000" stroke-opacity=".6"/><path d="M213 54V140" stroke="#fff" stroke-opacity=".06"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#f2f4f7">load_switch</text>
+  <text x="20" y="45" font-size="10.5" fill="#8b8f99">esentis</text>
+  <g transform="translate(222 12)">
+    <rect width="76" height="52" rx="4" fill="url(#mx-face)" stroke="#000"/>
+    <path d="M12 34A34 34 0 0 1 52 20" fill="none" stroke="#2b2620" stroke-width="1.2"/><path d="M52 20A34 34 0 0 1 64 34" fill="none" stroke="#d6261a" stroke-width="2.4"/>
+    <g stroke="#2b2620"><path d="M38 12V16" transform="rotate(-45 38 48)"/><path d="M38 12V16" transform="rotate(-27 38 48)"/><path d="M38 12V16" transform="rotate(-9 38 48)"/><path d="M38 12V16" transform="rotate(9 38 48)"/><path d="M38 12V16" transform="rotate(27 38 48)"/><path d="M38 12V16" transform="rotate(45 38 48)"/></g>
+    <text x="9" y="47" font-size="7" font-weight="700" fill="#2b2620">VU</text><text x="67" y="47" font-size="7.5" font-weight="700" fill="#2b2620" text-anchor="end">★</text>
+    <g transform="rotate(-9.2 38 48)"><path class="mx-n" style="animation-delay:-0s" d="M38 48V13" stroke="#1a1a1a" stroke-width="1.2"/></g>
+    <rect x="28" y="44" width="20" height="8" rx="2" fill="#1a1a1c"/>
+  </g><g transform="translate(306 12)">
+    <rect width="76" height="52" rx="4" fill="url(#mx-face)" stroke="#000"/>
+    <path d="M12 34A34 34 0 0 1 52 20" fill="none" stroke="#2b2620" stroke-width="1.2"/><path d="M52 20A34 34 0 0 1 64 34" fill="none" stroke="#d6261a" stroke-width="2.4"/>
+    <g stroke="#2b2620"><path d="M38 12V16" transform="rotate(-45 38 48)"/><path d="M38 12V16" transform="rotate(-27 38 48)"/><path d="M38 12V16" transform="rotate(-9 38 48)"/><path d="M38 12V16" transform="rotate(9 38 48)"/><path d="M38 12V16" transform="rotate(27 38 48)"/><path d="M38 12V16" transform="rotate(45 38 48)"/></g>
+    <text x="9" y="47" font-size="7" font-weight="700" fill="#2b2620">VU</text><text x="67" y="47" font-size="7.5" font-weight="700" fill="#2b2620" text-anchor="end">⑂</text>
+    <g transform="rotate(-18.0 38 48)"><path class="mx-n" style="animation-delay:-0.8s" d="M38 48V13" stroke="#1a1a1a" stroke-width="1.2"/></g>
+    <rect x="28" y="44" width="20" height="8" rx="2" fill="#1a1a1c"/>
+  </g>
+  <g transform="translate(46 0)">
+    <text y="62" font-size="7" font-weight="700" fill="#8b8f99" letter-spacing="1.2" text-anchor="middle">STARS</text>
+    <circle cy="74" r="6.5" fill="#2e3036" stroke="#4a4d55"/><path d="M0 74L-3.2 70.9" stroke="#fff" stroke-width="1.4"/>
+    <rect x="-2" y="86" width="4" height="38" rx="2" fill="#050506"/>
+    <rect x="-11" y="107.8" width="22" height="9" rx="2" fill="url(#mx-cap)" stroke="#000" stroke-opacity=".5"/>
+    <path d="M-11 112.3H11" stroke="#000" stroke-opacity=".5"/>
+    <text y="141" font-size="10" font-weight="700" fill="#f2f4f7" text-anchor="middle">★ 20</text>
+  </g><g transform="translate(108 0)">
+    <text y="62" font-size="7" font-weight="700" fill="#8b8f99" letter-spacing="1.2" text-anchor="middle">FORKS</text>
+    <circle cy="74" r="6.5" fill="#2e3036" stroke="#4a4d55"/><path d="M0 74L-4.4 73.3" stroke="#fff" stroke-width="1.4"/>
+    <rect x="-2" y="86" width="4" height="38" rx="2" fill="#050506"/>
+    <rect x="-11" y="112.2" width="22" height="9" rx="2" fill="url(#mx-cap)" stroke="#000" stroke-opacity=".5"/>
+    <path d="M-11 116.7H11" stroke="#000" stroke-opacity=".5"/>
+    <text y="141" font-size="10" font-weight="700" fill="#f2f4f7" text-anchor="middle">⑂ 3</text>
+  </g><g transform="translate(170 0)">
+    <text y="62" font-size="7" font-weight="700" fill="#8b8f99" letter-spacing="1.2" text-anchor="middle">LANG</text>
+    <circle cy="74" r="6.5" fill="#2e3036" stroke="#4a4d55"/><path d="M0 74L-0.6 69.5" stroke="#fff" stroke-width="1.4"/>
+    <rect x="-2" y="86" width="4" height="38" rx="2" fill="#050506"/>
+    <rect x="-11" y="103.0" width="22" height="9" rx="2" fill="#00B4AB" stroke="#000" stroke-opacity=".5"/>
+    <path d="M-11 107.5H11" stroke="#000" stroke-opacity=".5"/>
+    <text y="141" font-size="10" font-weight="700" fill="#f2f4f7" text-anchor="middle"><tspan font-size="8.5">Dart</tspan></text>
+  </g>
+  <g font-size="7" font-weight="700" fill="#8b8f99" letter-spacing="1.2" text-anchor="middle"><text x="298" y="86">CROSSFADER</text><text x="232" y="112">A</text><text x="364" y="112">B</text></g>
+  <path d="M298 96V120" stroke="#3a3d45"/>
+  <rect x="242" y="106" width="112" height="4" rx="2" fill="#050506"/>
+  <g class="mx-x"><rect x="331.0" y="98" width="14" height="20" rx="2" fill="url(#mx-cap)" stroke="#000" stroke-opacity=".5"/><path d="M338.0 98V118" stroke="#000" stroke-opacity=".5"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" fill="#5f636c"><text x="244" y="137">CUE</text><text x="352" y="137" text-anchor="end">MASTER</text></g>
+  <circle cx="276" cy="134" r="3" fill="#00B4AB"/><circle cx="314" cy="134" r="3" fill="#3a3d45"/>
+</g>
+</svg>
