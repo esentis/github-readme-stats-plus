@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00B4AB" stop-opacity=".45"/><stop offset="1" stop-color="#00B4AB" stop-opacity="0"/></linearGradient></defs>
+<rect width="400" height="150" rx="12" fill="#0b0e14"/>
+<rect x=".5" y=".5" width="399" height="149" rx="11.5" fill="none" stroke="#232a36"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <circle cx="22" cy="26" r="4" fill="#00B4AB"/>
+  <text x="32" y="30" font-size="12" fill="#7d8799">esentis / <tspan font-size="14" font-weight="700" fill="#fff">load_switch</tspan></text>
+  <text x="384" y="30" font-size="9" font-weight="700" letter-spacing="1" fill="#3fb950" text-anchor="end">● PUBLIC<animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/></text>
+  <line x1="16" y1="42" x2="384" y2="42" stroke="#232a36"/>
+  <rect x="16" y="52" width="62" height="56" rx="8" fill="#141922" stroke="#232a36"/>
+  <text x="26" y="68" font-size="9" font-weight="700" letter-spacing="1" fill="#7d8799">STARS</text><text x="26" y="96" font-size="22" font-weight="800" fill="#fff">20</text>
+  <rect x="84" y="52" width="62" height="56" rx="8" fill="#141922" stroke="#232a36"/>
+  <text x="94" y="68" font-size="9" font-weight="700" letter-spacing="1" fill="#7d8799">FORKS</text><text x="94" y="96" font-size="22" font-weight="800" fill="#fff">3</text>
+  <rect x="152" y="52" width="96" height="56" rx="8" fill="#141922" stroke="#232a36"/>
+  <text x="162" y="68" font-size="9" font-weight="700" letter-spacing="1" fill="#7d8799">LANGUAGE</text><text x="162" y="91" font-size="12.5" font-weight="700" fill="#fff">Dart</text><rect x="162" y="97" width="76" height="4" rx="2" fill="#00B4AB"/>
+  <rect x="256" y="52" width="128" height="56" rx="8" fill="#141922" stroke="#232a36"/>
+  <text x="266" y="68" font-size="9" font-weight="700" letter-spacing="1" fill="#7d8799">SIGNATURE</text>
+  <path d="M264.0 86.5L274.2 81.6L284.4 89.0L294.5 75.6L304.7 81.4L314.9 77.4L325.1 82.5L335.3 79.8L345.5 82.6L355.6 77.6L365.8 81.8L376.0 73.5L376 100L264 100Z" fill="url(#area)"/>
+  <path d="M264.0 86.5L274.2 81.6L284.4 89.0L294.5 75.6L304.7 81.4L314.9 77.4L325.1 82.5L335.3 79.8L345.5 82.6L355.6 77.6L365.8 81.8L376.0 73.5" fill="none" stroke="#00B4AB" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" pathLength="1" stroke-dasharray="1"><animate attributeName="stroke-dashoffset" values="1;0" dur="1.6s" fill="freeze"/></path>
+  <circle cx="376.0" cy="73.5" r="3" fill="#fff" stroke="#00B4AB" stroke-width="2"/>
+  <text font-size="11" fill="#8b95a7"><tspan x="16" y="126">A highly customizable toggle switch with a loading state.</tspan></text>
+</g>
+</svg>

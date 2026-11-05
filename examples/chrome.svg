@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" role="img"><title>load_switch</title>
+<defs>
+  <clipPath id="clip"><rect width="400" height="150" rx="14"/></clipPath>
+  <linearGradient id="metal" x1="0" y1="0" x2=".4" y2="1">
+    <stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#8d96a3"/><stop offset=".47" stop-color="#16181d"/><stop offset=".52" stop-color="#00B4AB"/><stop offset=".58" stop-color="#eef1f5"/><stop offset=".82" stop-color="#5d6672"/><stop offset="1" stop-color="#fff"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="0 -.1;0 .1;0 -.1" dur="7s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
+    <stop offset=".1" stop-color="#fff"/><stop offset=".48" stop-color="#c3ccd8"/><stop offset=".5" stop-color="#4a515c"/><stop offset=".58" stop-color="#e6eaf0"/><stop offset=".9" stop-color="#fff"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="400" height="150" fill="#08090c"/>
+  <path d="M312 -14C370 -10 418 14 408 58C400 94 352 88 336 64C320 40 288 32 298 6Z" fill="url(#metal)"/>
+  <path d="M286 162C282 128 322 104 358 112C392 120 414 146 408 164Z" fill="url(#metal)"/>
+  <path d="M352 82C368 86 376 98 372 108" fill="none" stroke="url(#metal)" stroke-width="9" stroke-linecap="round"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round">
+    <path d="M318 2C350 4 382 16 392 36" stroke-width="2"/><path d="M304 150C306 134 326 120 350 120" stroke-width="1.5" stroke-opacity=".8"/>
+  </g>
+  <path d="M0-9L1.6-1.6L9 0L1.6 1.6L0 9L-1.6 1.6L-9 0L-1.6-1.6Z" fill="#fff" transform="translate(330 88)"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></path>
+</g>
+<rect x=".5" y=".5" width="399" height="149" rx="13.5" fill="none" stroke="#fff" stroke-opacity=".12"/>
+<g font-family="-apple-system, 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">
+  <text x="24" y="44" font-size="23" font-weight="800" fill="url(#title)">load_switch</text>
+  <text font-size="13" fill="#aab2bf"><tspan x="24" y="68">A highly customizable toggle switch with</tspan><tspan x="24" y="85">a loading state.</tspan></text>
+  <g transform="translate(24 0)"><circle cx="5" cy="122" r="5" fill="#00B4AB"/><text x="16" y="126.5" font-size="12.5" fill="#e8ecf2" font-weight="600">Dart</text></g><g transform="translate(90 0)"><path transform="translate(0 115) scale(0.875)" fill-rule="evenodd" fill="#c3cad5" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/><text x="20" y="126.5" font-size="12.5" fill="#e8ecf2" font-weight="600">20</text></g><g transform="translate(145 0)"><path transform="translate(0 115) scale(0.875)" fill-rule="evenodd" fill="#c3cad5" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/><text x="20" y="126.5" font-size="12.5" fill="#e8ecf2" font-weight="600">3</text></g>
+</g>
+</svg>
